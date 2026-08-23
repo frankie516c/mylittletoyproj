@@ -7,6 +7,7 @@
 | [`dog-trainer-demo/`](dog-trainer-demo/) | 멍톡 🐩 — 말로 묻는 강아지 훈련 상담 데모. STT → 웹 검색 답변 → 신뢰도/정확성/속도 분석 | Node (무의존성), OpenAI API |
 | [`eval-pos-neg/`](eval-pos-neg/) | 동영상 리뷰 멀티모달 감정 분석. 음성(STT) + 얼굴 표정을 융합해 긍/부정 판정 | Python, FastAPI, faster-whisper, PyTorch |
 | [`ksent/`](ksent/) | 한국어 감성분류 모델 평가 하네스. 행동 테스트로 반어법·확신도 실패를 드러냄 | Python, transformers, numpy |
+| [`dog-training-rag/`](dog-training-rag/) | 강아지 훈련 RAG 데모. 구조 인식 마크다운 청킹 + 로컬 임베딩/벡터DB, hit rate·MRR 평가 하네스 포함 | Python, FastAPI, fastembed(ONNX), Qdrant, OpenAI API |
 
 ## 규칙
 
