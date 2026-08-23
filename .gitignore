@@ -1,0 +1,56 @@
+# ─── 비밀정보: 절대 커밋 금지 ──────────────────────────────────────────────
+# 프로젝트별 .gitignore 보다 먼저 걸리는 저장소 전체 방어선이다.
+# 새 프로젝트를 추가할 때 그 폴더에 .gitignore 를 깜빡해도 여기서 막힌다.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+certs/
+credentials.json
+service-account*.json
+
+# ─── 가상환경 / 캐시 ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+node_modules/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ─── 모델 가중치 (자동 다운로드되며, 용량이 크다) ──────────────────────────
+models/
+*.onnx
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# ─── 데이터셋 / 미디어 샘플 (용량이 크고 원본 출처가 따로 있음) ────────────
+*.wav
+*.flac
+*.mp3
+*.mp4
+*.webm
+*.mov
+*.mkv
+
+# ─── 런타임 산출물 ─────────────────────────────────────────────────────────
+*.log
+.testdata/
+nohup.out
+
+# ─── 에디터 / OS ───────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
