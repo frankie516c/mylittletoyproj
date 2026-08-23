@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>동영상 리뷰 감정 분석 데모</title>
+<style>
+  :root{
+    --bg:#0e1117; --panel:#161b25; --panel2:#1d2330; --line:#2a3242;
+    --fg:#e6ebf2; --muted:#8b97a8; --accent:#5b9dff;
+    --pos:#2ecc8f; --neg:#ff6b6b; --neu:#f0b429;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font-family:"Pretendard","Malgun Gothic","Segoe UI",system-ui,sans-serif;
+       line-height:1.6}
+  .wrap{max-width:1080px;margin:0 auto;padding:32px 20px 80px}
+  header h1{font-size:26px;margin:0 0 6px}
+  header p{margin:0;color:var(--muted);font-size:14px}
+  .pill{display:inline-block;font-size:12px;padding:3px 10px;border-radius:999px;
+        border:1px solid var(--line);color:var(--muted);margin-top:10px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+        padding:20px;margin-top:20px}
+  .card h2{font-size:15px;margin:0 0 14px;color:var(--muted);font-weight:600;
+           letter-spacing:.02em}
+  .row{display:flex;gap:12px;flex-wrap:wrap}
+  button{font:inherit;font-weight:600;padding:11px 20px;border-radius:10px;
+         border:1px solid var(--line);background:var(--panel2);color:var(--fg);
+         cursor:pointer;transition:.15s}
+  button:hover:not(:disabled){border-color:var(--accent);color:#fff}
+  button:disabled{opacity:.4;cursor:not-allowed}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#08111f}
+  button.danger{background:#3a1d22;border-color:#7d3440;color:#ffb3b3}
+  .hint{color:var(--muted);font-size:13px;margin-top:10px}
+  video{width:100%;max-width:480px;background:#000;border-radius:10px;
+        border:1px solid var(--line);display:block;margin-top:14px}
+  .rec{display:none;align-items:center;gap:8px;color:var(--neg);font-weight:700;
+       font-size:14px;margin-top:12px}
+  .rec.on{display:flex}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--neg);
+       animation:blink 1s infinite}
+  @keyframes blink{50%{opacity:.2}}
+  #status{margin-top:16px;font-size:14px;color:var(--muted);min-height:22px}
+  .err{color:var(--neg)}
+
+  .verdict{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .badge{font-size:34px;font-weight:800;padding:14px 30px;border-radius:14px;
+         border:2px solid}
+  .badge.positive{color:var(--pos);border-color:var(--pos);background:#0f2a20}
+  .badge.negative{color:var(--neg);border-color:var(--neg);background:#2a1417}
+  .badge.neutral{color:var(--neu);border-color:var(--neu);background:#2a2211}
+  .badge.unknown{color:var(--muted);border-color:var(--line);background:var(--panel2)}
+  .vmeta{flex:1;min-width:240px}
+  .gauge{height:14px;border-radius:8px;background:linear-gradient(90deg,
+         var(--neg) 0%, var(--neu) 50%, var(--pos) 100%);position:relative;
+         margin:10px 0 6px}
+  .needle{position:absolute;top:-5px;width:4px;height:24px;border-radius:2px;
+          background:#fff;box-shadow:0 0 0 2px rgba(0,0,0,.6);transform:translateX(-2px)}
+  .scale{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+  .sub{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .sub h3{margin:0 0 4px;font-size:13px;color:var(--muted);font-weight:600}
+  .big{font-size:26px;font-weight:800;margin:2px 0 6px}
+  .bar{height:8px;border-radius:6px;background:#0c1016;overflow:hidden;margin:4px 0 2px;
+       display:block}
+  .bar > i{display:block;height:100%;border-radius:6px}
+  .emo{display:grid;grid-template-columns:74px 1fr 52px;gap:8px;align-items:center;
+       font-size:13px;margin-bottom:6px}
+  .emo .num{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+
+  .strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:8px}
+  .frame{flex:0 0 108px;text-align:center;font-size:11px;color:var(--muted)}
+  .frame img{width:108px;height:108px;object-fit:cover;border-radius:10px;
+             border:1px solid var(--line);display:block}
+  .frame .lab{margin-top:6px;font-weight:700;font-size:12px;color:var(--fg)}
+  .miss{display:flex;flex-direction:column;align-items:center;
+        justify-content:center;height:108px;border:1px dashed var(--line);
+        border-radius:10px}
+  .quote{background:var(--panel2);border-left:3px solid var(--accent);
+         border-radius:0 8px 8px 0;padding:12px 16px;white-space:pre-wrap;
+         font-size:15px}
+  .notes{margin:12px 0 0;padding-left:18px;color:var(--neu);font-size:13px}
+  .foot{margin-top:14px;font-size:12px;color:var(--muted);
+        display:flex;gap:16px;flex-wrap:wrap}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+  td{padding:5px 0;border-bottom:1px solid var(--line)}
+  td:last-child{text-align:right;color:var(--muted)}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>동영상 리뷰 감정 분석</h1>
+    <p>말한 내용(STT)과 얼굴 표정을 함께 읽어 리뷰의 긍정 / 부정을 판정합니다.</p>
+    <span class="pill" id="warm">모델 예열 중…</span>
+  </header>
+
+  <div class="card">
+    <h2>1. 리뷰 영상 준비</h2>
+    <div class="row">
+      <button id="pick">동영상 업로드</button>
+      <button id="rec" class="primary">직접 리뷰 녹화</button>
+      <button id="stop" class="danger hidden">녹화 중지</button>
+    </div>
+    <input type="file" id="file" accept="video/*" class="hidden">
+    <div class="rec" id="recind"><span class="dot"></span><span id="rectime">0:00</span> 녹화 중</div>
+    <video id="preview" muted playsinline class="hidden"></video>
+    <video id="playback" controls playsinline class="hidden"></video>
+    <p class="hint">녹화는 카메라·마이크 권한이 필요합니다. 카메라를 정면으로 보고 소감을 말해 주세요.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. 분석</h2>
+    <div class="row">
+      <button id="run" class="primary" disabled>감정 분석 실행</button>
+      <button id="reset">초기화</button>
+    </div>
+    <div id="status"></div>
+  </div>
+
+  <div id="out" class="hidden">
+
+    <div class="card">
+      <h2>최종 판정</h2>
+      <div class="verdict">
+        <div class="badge unknown" id="badge">–</div>
+        <div class="vmeta">
+          <div class="gauge"><span class="needle" id="needle" style="left:50%"></span></div>
+          <div class="scale"><span>부정 0%</span><span>중립 50%</span><span>긍정 100%</span></div>
+          <div id="vsum" class="hint"></div>
+        </div>
+      </div>
+      <ul class="notes hidden" id="notes"></ul>
+    </div>
+
+    <div class="card">
+      <h2>모달리티별 근거</h2>
+      <div class="grid2">
+        <div class="sub">
+          <h3>음성 텍스트 감성</h3>
+          <div class="big" id="tval">–</div>
+          <span class="bar"><i id="tbar"></i></span>
+          <div class="hint" id="tnote"></div>
+        </div>
+        <div class="sub">
+          <h3>표정 평균 감정</h3>
+          <div class="big" id="fval">–</div>
+          <div id="emos"></div>
+          <div class="hint" id="fnote"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>프레임별 얼굴 표정</h2>
+      <div class="strip" id="strip"></div>
+    </div>
+
+    <div class="card">
+      <h2>인식된 발화 (STT)</h2>
+      <div class="quote" id="stt"></div>
+      <div class="foot" id="sttmeta"></div>
+    </div>
+
+    <div class="card">
+      <h2>처리 정보</h2>
+      <table id="meta"></table>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const EMO_COLOR = {
+  happy:'#2ecc8f', surprise:'#5b9dff', neutral:'#8b97a8',
+  sad:'#7d8bff', fear:'#b57bff', disgust:'#e0824c', angry:'#ff6b6b'
+};
+
+let blob = null, recorder = null, stream = null, chunks = [], timer = null, t0 = 0;
+
+fetch('/eval-pos-neg/warmup', {method:'POST'})
+  .then(r => r.json())
+  .then(d => {
+    const bad = Object.entries(d.models || {}).filter(([, v]) => v !== 'ready');
+    $('warm').textContent = bad.length
+      ? '일부 모델 로딩 실패: ' + bad.map(([k]) => k).join(', ')
+      : '모델 준비 완료 (STT · 얼굴검출 · 표정분류 · 텍스트감성)';
+  })
+  .catch(() => { $('warm').textContent = '모델 예열 실패 (첫 분석이 느릴 수 있습니다)'; });
+
+function setStatus(msg, isErr) {
+  $('status').textContent = msg;
+  $('status').className = isErr ? 'err' : '';
+}
+
+function ready(b, srcUrl) {
+  blob = b;
+  $('run').disabled = !b;
+  if (srcUrl) {
+    $('playback').src = srcUrl;
+    $('playback').classList.remove('hidden');
+  }
+}
+
+/* ---------- 업로드 ---------- */
+$('pick').onclick = () => $('file').click();
+$('file').onchange = (e) => {
+  const f = e.target.files[0];
+  if (!f) return;
+  $('preview').classList.add('hidden');
+  ready(f, URL.createObjectURL(f));
+  setStatus('업로드 완료: ' + f.name + ' (' + (f.size/1048576).toFixed(1) + 'MB) — 분석을 실행하세요.');
+};
+
+/* ---------- 녹화 ---------- */
+function pickMime() {
+  const cands = ['video/webm;codecs=vp9,opus', 'video/webm;codecs=vp8,opus',
+                 'video/webm', 'video/mp4'];
+  for (const c of cands) {
+    if (window.MediaRecorder && MediaRecorder.isTypeSupported(c)) return c;
+  }
+  return '';
+}
+
+$('rec').onclick = async () => {
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({
+      video: { width: { ideal: 640 }, height: { ideal: 480 } },
+      audio: { echoCancellation: true, noiseSuppression: true }
+    });
+  } catch (err) {
+    setStatus('카메라/마이크를 열 수 없습니다: ' + err.message, true);
+    return;
+  }
+
+  $('playback').classList.add('hidden');
+  const pv = $('preview');
+  pv.srcObject = stream;
+  pv.classList.remove('hidden');
+  await pv.play().catch(() => {});
+
+  const mime = pickMime();
+  chunks = [];
+  recorder = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+  recorder.ondataavailable = (e) => { if (e.data.size) chunks.push(e.data); };
+  recorder.onstop = () => {
+    const b = new Blob(chunks, { type: recorder.mimeType || 'video/webm' });
+    pv.classList.add('hidden');
+    pv.srcObject = null;
+    ready(b, URL.createObjectURL(b));
+    setStatus('녹화 완료 (' + (b.size/1048576).toFixed(1) + 'MB) — 분석을 실행하세요.');
+  };
+  recorder.start(1000);
+
+  t0 = Date.now();
+  timer = setInterval(() => {
+    const s = Math.floor((Date.now() - t0) / 1000);
+    $('rectime').textContent = Math.floor(s/60) + ':' + String(s%60).padStart(2,'0');
+  }, 250);
+
+  $('recind').classList.add('on');
+  $('rec').classList.add('hidden');
+  $('stop').classList.remove('hidden');
+  $('pick').disabled = true;
+  setStatus('녹화 중입니다. 카메라를 보고 소감을 말한 뒤 중지를 누르세요.');
+};
+
+$('stop').onclick = () => {
+  if (recorder && recorder.state !== 'inactive') recorder.stop();
+  if (stream) stream.getTracks().forEach(t => t.stop());
+  clearInterval(timer);
+  $('recind').classList.remove('on');
+  $('rec').classList.remove('hidden');
+  $('stop').classList.add('hidden');
+  $('pick').disabled = false;
+};
+
+/* ---------- 초기화 ---------- */
+$('reset').onclick = () => {
+  if (recorder && recorder.state !== 'inactive') $('stop').onclick();
+  blob = null;
+  $('run').disabled = true;
+  $('file').value = '';
+  $('playback').classList.add('hidden');
+  $('playback').removeAttribute('src');
+  $('preview').classList.add('hidden');
+  $('out').classList.add('hidden');
+  setStatus('');
+};
+
+/* ---------- 분석 ---------- */
+$('run').onclick = async () => {
+  if (!blob) return;
+  $('run').disabled = true;
+  setStatus('분석 중… 영상 디코딩 → 음성 인식 → 얼굴/표정 → 종합 (수십 초 걸릴 수 있습니다)');
+
+  const fd = new FormData();
+  const isMp4 = (blob.type || 'video/webm').includes('mp4');
+  const name = blob.name || ('review.' + (isMp4 ? 'mp4' : 'webm'));
+  fd.append('video', blob, name);
+
+  try {
+    const res = await fetch('/eval-pos-neg/analyze', { method: 'POST', body: fd });
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error || '알 수 없는 오류');
+    render(data);
+    setStatus('완료 (총 ' + data.timing.total + '초)');
+  } catch (err) {
+    setStatus('분석 실패: ' + err.message, true);
+  } finally {
+    $('run').disabled = false;
+  }
+};
+
+/* ---------- 결과 렌더링 ---------- */
+function pct(x) { return (x * 100).toFixed(1) + '%'; }
+
+function render(d) {
+  const v = d.verdict;
+
+  const badge = $('badge');
+  badge.className = 'badge ' + v.tone;
+  badge.textContent = v.label;
+
+  $('needle').style.left = (v.score * 100).toFixed(1) + '%';
+  let summary = '긍정 점수 ' + pct(v.score) + ' · 확신도 ' + pct(v.confidence) +
+                ' · 모달리티 ' + v.agreement;
+  if (v.weights && v.weights.text !== undefined) {
+    summary += ' · 가중치 텍스트 ' + pct(v.weights.text) + ' / 표정 ' + pct(v.weights.face);
+  }
+  $('vsum').textContent = summary;
+
+  const notes = $('notes');
+  notes.innerHTML = '';
+  (v.notes || []).forEach(n => {
+    const li = document.createElement('li');
+    li.textContent = n;
+    notes.appendChild(li);
+  });
+  notes.classList.toggle('hidden', !(v.notes || []).length);
+
+  // 텍스트 감성
+  const t = d.text_sentiment;
+  if (v.text_positive !== null && v.text_positive !== undefined) {
+    $('tval').textContent = t.label + ' · ' + pct(t.positive);
+    $('tval').style.color = t.positive >= 0.5 ? 'var(--pos)' : 'var(--neg)';
+    const bar = $('tbar');
+    bar.style.width = pct(t.positive);
+    bar.style.background = t.positive >= 0.5 ? 'var(--pos)' : 'var(--neg)';
+    $('tnote').textContent =
+      '문장 ' + t.chunks.length + '개 길이가중 평균 · 극성 캘리브레이션: ' + t.calibration;
+  } else {
+    $('tval').textContent = '분석 불가';
+    $('tval').style.color = 'var(--muted)';
+    $('tbar').style.width = '0%';
+    $('tnote').textContent = t.error || d.stt.error || '텍스트가 없습니다.';
+  }
+
+  // 표정 평균 감정
+  const f = d.face;
+  const emos = $('emos');
+  emos.innerHTML = '';
+  if (f.faces_found > 0) {
+    $('fval').textContent = f.dominant_ko + ' · 긍정환산 ' + pct(f.positive_score);
+    $('fval').style.color = f.positive_score >= 0.5 ? 'var(--pos)' : 'var(--neg)';
+    Object.entries(f.mean_probs).sort((a, b) => b[1] - a[1]).forEach(([k, p]) => {
+      const row = document.createElement('div');
+      row.className = 'emo';
+      const nameEl = document.createElement('span');
+      nameEl.textContent = f.emotion_ko[k] || k;
+      const barEl = document.createElement('span');
+      barEl.className = 'bar';
+      const fill = document.createElement('i');
+      fill.style.width = (p * 100).toFixed(1) + '%';
+      fill.style.background = EMO_COLOR[k] || '#8b97a8';
+      barEl.appendChild(fill);
+      const numEl = document.createElement('span');
+      numEl.className = 'num';
+      numEl.textContent = (p * 100).toFixed(1) + '%';
+      row.append(nameEl, barEl, numEl);
+      emos.appendChild(row);
+    });
+    $('fnote').textContent =
+      '프레임 ' + f.frames_scanned + '장 중 ' + f.faces_found +
+      '장에서 얼굴 검출 · 평균 정서가 ' + f.mean_valence.toFixed(3);
+  } else {
+    $('fval').textContent = '얼굴 미검출';
+    $('fval').style.color = 'var(--muted)';
+    $('fnote').textContent = f.error || '';
+  }
+
+  // 프레임 스트립
+  const strip = $('strip');
+  strip.innerHTML = '';
+  (f.frames || []).forEach(fr => {
+    const el = document.createElement('div');
+    el.className = 'frame';
+    if (fr.detected && fr.thumbnail) {
+      const top = (fr.probs && fr.probs[fr.top_label]) || 0;
+      const img = document.createElement('img');
+      img.src = fr.thumbnail;
+      const lab = document.createElement('div');
+      lab.className = 'lab';
+      lab.style.color = EMO_COLOR[fr.top_label] || '#e6ebf2';
+      lab.textContent = fr.top_label_ko;
+      const sub = document.createElement('div');
+      sub.textContent = (top * 100).toFixed(0) + '% · ' + fr.timestamp.toFixed(1) + 's';
+      el.append(img, lab, sub);
+    } else {
+      const box = document.createElement('div');
+      box.className = 'miss';
+      box.textContent = '얼굴 없음';
+      const sub = document.createElement('div');
+      sub.style.marginTop = '6px';
+      sub.textContent = fr.timestamp.toFixed(1) + 's';
+      el.append(box, sub);
+    }
+    strip.appendChild(el);
+  });
+  if (!(f.frames || []).length) {
+    strip.textContent = '추출된 프레임이 없습니다.';
+  }
+
+  // STT
+  $('stt').textContent = d.stt.text || d.stt.error || '인식된 발화가 없습니다.';
+  $('sttmeta').textContent =
+    '언어 ' + (d.stt.language || '-') + ' (' + pct(d.stt.language_probability || 0) + ')' +
+    '   ·   길이 ' + (d.stt.duration || 0).toFixed(1) + '초' +
+    '   ·   구간 ' + d.stt.segments.length + '개';
+
+  // 처리 정보
+  const rows = [
+    ['업로드', d.upload.filename + ' · ' + (d.upload.bytes/1048576).toFixed(2) + 'MB · ' +
+               (d.upload.content_type || '-')],
+    ['추출 프레임', d.media.frames_extracted + '장 / 영상 ' +
+                    d.media.video_duration.toFixed(1) + '초'],
+    ['STT 모델', d.models.stt],
+    ['표정 분류기', d.models.emotion],
+    ['텍스트 감성', d.models.text],
+    ['처리 시간', '디코딩 ' + d.timing.decode + 's · STT ' + d.timing.stt +
+                  's · 표정 ' + d.timing.face + 's · 텍스트 ' + d.timing.text +
+                  's · 합계 ' + d.timing.total + 's'],
+  ];
+  if ((d.media.errors || []).length) rows.push(['디코딩 경고', d.media.errors.join(' / ')]);
+  const table = $('meta');
+  table.innerHTML = '';
+  rows.forEach(([k, val]) => {
+    const tr = document.createElement('tr');
+    const td1 = document.createElement('td');
+    td1.textContent = k;
+    const td2 = document.createElement('td');
+    td2.textContent = val;
+    tr.append(td1, td2);
+    table.appendChild(tr);
+  });
+
+  $('out').classList.remove('hidden');
+  $('out').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+</body>
+</html>

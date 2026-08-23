@@ -5,6 +5,7 @@
 | 폴더 | 내용 | 스택 |
 |---|---|---|
 | [`dog-trainer-demo/`](dog-trainer-demo/) | 멍톡 🐩 — 말로 묻는 강아지 훈련 상담 데모. STT → 웹 검색 답변 → 신뢰도/정확성/속도 분석 | Node (무의존성), OpenAI API |
+| [`eval-pos-neg/`](eval-pos-neg/) | 동영상 리뷰 멀티모달 감정 분석. 음성(STT) + 얼굴 표정을 융합해 긍/부정 판정 | Python, FastAPI, faster-whisper, PyTorch |
 
 ## 규칙
 

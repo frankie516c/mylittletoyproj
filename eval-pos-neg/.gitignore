@@ -1,0 +1,15 @@
+# 자동 다운로드되는 모델 가중치 (YuNet ONNX)
+models/
+
+# stt.py 가 받아오는 샘플 음성
+sample.flac
+
+# 로컬 개발용 인증서 — 개인키 포함, 절대 커밋 금지
+certs/
+*.pem
+*.crt
+*.srl
+
+.venv/
+__pycache__/
+*.py[cod]
