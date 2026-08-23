@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>강아지 훈련 RAG 데모</title>
+<style>
+  :root {
+    --bg: #f7f6f3; --panel: #ffffff; --ink: #23201c; --muted: #756e64;
+    --line: #e3ded6; --accent: #b4693a; --accent-soft: #f5e7dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #191714; --panel: #221f1b; --ink: #ece7df; --muted: #9c948a;
+      --line: #35302a; --accent: #e0996a; --accent-soft: #33271e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.7 -apple-system, "Segoe UI", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+  }
+  header {
+    border-bottom: 1px solid var(--line); background: var(--panel);
+    position: sticky; top: 0; z-index: 5;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+  header .wrap { padding-top: 18px; padding-bottom: 16px; }
+  h1 { margin: 0 0 4px; font-size: 19px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); font-size: 13px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .pill {
+    font-size: 11.5px; color: var(--muted); border: 1px solid var(--line);
+    border-radius: 999px; padding: 3px 9px; background: var(--bg);
+  }
+  main { padding: 24px 0 120px; }
+  .samples { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+  .samples button {
+    font: inherit; font-size: 13px; cursor: pointer; color: var(--ink);
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 999px; padding: 7px 13px;
+  }
+  .samples button:hover { border-color: var(--accent); color: var(--accent); }
+  .turn { margin-bottom: 28px; }
+  .q {
+    background: var(--accent-soft); border-radius: 12px; padding: 12px 15px;
+    font-weight: 600; margin-bottom: 14px;
+  }
+  .a { white-space: pre-wrap; }
+  .a .cite {
+    display: inline-block; min-width: 18px; text-align: center; font-size: 11px;
+    font-weight: 700; color: var(--accent); background: var(--accent-soft);
+    border-radius: 4px; padding: 1px 5px; margin: 0 1px; text-decoration: none;
+  }
+  .meta { margin-top: 12px; font-size: 12px; color: var(--muted); }
+  .sources { margin-top: 14px; border-top: 1px dashed var(--line); padding-top: 12px; }
+  .sources h3 { font-size: 12px; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+  .src {
+    border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px;
+    margin-bottom: 8px; background: var(--panel); scroll-margin-top: 110px;
+  }
+  .src.hl { border-color: var(--accent); }
+  .src-head { display: flex; gap: 8px; align-items: baseline; font-size: 12.5px; }
+  .src-n { font-weight: 700; color: var(--accent); }
+  .src-path { color: var(--muted); font-size: 11.5px; margin: 3px 0 6px; word-break: break-word; }
+  .src-snip { font-size: 12.5px; color: var(--muted); }
+  .src a { color: var(--accent); font-size: 11.5px; }
+  .err {
+    border: 1px solid #c2553f; background: rgba(194, 85, 63, 0.08); color: #c2553f;
+    border-radius: 10px; padding: 12px 14px; font-size: 13.5px;
+  }
+  .composer {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: var(--panel); border-top: 1px solid var(--line); padding: 12px 0;
+  }
+  .composer form { display: flex; gap: 8px; }
+  .composer input {
+    flex: 1; font: inherit; padding: 11px 14px; border-radius: 10px;
+    border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+  }
+  .composer input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .composer button {
+    font: inherit; font-weight: 600; padding: 11px 20px; border-radius: 10px;
+    border: none; background: var(--accent); color: #fff; cursor: pointer;
+  }
+  .composer button:disabled { opacity: 0.5; cursor: default; }
+  .dots::after { content: "\2026"; animation: blink 1.2s steps(4) infinite; }
+  @keyframes blink { 0% { opacity: 0.3 } 50% { opacity: 1 } 100% { opacity: 0.3 } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>강아지 훈련 RAG 데모</h1>
+    <div class="sub">ASPCA 훈련 자료 2편을 구조 인식 청킹으로 색인하고, 검색된 근거만으로 답합니다.</div>
+    <div class="pills" id="pills"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="samples" id="samples"></div>
+  <div id="feed"></div>
+</main>
+
+<div class="composer">
+  <div class="wrap">
+    <form id="form">
+      <input id="q" autocomplete="off" placeholder="예: 강아지가 손을 자꾸 무는데 어떻게 해야 하나요?" />
+      <button id="send" type="submit">질문</button>
+    </form>
+  </div>
+</div>
+
+<script>
+const SAMPLES = [
+  "강아지가 손을 자꾸 무는데 어떻게 해야 하나요?",
+  "물기 억제는 어떻게 가르치나요?",
+  "성견이 무는 것과 어린 강아지가 무는 게 다른가요?",
+  "입질할 때 해서는 안 되는 행동은?",
+  "언제 전문가를 찾아가야 하나요?"
+];
+
+const feed = document.getElementById("feed");
+const form = document.getElementById("form");
+const input = document.getElementById("q");
+const sendBtn = document.getElementById("send");
+
+const ESCAPES = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" };
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ESCAPES[c]);
+
+SAMPLES.forEach((s) => {
+  const b = document.createElement("button");
+  b.textContent = s;
+  b.onclick = () => { input.value = s; form.requestSubmit(); };
+  document.getElementById("samples").appendChild(b);
+});
+
+fetch("/api/health").then((r) => r.json()).then((h) => {
+  const model = h.embedding_model ? h.embedding_model.split("/").pop() : "-";
+  const pills = [
+    "청크 " + h.chunks + "개",
+    "임베딩 " + model,
+    "생성 " + h.generation_model,
+    h.openai_configured ? "OpenAI 연결됨" : "OPENAI_API_KEY 미설정"
+  ];
+  document.getElementById("pills").innerHTML =
+    pills.map((p) => '<span class="pill">' + esc(p) + "</span>").join("");
+}).catch(() => {});
+
+function renderAnswer(text, turnId) {
+  return esc(text).replace(/\[(\d+)\]/g, (_, n) =>
+    '<a class="cite" href="#src-' + turnId + "-" + n + '">' + n + "</a>");
+}
+
+let turnSeq = 0;
+
+form.onsubmit = async (e) => {
+  e.preventDefault();
+  const question = input.value.trim();
+  if (!question) return;
+  input.value = "";
+  sendBtn.disabled = true;
+
+  const id = ++turnSeq;
+  const turn = document.createElement("div");
+  turn.className = "turn";
+  turn.innerHTML =
+    '<div class="q">' + esc(question) + "</div>" +
+    '<div class="a" id="a-' + id + '"><span class="dots">근거 검색 중</span></div>';
+  feed.appendChild(turn);
+  turn.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  try {
+    const res = await fetch("/api/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.detail || "HTTP " + res.status);
+
+    const srcHtml = data.sources.map((s) =>
+      '<div class="src" id="src-' + id + "-" + s.n + '">' +
+        '<div class="src-head">' +
+          '<span class="src-n">[' + s.n + "]</span>" +
+          "<span>" + esc(s.publisher) + " · " + esc(s.title_ko) + "</span>" +
+          '<span style="margin-left:auto;color:var(--muted);font-size:11px">' + s.score + "</span>" +
+        "</div>" +
+        '<div class="src-path">' + esc(s.heading) + "</div>" +
+        '<div class="src-snip">' + esc(s.snippet) + "</div>" +
+        '<a href="' + esc(s.url) + '" target="_blank" rel="noreferrer noopener">원문 보기 ↗</a>' +
+      "</div>").join("");
+
+    document.getElementById("a-" + id).innerHTML =
+      renderAnswer(data.answer, id) +
+      '<div class="meta">검색 ' + data.retrieval_ms + "ms · 생성 " + data.generation_ms +
+        "ms · " + esc(data.model) + "</div>" +
+      '<div class="sources"><h3>근거 ' + data.sources.length + "개</h3>" + srcHtml + "</div>";
+
+    turn.querySelectorAll(".cite").forEach((a) => {
+      a.onclick = (ev) => {
+        ev.preventDefault();
+        const el = document.querySelector(a.getAttribute("href"));
+        if (!el) return;
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        el.classList.add("hl");
+        setTimeout(() => el.classList.remove("hl"), 1600);
+      };
+    });
+  } catch (err) {
+    document.getElementById("a-" + id).innerHTML =
+      '<div class="err">' + esc(err.message || err) + "</div>";
+  } finally {
+    sendBtn.disabled = false;
+    input.focus();
+  }
+};
+</script>
+</body>
+</html>

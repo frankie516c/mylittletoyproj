@@ -1,0 +1,12 @@
+# 수집한 원문·청크·벡터DB·평가셋 — 전부 로컬에서 재생성한다
+data/
+
+# 비밀정보
+.env
+.env.*
+!.env.example
+
+# 파이썬
+.venv/
+__pycache__/
+*.py[cod]
