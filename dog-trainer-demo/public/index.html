@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>멍톡 · 강아지 훈련 음성 상담</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">🐩</span>
+    <div>
+      <h1>멍톡</h1>
+      <p>말로 물어보는 강아지 훈련 상담 · 데모</p>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <span class="pill" id="engine-pill">엔진 확인 중…</span>
+  </div>
+</header>
+
+<main class="layout">
+
+  <!-- ─────────────────────────── 왼쪽: 프로필 + 마이크 ─────────────────────────── -->
+  <aside class="col col-left">
+    <section class="card profile-card">
+      <div class="card-title">우리 아이 프로필</div>
+      <div class="dog-head">
+        <div class="dog-avatar">🐩</div>
+        <div>
+          <div class="dog-name">코코</div>
+          <div class="dog-sub">토이푸들 · 수컷 · 만 4세</div>
+        </div>
+      </div>
+      <dl class="profile-grid">
+        <div><dt>견종</dt><dd>토이푸들</dd></div>
+        <div><dt>성별</dt><dd>수컷 (중성화)</dd></div>
+        <div><dt>나이</dt><dd>만 4세</dd></div>
+        <div><dt>체중</dt><dd>5.2 kg</dd></div>
+      </dl>
+      <p class="profile-note">실내 생활 · 하루 2회 산책 · 중성화 완료</p>
+      <p class="profile-hint">※ 데모용 가상 프로필입니다. 모든 답변은 이 프로필에 맞춰 생성됩니다.</p>
+    </section>
+
+    <section class="card mic-card">
+      <div class="card-title">음성으로 질문하기</div>
+
+      <button id="mic-btn" class="mic-btn" type="button">
+        <span class="mic-ring"></span>
+        <span class="mic-icon" id="mic-icon">🎙️</span>
+      </button>
+
+      <div class="mic-state">
+        <div class="mic-label" id="mic-label">눌러서 말하기 시작</div>
+        <div class="mic-timer" id="mic-timer">00:00</div>
+      </div>
+
+      <div class="level-bars" id="level-bars" aria-hidden="true"></div>
+
+      <p class="mic-guide">
+        버튼을 <b>한 번</b> 눌러 말하기 시작하고,<br />
+        다 말한 뒤 <b>한 번 더</b> 누르면 됩니다.<br />
+        <span class="dim">누르고 있을 필요 없어요.</span>
+      </p>
+
+      <div class="divider"><span>또는 직접 입력</span></div>
+      <form id="text-form" class="text-form">
+        <input id="text-input" type="text" placeholder="예) 산책할 때 자꾸 짖어요" autocomplete="off" />
+        <button type="submit" aria-label="질문 보내기">↑</button>
+      </form>
+
+      <div class="samples">
+        <button class="chip" type="button">배변 훈련이 자꾸 실패해요</button>
+        <button class="chip" type="button">초인종 소리에 심하게 짖어요</button>
+        <button class="chip" type="button">혼자 두면 하울링을 해요</button>
+        <button class="chip" type="button">산책 중 리드줄을 당겨요</button>
+      </div>
+    </section>
+  </aside>
+
+  <!-- ─────────────────────────── 가운데: 대화 ─────────────────────────── -->
+  <section class="col col-center">
+    <div class="card chat-card">
+      <div class="card-title row">
+        <span>상담 내용</span>
+        <button id="reset-btn" class="ghost-btn" type="button">초기화</button>
+      </div>
+      <div class="chat" id="chat">
+        <div class="empty-state" id="empty-state">
+          <div class="empty-emoji">🦴</div>
+          <p><b>코코</b>에 대해 궁금한 훈련법을 말해 보세요.</p>
+          <p class="dim">답변은 블로그 · 유튜브 · 논문 등 실제 웹 자료를 검색해서 만들어집니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── 오른쪽: 분석 ─────────────────────────── -->
+  <aside class="col col-right">
+    <section class="card analysis-card">
+      <div class="card-title">답변 분석 리포트</div>
+
+      <div id="analysis-empty" class="analysis-empty">
+        <p>질문을 하면 이 자리에<br /><b>신뢰도 · 정확성 · 속도</b> 분석이 표시됩니다.</p>
+      </div>
+
+      <div id="analysis" class="analysis hidden">
+        <div class="gauges">
+          <div class="gauge" data-key="reliability">
+            <svg viewBox="0 0 100 100"><circle class="g-bg" cx="50" cy="50" r="42"/><circle class="g-fg" cx="50" cy="50" r="42"/></svg>
+            <div class="g-val"><span class="num">–</span></div>
+            <div class="g-name">신뢰도</div>
+          </div>
+          <div class="gauge" data-key="accuracy">
+            <svg viewBox="0 0 100 100"><circle class="g-bg" cx="50" cy="50" r="42"/><circle class="g-fg" cx="50" cy="50" r="42"/></svg>
+            <div class="g-val"><span class="num">–</span></div>
+            <div class="g-name">정확성</div>
+          </div>
+          <div class="gauge" data-key="speed">
+            <svg viewBox="0 0 100 100"><circle class="g-bg" cx="50" cy="50" r="42"/><circle class="g-fg" cx="50" cy="50" r="42"/></svg>
+            <div class="g-val"><span class="num">–</span></div>
+            <div class="g-name">빠르기</div>
+          </div>
+        </div>
+
+        <div class="verdict" id="verdict">–</div>
+
+        <div class="section">
+          <h3>응답 속도 분해</h3>
+          <div class="timing" id="timing"></div>
+          <div class="timing-total" id="timing-total"></div>
+        </div>
+
+        <div class="section">
+          <h3>신뢰도 <span class="reason" id="reliability-reason"></span></h3>
+          <div class="src-mix" id="src-mix"></div>
+          <ul class="src-list" id="src-list"></ul>
+        </div>
+
+        <div class="section">
+          <h3>정확성 <span class="reason" id="accuracy-reason"></span></h3>
+          <ul class="checks" id="checks"></ul>
+        </div>
+
+        <div class="section" id="risk-section">
+          <h3>주의 사항</h3>
+          <ul class="risks" id="risks"></ul>
+        </div>
+      </div>
+    </section>
+  </aside>
+</main>
+
+<footer class="foot">
+  데모용 프로토타입 · 의학적 진단을 대체하지 않습니다. 이상 증상은 반드시 수의사와 상담하세요.
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>
