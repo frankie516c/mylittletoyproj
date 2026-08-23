@@ -1,0 +1,13 @@
+# NSMC 원본 데이터셋 (19MB) — 아래 링크에서 받아 data/ 에 둔다
+data/
+
+# 학습 캐시 (14MB) — tfidf_baseline.py 가 다시 만든다
+results/tfidf.pkl
+
+.venv/
+__pycache__/
+*.py[cod]
+
+# 저장소 루트 .gitignore 가 *.log 를 막지만, 여기 로그는 런타임 찌꺼기가 아니라
+# 리포트에 인용된 실행 근거다. 예외로 되살린다.
+!results/*.log

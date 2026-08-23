@@ -1,0 +1,667 @@
+<title>한국어 감성분류 스트레스 테스트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap">
+
+<style>
+:root{
+  --ground:#F5F6F8;
+  --surface:#FFFFFF;
+  --sunk:#EDEFF3;
+  --ink:#14171D;
+  --ink-2:#3D4552;
+  --muted:#6B7484;
+  --rule:#D8DDE5;
+  --rule-soft:#E8EBF0;
+  --accent:#27548F;
+  --accent-soft:#E3EAF4;
+  --pass:#1B7355;
+  --pass-soft:#DFEDE7;
+  --fail:#AA412B;
+  --fail-soft:#F6E4DF;
+  --warn:#9A7115;
+  --warn-soft:#F3EBD8;
+  --shadow:0 1px 2px rgba(20,23,29,.05), 0 8px 24px -16px rgba(20,23,29,.22);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0E1116;
+    --surface:#161A21;
+    --sunk:#1D222B;
+    --ink:#E7EAEF;
+    --ink-2:#BCC4D0;
+    --muted:#8D97A6;
+    --rule:#2B323C;
+    --rule-soft:#232932;
+    --accent:#7FA9E4;
+    --accent-soft:#1B2635;
+    --pass:#4FB894;
+    --pass-soft:#152B25;
+    --fail:#E08768;
+    --fail-soft:#331F18;
+    --warn:#D6AC57;
+    --warn-soft:#2E2718;
+    --shadow:0 1px 2px rgba(0,0,0,.35), 0 8px 24px -16px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0E1116;
+  --surface:#161A21;
+  --sunk:#1D222B;
+  --ink:#E7EAEF;
+  --ink-2:#BCC4D0;
+  --muted:#8D97A6;
+  --rule:#2B323C;
+  --rule-soft:#232932;
+  --accent:#7FA9E4;
+  --accent-soft:#1B2635;
+  --pass:#4FB894;
+  --pass-soft:#152B25;
+  --fail:#E08768;
+  --fail-soft:#331F18;
+  --warn:#D6AC57;
+  --warn-soft:#2E2718;
+  --shadow:0 1px 2px rgba(0,0,0,.35), 0 8px 24px -16px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px 96px}
+.col{max-width:70ch}
+
+/* ---------- masthead ---------- */
+.mast{padding:64px 0 40px;border-bottom:2px solid var(--ink)}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:500;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 18px
+}
+h1{
+  font-family:Newsreader,Georgia,serif;font-weight:500;
+  font-size:clamp(38px,6vw,60px);line-height:1.06;letter-spacing:-.015em;
+  margin:0 0 20px;text-wrap:balance
+}
+.dek{font-size:19px;line-height:1.62;color:var(--ink-2);margin:0;max-width:62ch;font-weight:300}
+.dek b{font-weight:600;color:var(--ink)}
+.mast-meta{
+  display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:30px;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted)
+}
+.mast-meta span b{color:var(--ink-2);font-weight:500}
+
+/* ---------- tiles ---------- */
+.tiles{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:1px;background:var(--rule);border:1px solid var(--rule);
+  margin:0 0 8px;border-top:none
+}
+.tile{background:var(--surface);padding:22px 20px 20px}
+.tile .k{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--muted);margin:0 0 10px
+}
+.tile .v{
+  font-family:"IBM Plex Mono",monospace;font-size:31px;font-weight:500;
+  line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;margin:0 0 8px
+}
+.tile .v.bad{color:var(--fail)}
+.tile .v.good{color:var(--pass)}
+.tile .n{font-size:12.5px;line-height:1.5;color:var(--muted);margin:0}
+
+/* ---------- sections ---------- */
+section{margin-top:64px}
+h2{
+  font-family:Newsreader,Georgia,serif;font-weight:600;font-size:29px;line-height:1.2;
+  letter-spacing:-.01em;margin:0 0 6px;text-wrap:balance
+}
+.sec-note{color:var(--muted);font-size:14px;margin:0 0 28px;max-width:64ch}
+h3{font-size:16.5px;font-weight:600;margin:34px 0 10px;letter-spacing:-.005em}
+p{margin:0 0 14px}
+.col p{max-width:70ch}
+
+/* ---------- findings ---------- */
+.find{
+  display:grid;grid-template-columns:106px minmax(0,1fr);gap:0 28px;
+  padding:26px 0;border-top:1px solid var(--rule)
+}
+.find:first-of-type{border-top:2px solid var(--ink)}
+.find-id{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500;
+  color:var(--muted);letter-spacing:.06em;padding-top:3px
+}
+.chip{
+  display:inline-block;margin-top:10px;padding:2px 8px;border-radius:2px;
+  font-family:"IBM Plex Sans KR",sans-serif;font-size:11px;font-weight:500;letter-spacing:.02em
+}
+.chip.c1{background:var(--fail-soft);color:var(--fail)}
+.chip.c2{background:var(--warn-soft);color:var(--warn)}
+.chip.c3{background:var(--pass-soft);color:var(--pass)}
+.find h3{margin:0 0 10px;font-size:19px;font-weight:600;line-height:1.4;text-wrap:balance}
+.find p{font-size:15px;color:var(--ink-2);max-width:66ch}
+.find p:last-child{margin-bottom:0}
+
+/* ---------- evidence blocks ---------- */
+.ex{
+  margin:14px 0 0;padding:0;list-style:none;
+  border-left:2px solid var(--rule);
+}
+.ex li{padding:7px 0 7px 16px;font-size:14.5px;line-height:1.55}
+.ex .quote{color:var(--ink)}
+.ex .val{
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--muted);
+  font-variant-numeric:tabular-nums;display:block;margin-top:2px
+}
+.ex .val em{font-style:normal;color:var(--fail);font-weight:500}
+.ex .val em.g{color:var(--pass)}
+
+/* ---------- tables ---------- */
+.scroll{overflow-x:auto;margin:18px 0 0;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+caption{
+  caption-side:top;text-align:left;padding:14px 16px 12px;font-size:12.5px;color:var(--muted);
+  border-bottom:1px solid var(--rule-soft)
+}
+th,td{padding:9px 14px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--rule-soft)}
+th:first-child,td:first-child{text-align:left;white-space:normal}
+thead th{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:500;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--rule);
+  position:sticky;top:0;background:var(--surface)
+}
+tbody td{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+tbody td:first-child{font-family:"IBM Plex Sans KR",sans-serif;color:var(--ink);font-size:13.5px}
+tbody tr:last-child td{border-bottom:none}
+tbody tr.hi td{background:var(--fail-soft)}
+tbody tr.total td{border-top:1px solid var(--rule);font-weight:600;color:var(--ink)}
+td.best{color:var(--pass);font-weight:500}
+td.worst{color:var(--fail);font-weight:500}
+.ref{color:var(--muted)}
+
+/* accuracy bar inside cells */
+.bar{display:block;height:3px;margin-top:4px;background:var(--rule);position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--accent);display:block}
+.bar.under i{background:var(--fail)}
+
+/* ---------- callout ---------- */
+.callout{
+  border-left:3px solid var(--accent);background:var(--surface);
+  padding:20px 24px;margin:26px 0 0;box-shadow:var(--shadow)
+}
+.callout p{margin:0;font-size:15.5px;color:var(--ink-2)}
+.callout p+p{margin-top:10px}
+.callout b{color:var(--ink);font-weight:600}
+
+code{
+  font-family:"IBM Plex Mono",monospace;font-size:.88em;
+  background:var(--sunk);padding:1px 5px;border-radius:2px;color:var(--ink-2)
+}
+pre{
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;line-height:1.75;
+  background:var(--surface);border:1px solid var(--rule);padding:16px 18px;
+  overflow-x:auto;margin:14px 0 0;color:var(--ink-2)
+}
+pre code{background:none;padding:0}
+
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px}
+ul.plain{margin:0;padding-left:19px}
+ul.plain li{margin-bottom:9px;font-size:14.5px;color:var(--ink-2)}
+ul.plain li b{color:var(--ink);font-weight:600}
+
+footer{
+  margin-top:72px;padding-top:22px;border-top:1px solid var(--rule);
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted)
+}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (max-width:640px){
+  .find{grid-template-columns:1fr;gap:0}
+  .find-id{padding-top:0;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+  .chip{margin-top:0}
+  .wrap{padding:0 18px 72px}
+}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">행동 테스트 / CheckList 방식 검증</p>
+  <h1>한국어 감성분류<br>스트레스 테스트</h1>
+  <p class="dek">NSMC로 학습된 공개 영화리뷰 감성분류 모델 3종을 로컬에 세팅하고, 직접 작성한 <b>202개 행동 테스트</b>와 NSMC held-out 5,000건으로 검증했다. 결론은 정확도표에 없다 — <b>반어법에서 세 모델 모두 “무조건 부정” 베이스라인보다 못했다.</b></p>
+  <div class="mast-meta">
+    <span><b>모델</b> mbert-nsmc · koelectra-gen · kcelectra-ko</span>
+    <span><b>베이스라인</b> TF-IDF+LR · 감성사전 · 평균앙상블</span>
+    <span><b>환경</b> torch 2.13 CPU / transformers 5.15</span>
+  </div>
+</header>
+
+<div class="tiles">
+  <div class="tile">
+    <p class="k">NSMC 정확도 (n=5,000)</p>
+    <p class="v">.923</p>
+    <p class="n">최고 koelectra-gen. TF-IDF 베이스라인 .863과 6%p 차이</p>
+  </div>
+  <div class="tile">
+    <p class="k">행동 테스트 (n=202)</p>
+    <p class="v">.90</p>
+    <p class="n">같은 모델. 다수클래스 .53 대비 실질 이득</p>
+  </div>
+  <div class="tile">
+    <p class="k">반어법 (n=26)</p>
+    <p class="v bad">.50</p>
+    <p class="n">다수클래스 .77보다 <b>27%p 낮음</b>. 음수 기여</p>
+  </div>
+  <div class="tile">
+    <p class="k">고확신 오답 비율</p>
+    <p class="v bad">55%</p>
+    <p class="n">koelectra 오답의 절반 이상이 확신도 &gt;0.9</p>
+  </div>
+</div>
+
+<section>
+  <h2>한 줄 결론</h2>
+  <div class="callout">
+    <p><b>부정문·대조문은 진짜로 학습돼 있다. 반어법은 전혀 학습돼 있지 않고, 모델은 그 사실을 모른다.</b></p>
+    <p>부정 처리는 TF-IDF 대비 +29%p로 트랜스포머가 실제로 버는 구간이다. 반면 반어법은 정확도가 낮은 정도가 아니라 <b>다수클래스보다 낮고, 틀릴 때 확신도가 더 높다</b>. 확신도 임계값으로 걸러낼 수 없다는 뜻이다.</p>
+  </div>
+</section>
+
+<section>
+  <h2>발견</h2>
+  <p class="sec-note">심각도 순. 번호는 우선순위이지 실행 순서가 아니다.</p>
+
+  <article class="find">
+    <div class="find-id">F01<span class="chip c1">치명</span></div>
+    <div>
+      <h3>반어법에서 세 모델 모두 다수클래스 베이스라인보다 못한다</h3>
+      <p>반어 26케이스(부정 20 / 반어적 칭찬 6)에서 mbert .54, koelectra .50, kcelectra .35. “무조건 부정”을 찍으면 .77이다. 표면 어휘를 그대로 따라가며, 문장의 후반부가 앞부분을 뒤집는 구조를 읽지 못한다.</p>
+      <ul class="ex">
+        <li><span class="quote">“명작이네요 명작. 화장실 갈 타이밍 잡기 딱 좋은.”</span>
+          <span class="val">정답 부정 · mbert <em>0.96</em> / koelectra <em>0.98</em> / kcelectra <em>0.97</em></span></li>
+        <li><span class="quote">“팝콘이 참 맛있었습니다.”</span>
+          <span class="val">정답 부정(영화 얘기를 안 함) · <em>0.79</em> / <em>0.95</em> / <em>0.96</em></span></li>
+        <li><span class="quote">“돈 아깝네요. 티켓값이 이 퀄리티에 비해 너무 쌉니다.”</span>
+          <span class="val">정답 긍정(반어적 칭찬) · <em>0.00</em> / <em>0.00</em> / <em>0.05</em></span></li>
+        <li><span class="quote">“최악입니다. 이걸 보고 나니 다른 영화가 다 시시해졌어요.”</span>
+          <span class="val">정답 긍정 · <em>0.00</em> / <em>0.02</em> / <em>0.04</em></span></li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="find">
+    <div class="find-id">F02<span class="chip c1">치명</span></div>
+    <div>
+      <h3>틀릴 때 더 확신한다 — 확신도 필터링이 통하지 않는다</h3>
+      <p>행동 테스트 오답 중 확신도 0.9 초과인 비율: koelectra <b>55%</b>, kcelectra <b>56%</b>, mbert 34%. 얕은 TF-IDF 베이스라인은 12%다. 즉 트랜스포머는 어려운 케이스에서 조용히 애매해지는 게 아니라 <b>자신 있게 틀린다</b>. “확신도 0.9 미만은 사람이 검수” 같은 운영 규칙으로 F01을 막을 수 없다.</p>
+      <p>다만 3종 평균 앙상블은 이 비율을 24%로 떨어뜨린다. 모델 간 불일치가 난이도 신호로 작동하기 때문이며, 실무에서 유일하게 값싼 완화책이다.</p>
+    </div>
+  </article>
+
+  <article class="find">
+    <div class="find-id">F03<span class="chip c2">중대</span></div>
+    <div>
+      <h3>P(pos)는 감성 “강도”가 아니다 — 별점 추정에 쓸 수 없다</h3>
+      <p>부정 뒤집기는 완벽하지만(Δ≈−0.94) 강도 변화에는 아무 반응이 없다. 확률은 0.97~0.99에 포화된 이진 스위치다. 긍정 문장에 불만 절을 덧붙여도 확률이 내려가지 않는 점이 특히 위험하다.</p>
+      <ul class="ex">
+        <li><span class="quote">“재미있었다” → “정말 너무 재미있었다”  (기대: 상승)</span>
+          <span class="val">mbert <em>+0.010</em> / koelectra <em>+0.018</em> / kcelectra <em>−0.000</em></span></li>
+        <li><span class="quote">“지루했다” → “너무너무 지루했다”  (기대: 하락)</span>
+          <span class="val">mbert <em>+0.000</em> / koelectra <em>+0.003</em> / kcelectra <em>+0.000</em></span></li>
+        <li><span class="quote">“괜찮은 영화였다” + “다만 결말이 많이 아쉬웠다”  (기대: 하락)</span>
+          <span class="val">mbert <em>+0.002</em> / koelectra <em>−0.018</em> / kcelectra <em>−0.012</em></span></li>
+        <li><span class="quote">“재미있었다” → “재미없었다”  (기대: 하락)</span>
+          <span class="val">mbert <em class="g">−0.978</em> / koelectra <em class="g">−0.959</em> / kcelectra <em class="g">−0.937</em></span></li>
+      </ul>
+      <p>강도 사다리에서도 같은 패턴이다. 긍정 사다리는 단조 증가하지만 두 번째 단계에서 이미 0.97에 닿아 이후가 평평하고, 부정 사다리는 <b>전 모델 단조성 실패</b> — “별로였어요”에서 곧장 0.002로 떨어진 뒤 “인생 최악의 영화”까지 변화가 없다.</p>
+    </div>
+  </article>
+
+  <article class="find">
+    <div class="find-id">F04<span class="chip c2">중대</span></div>
+    <div>
+      <h3>무관한 문장을 앞뒤에 붙이면 mbert·kcelectra는 30%가 뒤집힌다</h3>
+      <p>의견과 무관한 문맥(“어제 친구랑 같이 극장에서 봤습니다.” … “참고로 주차는 3시간 무료였습니다.”)만 덧붙였는데 라벨이 바뀐 비율이 mbert <b>30.2%</b>, kcelectra <b>28.2%</b>다. 실제 리뷰는 이런 잡담을 항상 포함하므로, 짧은 문장으로 만든 벤치마크 점수가 실사용 성능을 과대평가한다.</p>
+      <p>같은 조건에서 koelectra는 3.0%, 앙상블 4.0%, TF-IDF 2.0%로 견고하다. 이 항목이 모델 선택을 가르는 가장 큰 실무 기준이다.</p>
+    </div>
+  </article>
+
+  <article class="find">
+    <div class="find-id">F05<span class="chip c2">중대</span></div>
+    <div>
+      <h3>NSMC 정확도는 모델 품질을 거의 구분하지 못한다</h3>
+      <p>char n-gram TF-IDF + 로지스틱회귀만으로 NSMC 전체 테스트셋 49,997건에서 <b>0.8714</b>가 나온다. mbert-nsmc(0.8724)와 사실상 동일하고 McNemar p=0.047로 겨우 유의하다. 즉 NSMC 점수 1~2%p 차이는 “어휘 통계 대비 이 모델이 무엇을 더 아는가”를 말해주지 않는다.</p>
+      <p>그 차이는 행동 테스트에서만 드러난다. 부정문 .67→.96, 대조문 .70→1.00, 적대적 어휘주입 .62→.88 — <b>트랜스포머가 실제로 버는 구간은 여기다.</b></p>
+    </div>
+  </article>
+
+  <article class="find">
+    <div class="find-id">F06<span class="chip c2">중대</span></div>
+    <div>
+      <h3>NSMC 골드 라벨 자체가 상당히 오염돼 있다</h3>
+      <p>세 트랜스포머가 <em>모두</em> 골드와 반대로 예측한 139건(2.78%)을 전수 판정했다. 결과는 골드 라벨 오류 32건(23.0%), 판정 불가 80건(57.6%), 진짜 모델 실패 27건(19.4%).</p>
+      <ul class="ex">
+        <li><span class="quote">“최고의 감동이지 아니하지 않을수 잇네” — 골드 <b>부정</b></span>
+          <span class="val">이중부정 긍정문. 라벨 오류</span></li>
+        <li><span class="quote">“너무재밋다^_^” — 골드 <b>부정</b></span>
+          <span class="val">라벨 오류</span></li>
+        <li><span class="quote">“평은 최대 한글 140자까지 가능합니다.” — 골드 <b>부정</b></span>
+          <span class="val">리뷰가 아니라 시스템 문구. 판정 불가</span></li>
+        <li><span class="quote">“ㅋㅋ” — 골드 <b>부정</b> (3건)</span>
+          <span class="val">극성 판정 자체가 불가능. 판정 불가</span></li>
+      </ul>
+      <p>실질 모델 실패는 전체의 <b>0.54%</b>뿐이다. 뒤집어 말하면 NSMC의 실효 상한은 100%가 한참 아래이고, 공개 리더보드의 90% 초반 수치는 모델 한계가 아니라 데이터 한계에 가깝다. 이 데이터셋으로 소수점 경쟁을 하는 것은 의미가 없다.</p>
+    </div>
+  </article>
+
+  <article class="find">
+    <div class="find-id">F07<span class="chip c3">양호</span></div>
+    <div>
+      <h3>부정·이중부정·대조·전언 구분은 실제로 작동한다</h3>
+      <p>koelectra 기준 부정문 .96, 이중부정 1.00, 대조문 1.00, 전언 vs 내 의견 .94. “평이 좋길래 봤는데 저한텐 별로였어요”처럼 <b>남의 평가와 내 평가가 반대인 문장</b>을 제대로 가른다. 얕은 베이스라인이 못 하는 일이고, 감성사전은 부정문에서 .33으로 무너진다.</p>
+      <p>단 mbert는 이중부정 .56으로 우연 수준이다. 같은 NSMC로 학습했더라도 백본에 따라 결과가 갈린다.</p>
+    </div>
+  </article>
+
+  <article class="find">
+    <div class="find-id">F08<span class="chip c3">양호</span></div>
+    <div>
+      <h3>개체명·장르 지름길 학습 흔적은 없다</h3>
+      <p>같은 문장에서 배우 이름 12종(한국/외국, 성별 혼합)만 교체했을 때 P(pos) 변동 폭은 koelectra 0.005~0.007, mbert 0.002~0.039, kcelectra 0.002~0.033. 장르 12종 교체 시 트랜스포머는 0.006 이하다. 정확도는 세 템플릿 모두 1.00.</p>
+      <p>흥미롭게도 <b>TF-IDF 베이스라인이 더 편향돼 있다</b> — 개체명 폭 0.111, 장르 폭 0.094. 특정 이름·장르 문자열이 학습셋에서 특정 라벨과 공기했기 때문이며, 트랜스포머는 이를 상당히 씻어냈다.</p>
+    </div>
+  </article>
+
+  <article class="find">
+    <div class="find-id">F09<span class="chip c2">주의</span></div>
+    <div>
+      <h3>보정은 대체로 양호하나 kcelectra는 특정 구간에서 크게 어긋난다</h3>
+      <p>ECE는 koelectra 0.010으로 우수, mbert 0.031, kcelectra 0.034. 그러나 MCE(구간 최대 오차)는 kcelectra가 <b>0.215</b>로 튄다 — 확신도 0.80~0.85 구간의 실제 정확도가 0.613에 불과하다. 온도 스케일링(T*=1.14)으로도 ECE가 0.0340→0.0342로 개선되지 않는다. 단일 온도로 고칠 수 있는 종류의 오차가 아니다.</p>
+      <p>mbert(T*=1.34)와 앙상블(T*=0.76)은 온도 스케일링으로 ECE가 절반 이하로 떨어지므로, 확률값을 쓸 계획이라면 보정을 반드시 붙여야 한다.</p>
+    </div>
+  </article>
+</section>
+
+<section>
+  <h2>능력별 정확도</h2>
+  <p class="sec-note">직접 작성한 202케이스. 막대는 정확도, <span style="color:var(--fail)">붉은 막대</span>는 해당 소분류의 다수클래스 베이스라인을 넘지 못한 셀이다. 괄호는 Wilson 95% 신뢰구간.</p>
+  <div class="scroll">
+    <table>
+      <caption>MFT — 최소기능 테스트 · 라벨 1=긍정 / 0=부정</caption>
+      <thead>
+        <tr>
+          <th>능력</th><th>n</th><th>다수</th>
+          <th>mbert-nsmc</th><th>koelectra-gen</th><th>kcelectra-ko</th>
+          <th>앙상블</th><th>TF-IDF</th><th>감성사전</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>기본 긍/부정</td><td>20</td><td class="ref">.50</td>
+          <td>.95<span class="bar"><i style="width:95%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>.75<span class="bar"><i style="width:75%"></i></span></td></tr>
+        <tr><td>부정문</td><td>24</td><td class="ref">.50</td>
+          <td>.88<span class="bar"><i style="width:88%"></i></span></td>
+          <td class="best">.96<span class="bar"><i style="width:96%"></i></span></td>
+          <td>.92<span class="bar"><i style="width:92%"></i></span></td>
+          <td>.92<span class="bar"><i style="width:92%"></i></span></td>
+          <td>.67<span class="bar"><i style="width:67%"></i></span></td>
+          <td class="worst">.33<span class="bar under"><i style="width:33%"></i></span></td></tr>
+        <tr><td>이중부정</td><td>16</td><td class="ref">.56</td>
+          <td class="worst">.56<span class="bar under"><i style="width:56%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>.88<span class="bar"><i style="width:88%"></i></span></td>
+          <td>.88<span class="bar"><i style="width:88%"></i></span></td>
+          <td class="worst">.50<span class="bar under"><i style="width:50%"></i></span></td>
+          <td>.81<span class="bar"><i style="width:81%"></i></span></td></tr>
+        <tr><td>대조 (A지만 B)</td><td>20</td><td class="ref">.50</td>
+          <td>.95<span class="bar"><i style="width:95%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>.95<span class="bar"><i style="width:95%"></i></span></td>
+          <td>.95<span class="bar"><i style="width:95%"></i></span></td>
+          <td>.70<span class="bar"><i style="width:70%"></i></span></td>
+          <td>.55<span class="bar"><i style="width:55%"></i></span></td></tr>
+        <tr class="hi"><td><b>반어 / 비꼼</b></td><td>26</td><td class="ref">.77</td>
+          <td class="worst">.54<span class="bar under"><i style="width:54%"></i></span></td>
+          <td class="worst">.50<span class="bar under"><i style="width:50%"></i></span></td>
+          <td class="worst">.35<span class="bar under"><i style="width:35%"></i></span></td>
+          <td class="worst">.42<span class="bar under"><i style="width:42%"></i></span></td>
+          <td class="worst">.50<span class="bar under"><i style="width:50%"></i></span></td>
+          <td class="worst">.27<span class="bar under"><i style="width:27%"></i></span></td></tr>
+        <tr><td>비교 표현</td><td>14</td><td class="ref">.50</td>
+          <td>.64<span class="bar"><i style="width:64%"></i></span></td>
+          <td>.93<span class="bar"><i style="width:93%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>.93<span class="bar"><i style="width:93%"></i></span></td>
+          <td>.79<span class="bar"><i style="width:79%"></i></span></td>
+          <td>.64<span class="bar"><i style="width:64%"></i></span></td></tr>
+        <tr><td>전언 vs 내 의견</td><td>16</td><td class="ref">.56</td>
+          <td>.81<span class="bar"><i style="width:81%"></i></span></td>
+          <td class="best">.94<span class="bar"><i style="width:94%"></i></span></td>
+          <td class="best">.94<span class="bar"><i style="width:94%"></i></span></td>
+          <td>.94<span class="bar"><i style="width:94%"></i></span></td>
+          <td>.88<span class="bar"><i style="width:88%"></i></span></td>
+          <td>.62<span class="bar"><i style="width:62%"></i></span></td></tr>
+        <tr><td>별점 표현</td><td>8</td><td class="ref">.50</td>
+          <td>.88<span class="bar"><i style="width:88%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>.88<span class="bar"><i style="width:88%"></i></span></td>
+          <td>.88<span class="bar"><i style="width:88%"></i></span></td>
+          <td>.88<span class="bar"><i style="width:88%"></i></span></td>
+          <td class="worst">.50<span class="bar under"><i style="width:50%"></i></span></td></tr>
+        <tr><td>신조어 · 인터넷체</td><td>12</td><td class="ref">.50</td>
+          <td>.75<span class="bar"><i style="width:75%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>.83<span class="bar"><i style="width:83%"></i></span></td>
+          <td>.83<span class="bar"><i style="width:83%"></i></span></td></tr>
+        <tr><td>슬픔·공포 ≠ 부정</td><td>9</td><td class="ref">.67</td>
+          <td>.89<span class="bar"><i style="width:89%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>.89<span class="bar"><i style="width:89%"></i></span></td>
+          <td>.78<span class="bar"><i style="width:78%"></i></span></td></tr>
+        <tr><td>국면 범위 (부분 vs 전체)</td><td>12</td><td class="ref">.50</td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>.58<span class="bar"><i style="width:58%"></i></span></td></tr>
+        <tr><td>적대적 어휘 주입</td><td>16</td><td class="ref">.50</td>
+          <td>.81<span class="bar"><i style="width:81%"></i></span></td>
+          <td>.88<span class="bar"><i style="width:88%"></i></span></td>
+          <td class="best">.94<span class="bar"><i style="width:94%"></i></span></td>
+          <td>.94<span class="bar"><i style="width:94%"></i></span></td>
+          <td>.62<span class="bar"><i style="width:62%"></i></span></td>
+          <td class="worst">.44<span class="bar under"><i style="width:44%"></i></span></td></tr>
+        <tr><td>가정법 · 조건문</td><td>6</td><td class="ref">.67</td>
+          <td>.83<span class="bar"><i style="width:83%"></i></span></td>
+          <td class="worst">.67<span class="bar under"><i style="width:67%"></i></span></td>
+          <td class="best">1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>.83<span class="bar"><i style="width:83%"></i></span></td>
+          <td>.83<span class="bar"><i style="width:83%"></i></span></td>
+          <td class="worst">.33<span class="bar under"><i style="width:33%"></i></span></td></tr>
+        <tr><td>장문 리뷰</td><td>3</td><td class="ref">.67</td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>1.00<span class="bar"><i style="width:100%"></i></span></td>
+          <td>.67<span class="bar"><i style="width:67%"></i></span></td></tr>
+        <tr class="total"><td>전체</td><td>202</td><td class="ref">.53</td>
+          <td>.80<br><span class="ref" style="font-size:11px">.74–.85</span></td>
+          <td class="best">.90<br><span class="ref" style="font-size:11px">.85–.93</span></td>
+          <td>.88<br><span class="ref" style="font-size:11px">.82–.91</span></td>
+          <td>.88<br><span class="ref" style="font-size:11px">.82–.91</span></td>
+          <td>.75<br><span class="ref" style="font-size:11px">.68–.80</span></td>
+          <td>.55<br><span class="ref" style="font-size:11px">.49–.62</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <caption>난이도별 — 1=사전적 어휘로 풀림 / 2=보통 / 3=추론 필요</caption>
+      <thead><tr><th>모델</th><th>d1 (n=23)</th><th>d2 (n=73)</th><th>d3 (n=106)</th><th>d1−d3 낙폭</th></tr></thead>
+      <tbody>
+        <tr><td>mbert-nsmc</td><td>.913</td><td>.890</td><td>.708</td><td class="worst">−.205</td></tr>
+        <tr><td>koelectra-gen</td><td>1.000</td><td>1.000</td><td class="best">.811</td><td>−.189</td></tr>
+        <tr><td>kcelectra-ko</td><td>1.000</td><td>.986</td><td>.774</td><td>−.226</td></tr>
+        <tr><td>TF-IDF + LR</td><td>1.000</td><td>.836</td><td>.632</td><td class="worst">−.368</td></tr>
+        <tr><td>감성사전</td><td>.870</td><td>.548</td><td>.491</td><td>−.379</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>NSMC held-out 벤치마크</h2>
+  <p class="sec-note">테스트셋 50,000건에서 라벨 균형을 유지해 층화 추출한 5,000건(긍정 2,500 / 부정 2,500), seed 0. CI는 부트스트랩 5,000회.</p>
+  <div class="scroll">
+    <table>
+      <thead><tr>
+        <th>모델</th><th>정확도</th><th>95% CI</th><th>F1 (pos)</th><th>F1 (neg)</th>
+        <th>AUC</th><th>Brier</th><th>ECE</th><th>MCE</th><th>AURC</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>mbert-nsmc</td><td>.8724</td><td class="ref">.8630–.8814</td><td>.8733</td><td>.8715</td><td>.9453</td><td>.0943</td><td>.0311</td><td>.0967</td><td>.0358</td></tr>
+        <tr><td>koelectra-gen</td><td class="best">.9238</td><td class="ref">.9162–.9314</td><td>.9269</td><td>.9204</td><td class="best">.9816</td><td class="best">.0546</td><td class="best">.0096</td><td>.1080</td><td class="best">.0136</td></tr>
+        <tr><td>kcelectra-ko</td><td>.8848</td><td class="ref">.8758–.8934</td><td>.8854</td><td>.8842</td><td>.9549</td><td>.0872</td><td>.0338</td><td class="worst">.2145</td><td>.0347</td></tr>
+        <tr><td>앙상블 (평균)</td><td>.9218</td><td class="ref">.9140–.9294</td><td>.9228</td><td>.9208</td><td>.9761</td><td>.0602</td><td>.0356</td><td>.1316</td><td>.0159</td></tr>
+        <tr><td>TF-IDF + LR</td><td>.8626</td><td class="ref">.8528–.8722</td><td>.8615</td><td>.8637</td><td>.9404</td><td>.0965</td><td>.0183</td><td>.0565</td><td>.0400</td></tr>
+        <tr><td>감성사전 (규칙)</td><td class="worst">.5886</td><td class="ref">.5750–.6016</td><td>.7041</td><td>.3254</td><td>.6996</td><td>.2150</td><td>.0664</td><td>.3775</td><td>.2889</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="two">
+    <div>
+      <h3>McNemar 쌍체 정확검정</h3>
+      <p style="font-size:14.5px;color:var(--ink-2)">koelectra와 앙상블은 <b>통계적으로 구분되지 않는다</b>(p=0.61). 나머지 모든 쌍은 유의하다. mbert vs TF-IDF는 p=0.047로 겨우 걸친다 — 5,000건 규모에서 이 정도면 실질 차이가 없다고 보는 편이 안전하다.</p>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>비교</th><th>only A</th><th>only B</th><th>p</th></tr></thead>
+          <tbody>
+            <tr><td>koelectra vs 앙상블</td><td>157</td><td>147</td><td>0.61</td></tr>
+            <tr><td>mbert vs TF-IDF</td><td>316</td><td>267</td><td>0.047</td></tr>
+            <tr><td>mbert vs kcelectra</td><td>287</td><td>349</td><td>0.016</td></tr>
+            <tr><td>koelectra vs kcelectra</td><td>374</td><td>179</td><td>7.6e−17</td></tr>
+            <tr><td>mbert vs koelectra</td><td>178</td><td>435</td><td>8.7e−26</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <h3>리뷰 길이별 정확도</h3>
+      <p style="font-size:14.5px;color:var(--ink-2)">koelectra만 길이에 따라 <b>단조 증가</b>한다(.864→.967). TF-IDF는 오히려 떨어지고(.889→.867) mbert는 평평하다. 긴 문맥을 실제로 활용하는 모델과 어휘만 세는 모델의 차이가 여기서 드러난다.</p>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>모델</th><th>0–10자</th><th>10–20</th><th>20–35</th><th>35–60</th><th>60+</th></tr></thead>
+          <tbody>
+            <tr><td>mbert</td><td>.869</td><td>.881</td><td>.849</td><td>.869</td><td>.911</td></tr>
+            <tr><td>koelectra</td><td>.864</td><td>.911</td><td>.921</td><td>.936</td><td class="best">.967</td></tr>
+            <tr><td>kcelectra</td><td>.884</td><td>.878</td><td>.875</td><td>.886</td><td>.915</td></tr>
+            <tr><td>앙상블</td><td>.918</td><td>.922</td><td>.908</td><td>.920</td><td>.953</td></tr>
+            <tr><td>TF-IDF</td><td>.889</td><td>.871</td><td>.844</td><td>.865</td><td>.867</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>강건성 — 변형 불변성</h2>
+  <p class="sec-note">MFT 202문장에 의미를 바꾸지 않는 변형을 가한 뒤 <b>예측 라벨이 뒤집힌 비율</b>. 감성 어휘와 부정 표지(안/못/없/않)는 변형에서 보호했다.</p>
+  <div class="scroll">
+    <table>
+      <thead><tr>
+        <th>변형</th><th>성격</th>
+        <th>mbert</th><th>koelectra</th><th>kcelectra</th><th>앙상블</th><th>TF-IDF</th>
+      </tr></thead>
+      <tbody>
+        <tr class="hi"><td>무관한 문맥 앞뒤 추가</td><td class="ref">의미 보존</td>
+          <td class="worst">.302</td><td class="best">.030</td><td class="worst">.282</td><td>.040</td><td>.020</td></tr>
+        <tr><td>띄어쓰기 전부 제거</td><td class="ref">의미 보존</td>
+          <td>.135</td><td>.070</td><td class="best">.060</td><td>.060</td><td>.135</td></tr>
+        <tr><td>인접 음절 도치</td><td class="ref">오타</td>
+          <td>.103</td><td>.062</td><td>.072</td><td class="best">.056</td><td>.118</td></tr>
+        <tr><td>받침 탈락</td><td class="ref">오타</td>
+          <td>.092</td><td>.041</td><td>.036</td><td class="best">.031</td><td>.128</td></tr>
+        <tr><td>이모지 추가</td><td class="ref">의미 보존</td>
+          <td>.084</td><td>.015</td><td>.025</td><td>.010</td><td class="best">.000</td></tr>
+        <tr><td>문장부호 제거</td><td class="ref">의미 보존</td>
+          <td class="best">.016</td><td>.016</td><td>.021</td><td>.016</td><td>.048</td></tr>
+        <tr class="total"><td>수동 작성 문체 변형 10쌍</td><td class="ref">구어체·맞춤법</td>
+          <td class="best">0/10</td><td class="best">0/10</td><td class="best">0/10</td><td class="best">0/10</td><td class="best">0/10</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:16px;font-size:14.5px;color:var(--ink-2);max-width:70ch">구어체 전환·맞춤법 오류·이모지 같은 <b>사람이 직접 만든 변형에는 전 모델이 완벽하게 견딘다</b>. 무너지는 지점은 오직 “관계없는 문장이 섞였을 때”다. 이건 토크나이저 강건성 문제가 아니라 <b>어느 부분이 의견인지 찾아내지 못하는 문제</b>이고, F01(반어)과 같은 뿌리다.</p>
+</section>
+
+<section>
+  <h2>검증 방법과 한계</h2>
+  <div class="two">
+    <div>
+      <h3>이 검증이 방어하는 것</h3>
+      <ul class="plain">
+        <li><b>라벨 극성 실측.</b> 허브의 <code>id2label</code>을 믿지 않고 명백한 긍/부정 프로브로 방향을 직접 확인했다. 세 모델 모두 index 1 = 긍정, 분리도 0.94~0.99. kcelectra는 <code>LABEL_0/LABEL_1</code>로만 표기돼 있어 이 단계 없이는 극성을 뒤집어 쓸 위험이 있었다.</li>
+        <li><b>유출 검사.</b> 수제 문장 210개를 NSMC train 150k / test 50k와 대조했다. 정확 일치 15건은 전부 “재미있었다”류 짧은 상용구(DIR·사다리·패러프레이즈 세트)였고, <b>결론이 걸린 MFT 난이도 세트는 정확 일치 0건</b>이다.</li>
+        <li><b>다수클래스 베이스라인 병기.</b> 반어 세트가 부정 라벨로 치우치면 “무조건 부정” 모델이 만점을 받으므로, 반어적 <em>칭찬</em> 6케이스를 넣어 .77로 낮췄고 모든 셀에 이 값을 함께 표기했다.</li>
+        <li><b>얕은 상한선.</b> NSMC train 150k로 학습한 char n-gram TF-IDF를 같이 돌려, 어휘 통계만으로 도달 가능한 지점을 명시했다.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>믿으면 안 되는 것</h3>
+      <ul class="plain">
+        <li><b>골드 라벨 주석자가 1명이다.</b> 202케이스의 정답과 139건 오분류 판정 모두 2차 검수를 받지 않았다. 특히 판정 불가(U) 80건의 배분에 주석자 편향이 들어갈 수 있다. 원자료는 <code>results/cases.csv</code>와 <code>adjudication.py</code>에 남겨 재판정이 가능하다.</li>
+        <li><b>소분류 표본이 작다.</b> n=6~26이라 Wilson CI가 ±0.2에 이른다. 확실한 결론은 반어(n=26, CI 상한도 다수클래스 미만)와 부정(n=24) 정도이고, 가정법(n=6)·장문(n=3)은 방향 참고용이다.</li>
+        <li><b>NSMC는 5,000건 부분표본이다.</b> 전체 50,000건이 아니다(CPU 추론 비용). TF-IDF만 전체 테스트셋을 돌렸고 0.8714였다.</li>
+        <li><b>koelectra-gen은 도메인이 다르다.</b> 쇼핑 리뷰 기반 범용 감성 모델이라 NSMC 기준으로는 out-of-domain인데도 1등이다. 영화 전용 학습이 반드시 유리하지 않다는 뜻이지만, 비교의 공정성 측면에서는 감안이 필요하다.</li>
+        <li><b>오타 변형은 드물게 의미를 바꾼다.</b> 받침 탈락이 “연기”를 “여기”로 만드는 식이다. 그래서 의미 보존군과 오타군을 표에서 분리했다.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>그래서 쓸 수 있나</h2>
+  <div class="callout">
+    <p><b>쓸 수 있다 — 단, 반어가 드문 데이터에 한해서, 라벨만.</b></p>
+    <p>일반 리뷰 대량 집계처럼 반어 비중이 낮은 용도라면 <code>Copycats/koelectra-base-v3-generalized-sentiment-analysis</code>가 명확한 1순위다. NSMC .924, 행동 테스트 .90, 문맥 패딩 flip 3.0%로 세 축 모두에서 앞선다.</p>
+    <p><b>확률값을 점수로 쓰지 말 것.</b> F03에서 보듯 P(pos)에는 강도 정보가 없다. 별점 예측이 필요하면 회귀로 다시 학습해야 한다.</p>
+    <p><b>확신도 기반 사람 검수는 반어를 못 잡는다.</b> 대신 3종 앙상블의 <em>불일치</em>를 검수 큐 신호로 쓰면 고확신 오답이 55%→24%로 떨어진다. 비용은 추론 3배.</p>
+  </div>
+</section>
+
+<section>
+  <h2>재현</h2>
+  <pre><code>python -m venv .venv &amp;&amp; .venv/Scripts/pip install torch transformers scikit-learn
+
+python check_leakage.py                    # 수제 문장 vs NSMC 유출 검사
+python run_eval.py --skip-nsmc             # 행동 스위트 (MFT/INV/DIR/UNC/편향)
+python run_nsmc.py predict &lt;model&gt;         # 모델별 NSMC 예측 캐싱
+python run_nsmc.py report                  # 파트 A 통계 전부
+python adjudication.py                     # 라벨노이즈 판정 집계
+python probe.py "재미없지 않았어요"          # 임의 문장 즉석 확인</code></pre>
+  <p style="margin-top:14px;font-size:14px;color:var(--muted)">모델 3종을 한 프로세스에 동시 상주시키면 CPU 추론 중 프로세스가 조용히 죽는 현상이 있어, NSMC 파트는 모델별 개별 프로세스로 분리하고 예측을 <code>.npy</code>로 캐싱하도록 만들었다. 중단돼도 이어서 돌아간다.</p>
+</section>
+
+<footer>
+  한국어 영화리뷰 감성분류 검증 · MFT 202 / INV 6종×202 / DIR 14쌍 + 사다리 2 / 편향 프로브 60 / NSMC 5,000 · 총 2,138 케이스 기록
+</footer>
+
+</div>

@@ -1,0 +1,29 @@
+
+==============================================================================
+모델 로딩 및 극성 방향 실측 검증
+==============================================================================
+  device = cpu
+  mbert-nsmc         sangrimlee/bert-base-multilingual-cased-nsmc
+      declared id2label = {0: 'negative', 1: 'positive'}
+      실측: pos_index=1 (declared=positive), neg_index=0, gap=0.995, probe_sep=+0.994
+  koelectra-gen      Copycats/koelectra-base-v3-generalized-sentiment-analysis
+      declared id2label = {0: '0', 1: '1'}
+      실측: pos_index=1 (declared=1), neg_index=0, gap=0.984, probe_sep=+0.971
+  kcelectra-ko       matthewburke/korean_sentiment
+      declared id2label = {0: 'LABEL_0', 1: 'LABEL_1'}
+      실측: pos_index=1 (declared=LABEL_1), neg_index=0, gap=0.938, probe_sep=+0.947
+  ensemble-mean      (mean of transformer P(pos))
+      declared id2label = {0: 'negative', 1: 'positive'}
+      실측: (mean of ['mbert-nsmc', 'koelectra-gen', 'kcelectra-ko'])
+  tfidf-lr           (char 2-4gram TF-IDF + LogisticRegression, NSMC train 150k)
+      declared id2label = {0: 'negative', 1: 'positive'}
+      실측: (supervised, fixed)
+  lexicon-baseline   (rule-based)
+      declared id2label = {0: 'negative', 1: 'positive'}
+      실측: (rule-based, fixed)
+
+==============================================================================
+파트 A. NSMC held-out 벤치마크  (n=5000, 긍정 2500 / 부정 2500)
+==============================================================================
+  mbert-nsmc: 276.5s (18 it/s)
+  koelectra-gen: 229.7s (22 it/s)

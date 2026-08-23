@@ -1,0 +1,9 @@
+# 모델 로딩 / 추론
+torch>=2.2
+transformers>=4.40
+numpy>=1.26
+
+# TF-IDF 베이스라인 (tfidf_baseline.py)
+scikit-learn>=1.4
+
+# 통계는 scipy 없이 순수 numpy/math 로 구현했다 (metrics.py)
