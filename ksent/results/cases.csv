@@ -1,0 +1,2139 @@
+﻿model,part,capability,text,gold,p_pos,pred,correct,difficulty
+mbert-nsmc,MFT,01_basic_pos_neg,정말 재미있게 봤습니다. 시간 가는 줄 몰랐어요.,1,0.9932,1,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,"연출, 연기, 음악 모두 완벽했다.",1,0.9956,1,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,올해 본 영화 중 최고. 강력 추천합니다.,1,0.9888,1,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,몰입감이 엄청나서 두 번 봤어요.,1,0.9957,1,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,기대 이상이었어요. 후회 없는 선택.,1,0.9219,1,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,배우들 연기가 정말 훌륭했습니다.,1,0.9922,1,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,여운이 오래 남는 좋은 작품이었어요.,1,0.9979,1,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,가족들과 보기 딱 좋은 따뜻한 영화.,1,0.9893,1,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,각본이 탄탄하고 결말도 만족스러웠다.,1,0.9877,1,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,돈이 아깝지 않은 영화였습니다.,1,0.4818,0,0,2
+mbert-nsmc,MFT,01_basic_pos_neg,너무 지루해서 중간에 나왔습니다.,0,0.0022,0,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,돈이 아까운 영화. 시간 낭비였다.,0,0.0016,0,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,스토리에 개연성이 하나도 없다.,0,0.0028,0,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,배우들 연기가 어색해서 몰입이 안 됐다.,0,0.0019,0,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,기대했는데 정말 실망스러웠어요.,0,0.0021,0,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,이런 영화를 왜 만들었는지 모르겠다.,0,0.0157,0,1,2
+mbert-nsmc,MFT,01_basic_pos_neg,지루하고 뻔한 전개. 추천하지 않습니다.,0,0.0018,0,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,최악이었어요. 절대 보지 마세요.,0,0.002,0,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,졸다가 끝났네요. 재미가 하나도 없음.,0,0.0018,0,1,1
+mbert-nsmc,MFT,01_basic_pos_neg,감독이 뭘 말하고 싶었는지 전혀 모르겠다.,0,0.0054,0,1,2
+mbert-nsmc,MFT,02_negation,재미없지 않았어요. 오히려 볼만했습니다.,1,0.9468,1,1,2
+mbert-nsmc,MFT,02_negation,생각보다 지루하지 않았다.,1,0.7499,1,1,2
+mbert-nsmc,MFT,02_negation,돈이 아깝지는 않았습니다.,1,0.2415,0,0,2
+mbert-nsmc,MFT,02_negation,실망스럽지 않은 영화였어요.,1,0.9494,1,1,2
+mbert-nsmc,MFT,02_negation,결코 나쁘지 않은 작품.,1,0.9727,1,1,2
+mbert-nsmc,MFT,02_negation,혹평만큼 형편없진 않았다.,1,0.0937,0,0,3
+mbert-nsmc,MFT,02_negation,재미있지 않았어요.,0,0.0326,0,1,2
+mbert-nsmc,MFT,02_negation,그다지 좋지 않았습니다.,0,0.0648,0,1,2
+mbert-nsmc,MFT,02_negation,추천할 만한 영화는 아니에요.,0,0.4037,0,1,2
+mbert-nsmc,MFT,02_negation,볼 가치가 없었다.,0,0.0032,0,1,2
+mbert-nsmc,MFT,02_negation,전혀 감동적이지 않았다.,0,0.0137,0,1,2
+mbert-nsmc,MFT,02_negation,다시 볼 생각은 없습니다.,0,0.2043,0,1,2
+mbert-nsmc,MFT,02_negation,나쁘지 않았어요. 볼 만합니다.,1,0.9761,1,1,2
+mbert-nsmc,MFT,02_negation,후회하지 않을 영화입니다.,1,0.919,1,1,2
+mbert-nsmc,MFT,02_negation,시간이 아깝지 않았어요.,1,0.5313,1,1,2
+mbert-nsmc,MFT,02_negation,기대를 저버리지 않았다.,1,0.1296,0,0,3
+mbert-nsmc,MFT,02_negation,지루할 틈이 없었습니다.,1,0.9298,1,1,2
+mbert-nsmc,MFT,02_negation,실패하지 않는 선택입니다.,1,0.8282,1,1,3
+mbert-nsmc,MFT,02_negation,재미를 느끼지 못했어요.,0,0.072,0,1,2
+mbert-nsmc,MFT,02_negation,공감이 전혀 되지 않았다.,0,0.0185,0,1,2
+mbert-nsmc,MFT,02_negation,몰입이 되지 않았습니다.,0,0.2703,0,1,2
+mbert-nsmc,MFT,02_negation,돈 값을 못 하는 영화.,0,0.0238,0,1,2
+mbert-nsmc,MFT,02_negation,굳이 극장에서 볼 필요는 없어요.,0,0.1249,0,1,3
+mbert-nsmc,MFT,02_negation,두 번은 못 보겠다.,0,0.3342,0,1,2
+mbert-nsmc,MFT,03_double_negation,재미없다고 할 수 없는 영화.,1,0.0226,0,0,3
+mbert-nsmc,MFT,03_double_negation,안 볼 이유가 없다.,1,0.0038,0,0,3
+mbert-nsmc,MFT,03_double_negation,싫어할 수 없는 매력이 있다.,1,0.9111,1,1,3
+mbert-nsmc,MFT,03_double_negation,칭찬을 안 할 수가 없네요.,1,0.8803,1,1,3
+mbert-nsmc,MFT,03_double_negation,실망하지 않을 수 없었다.,0,0.8134,1,0,3
+mbert-nsmc,MFT,03_double_negation,화가 안 날 수가 없더군요.,0,0.1994,0,1,3
+mbert-nsmc,MFT,03_double_negation,지루하지 않다고는 못 하겠다.,0,0.6642,1,0,3
+mbert-nsmc,MFT,03_double_negation,좋았다고 말하긴 어렵다.,0,0.9432,1,0,3
+mbert-nsmc,MFT,03_double_negation,재미없다는 말이 나올 수가 없다.,1,0.0899,0,0,3
+mbert-nsmc,MFT,03_double_negation,추천 안 할 이유가 없네요.,1,0.1409,0,0,3
+mbert-nsmc,MFT,03_double_negation,감탄하지 않을 수 없는 연출.,1,0.5626,1,1,3
+mbert-nsmc,MFT,03_double_negation,불만이 없다고는 못 하지만 그래도 좋았다.,1,0.9951,1,1,3
+mbert-nsmc,MFT,03_double_negation,좋다고 안 할 수가 없는 작품.,1,0.9671,1,1,3
+mbert-nsmc,MFT,03_double_negation,아쉽지 않다고 하기는 힘들다.,0,0.3188,0,1,3
+mbert-nsmc,MFT,03_double_negation,실망 안 할 수가 없는 결말.,0,0.4,0,1,3
+mbert-nsmc,MFT,03_double_negation,돈이 안 아까울 수가 없다.,0,0.1717,0,1,3
+mbert-nsmc,MFT,04_contrast_but,초반은 좀 지루했지만 후반부는 정말 압권이었다.,1,0.8897,1,1,2
+mbert-nsmc,MFT,04_contrast_but,연출은 화려했지만 알맹이가 하나도 없었다.,0,0.0214,0,1,2
+mbert-nsmc,MFT,04_contrast_but,배우들 연기는 좋았는데 각본이 다 망쳤다.,0,0.0023,0,1,2
+mbert-nsmc,MFT,04_contrast_but,CG는 조잡했지만 이야기가 너무 좋아서 다 용서됨.,1,0.8831,1,1,2
+mbert-nsmc,MFT,04_contrast_but,원작 팬으로서 아쉬운 점도 있었지만 전반적으로 훌륭한 각색.,1,0.9791,1,1,2
+mbert-nsmc,MFT,04_contrast_but,소재는 참신했으나 결말이 최악이라 다 날려먹었다.,0,0.0018,0,1,2
+mbert-nsmc,MFT,04_contrast_but,한 시간까지는 최고였는데 그 뒤로 완전히 무너진다.,0,0.1583,0,1,3
+mbert-nsmc,MFT,04_contrast_but,기대를 안 하고 봐서 그런지 의외로 괜찮았다.,1,0.9741,1,1,2
+mbert-nsmc,MFT,04_contrast_but,호불호는 갈리겠지만 나는 정말 좋았다.,1,0.9929,1,1,2
+mbert-nsmc,MFT,04_contrast_but,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다.,0,0.2275,0,1,3
+mbert-nsmc,MFT,04_contrast_but,전반부는 훌륭했으나 후반부가 다 망쳤습니다.,0,0.043,0,1,2
+mbert-nsmc,MFT,04_contrast_but,단점도 분명 있지만 그걸 덮고도 남는 영화.,1,0.9603,1,1,2
+mbert-nsmc,MFT,04_contrast_but,기대작이었는데 딱 기대만큼만 하고 끝났다. 아쉽다.,0,0.0525,0,1,3
+mbert-nsmc,MFT,04_contrast_but,화려하진 않지만 담백하고 진심이 느껴졌어요.,1,0.9972,1,1,3
+mbert-nsmc,MFT,04_contrast_but,잘 만든 건 알겠는데 제 취향은 전혀 아니었습니다.,0,0.0136,0,1,3
+mbert-nsmc,MFT,04_contrast_but,초반 진입장벽만 넘으면 정말 좋은 영화입니다.,1,0.9765,1,1,3
+mbert-nsmc,MFT,04_contrast_but,배우는 최고인데 영화는 최악.,0,0.0019,0,1,2
+mbert-nsmc,MFT,04_contrast_but,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천.,1,0.0502,0,0,3
+mbert-nsmc,MFT,04_contrast_but,결말이 열려 있어 호불호가 갈리겠지만 저는 만족했습니다.,1,0.9767,1,1,2
+mbert-nsmc,MFT,04_contrast_but,소재는 좋았는데 그걸 살리지 못했다.,0,0.015,0,1,2
+mbert-nsmc,MFT,05_sarcasm_irony,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니.,0,0.1449,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,역대급입니다. 역대급으로 지루한.,0,0.0111,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요.,0,0.0087,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,감독님 다음 작품도 기대할게요... 안 볼 거지만.,0,0.9293,1,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,잠이 안 올 때 보세요. 수면제보다 낫습니다.,0,0.0711,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,시간 순삭이네요. 세 시간이 삼십 시간 같았어요.,0,0.6904,1,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,명작이네요 명작. 화장실 갈 타이밍 잡기 딱 좋은.,0,0.9631,1,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,주연배우 팬이라 별 하나 드립니다.,0,0.0059,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,이 영화 보고 인생이 바뀌었어요. 극장 가는 걸 끊었거든요.,0,0.9662,1,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,두 시간 동안 아주 푹 쉬다 왔습니다.,0,0.8917,1,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,각본가님 천재 아니신가요? 이런 전개는 아무나 못 씁니다.,0,0.0119,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,돈 버리는 방법을 알려드립니다. 이 영화 예매하세요.,0,0.0479,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,불면증 있으신 분들께 강력 추천드립니다.,0,0.8643,1,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,아 정말 좋은 영화네요. 중간에 나올 용기를 줘서.,0,0.9794,1,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견.,0,0.0288,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,팝콘이 참 맛있었습니다.,0,0.7874,1,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,CG에 돈 다 썼나 봐요. 각본 쓸 돈이 없었나.,0,0.0026,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,졸음 방지용으로 커피 꼭 챙기세요.,0,0.4585,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,역시 기대를 저버리지 않네요. 늘 그랬듯 실망시켰습니다.,0,0.0036,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,이걸 극장에서 봤다는 게 제 인생 최대 업적입니다.,0,0.3906,0,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,이 감독 진짜 못됐어요. 사람 울리는 데 선수네요.,1,0.1583,0,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,돈 아깝네요. 티켓값이 이 퀄리티에 비해 너무 쌉니다.,1,0.0026,0,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,화나네요. 이렇게 좋은 걸 이제야 봤다는 게.,1,0.7229,1,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요.,1,0.9724,1,1,3
+mbert-nsmc,MFT,05_sarcasm_irony,최악입니다. 이걸 보고 나니 다른 영화가 다 시시해졌어요.,1,0.0019,0,0,3
+mbert-nsmc,MFT,05_sarcasm_irony,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요.,1,0.3695,0,0,3
+mbert-nsmc,MFT,06_comparative,전작보다 훨씬 낫다.,1,0.8854,1,1,2
+mbert-nsmc,MFT,06_comparative,전작보다 못하다.,0,0.0436,0,1,2
+mbert-nsmc,MFT,06_comparative,원작보다는 못해도 충분히 재밌었다.,1,0.8844,1,1,3
+mbert-nsmc,MFT,06_comparative,비슷한 장르 중에선 제일 별로였다.,0,0.0026,0,1,2
+mbert-nsmc,MFT,06_comparative,이 감독 작품 중 최고작.,1,0.9876,1,1,1
+mbert-nsmc,MFT,06_comparative,이 감독 작품 중 가장 아쉽다.,0,0.7022,1,0,2
+mbert-nsmc,MFT,06_comparative,2편이 1편을 뛰어넘었다.,1,0.4116,0,0,2
+mbert-nsmc,MFT,06_comparative,1편의 발끝에도 못 미친다.,0,0.0216,0,1,2
+mbert-nsmc,MFT,06_comparative,올해 본 영화 중에 이만한 게 없었다.,1,0.9365,1,1,2
+mbert-nsmc,MFT,06_comparative,올해 본 영화 중 이만큼 지루한 건 없었다.,0,0.8425,1,0,2
+mbert-nsmc,MFT,06_comparative,헐리우드 대작들보다 훨씬 알차다.,1,0.6579,1,1,2
+mbert-nsmc,MFT,06_comparative,차라리 예고편만 보는 게 낫다.,0,0.0041,0,1,3
+mbert-nsmc,MFT,06_comparative,집에서 티비로 봤어도 충분했을 영화.,0,0.7567,1,0,3
+mbert-nsmc,MFT,06_comparative,극장값이 전혀 아깝지 않은 스케일.,1,0.3985,0,0,2
+mbert-nsmc,MFT,07_reported_opinion,평이 좋길래 봤는데 저한텐 별로였어요.,0,0.004,0,1,2
+mbert-nsmc,MFT,07_reported_opinion,혹평이 많던데 전 재밌게 봤습니다.,1,0.9852,1,1,2
+mbert-nsmc,MFT,07_reported_opinion,친구는 재밌다는데 저는 도저히 못 보겠더라고요.,0,0.0645,0,1,2
+mbert-nsmc,MFT,07_reported_opinion,다들 별로라지만 제 인생영화입니다.,1,0.988,1,1,2
+mbert-nsmc,MFT,07_reported_opinion,예고편은 최고였는데 본편은 실망.,0,0.0042,0,1,2
+mbert-nsmc,MFT,07_reported_opinion,광고는 걸작이라던데 실제로는 졸작.,0,0.0019,0,1,2
+mbert-nsmc,MFT,07_reported_opinion,평점 믿고 갔다가 후회했습니다.,0,0.141,0,1,3
+mbert-nsmc,MFT,07_reported_opinion,평점이 낮아서 걱정했는데 괜한 걱정이었네요.,1,0.9675,1,1,3
+mbert-nsmc,MFT,07_reported_opinion,주변에서 다 말렸는데 보길 잘했어요.,1,0.9768,1,1,3
+mbert-nsmc,MFT,07_reported_opinion,평론가 점수는 낮던데 관객 입장에선 충분히 재밌습니다.,1,0.9334,1,1,3
+mbert-nsmc,MFT,07_reported_opinion,입소문 듣고 갔다가 시간만 버렸네요.,0,0.0025,0,1,2
+mbert-nsmc,MFT,07_reported_opinion,호평 일색이던데 저만 이상한가요? 정말 별로였습니다.,0,0.0023,0,1,2
+mbert-nsmc,MFT,07_reported_opinion,악평 보고 기대 없이 갔는데 의외의 수확이었어요.,1,0.4627,0,0,3
+mbert-nsmc,MFT,07_reported_opinion,추천해준 친구랑 절교하고 싶습니다.,0,0.6962,1,0,3
+mbert-nsmc,MFT,07_reported_opinion,리뷰가 왜 좋은지 알겠더라고요. 정말 잘 만들었습니다.,1,0.9892,1,1,2
+mbert-nsmc,MFT,07_reported_opinion,별점 테러가 이해되는 영화였습니다.,0,0.673,1,0,3
+mbert-nsmc,MFT,08_rating_expr,별점 1점도 아깝다.,0,0.0018,0,1,2
+mbert-nsmc,MFT,08_rating_expr,10점 만점에 10점.,1,0.9926,1,1,2
+mbert-nsmc,MFT,08_rating_expr,★★★★★,1,0.771,1,1,2
+mbert-nsmc,MFT,08_rating_expr,★☆☆☆☆,0,0.9236,1,0,2
+mbert-nsmc,MFT,08_rating_expr,5점 만점에 1점 드립니다.,0,0.0223,0,1,2
+mbert-nsmc,MFT,08_rating_expr,평점 9.5점 인정합니다.,1,0.8609,1,1,2
+mbert-nsmc,MFT,08_rating_expr,0점 주고 싶은데 최소가 1점이라 1점 줍니다.,0,0.0019,0,1,3
+mbert-nsmc,MFT,08_rating_expr,만점 줍니다 만점.,1,0.948,1,1,2
+mbert-nsmc,MFT,09_slang_internet,ㄹㅇ 개꿀잼 ㅋㅋㅋㅋ,1,0.6767,1,1,2
+mbert-nsmc,MFT,09_slang_internet,노잼 그 자체,0,0.8711,1,0,1
+mbert-nsmc,MFT,09_slang_internet,존잼임 강추,1,0.9729,1,1,1
+mbert-nsmc,MFT,09_slang_internet,발연기 오지네요 진짜,0,0.0036,0,1,2
+mbert-nsmc,MFT,09_slang_internet,핵노잼 ㅡㅡ,0,0.7208,1,0,1
+mbert-nsmc,MFT,09_slang_internet,인생영화 등극 ㅠㅠ 너무 좋았음,1,0.9967,1,1,1
+mbert-nsmc,MFT,09_slang_internet,시간 순삭 ㄱㅇㄷ,1,0.359,0,0,2
+mbert-nsmc,MFT,09_slang_internet,돈아까움 진짜,0,0.002,0,1,1
+mbert-nsmc,MFT,09_slang_internet,띵작 ㅇㅈ,1,0.7208,1,1,3
+mbert-nsmc,MFT,09_slang_internet,국뽕 오지지만 그래도 재밌음,1,0.9288,1,1,3
+mbert-nsmc,MFT,09_slang_internet,총체적 난국이네요,0,0.0052,0,1,2
+mbert-nsmc,MFT,09_slang_internet,보다가 폰만 봤네요,0,0.0791,0,1,3
+mbert-nsmc,MFT,10_sad_scary_not_negative,너무 슬퍼서 펑펑 울었어요. 정말 좋은 영화입니다.,1,0.9969,1,1,2
+mbert-nsmc,MFT,10_sad_scary_not_negative,주인공이 죽는 비극이지만 그래서 더 아름다웠다.,1,0.9159,1,1,3
+mbert-nsmc,MFT,10_sad_scary_not_negative,무서워서 눈을 못 뜨겠더라고요. 공포영화로는 최고.,1,0.9484,1,1,3
+mbert-nsmc,MFT,10_sad_scary_not_negative,잔인한 장면이 많지만 그만큼 강렬한 메시지를 남긴다.,1,0.994,1,1,3
+mbert-nsmc,MFT,10_sad_scary_not_negative,불편한 소재를 정말 잘 다뤘습니다.,1,0.0819,0,0,3
+mbert-nsmc,MFT,10_sad_scary_not_negative,가슴이 먹먹해지는 영화. 꼭 보세요.,1,0.9962,1,1,2
+mbert-nsmc,MFT,10_sad_scary_not_negative,웃긴 장면은 많았지만 코미디로서는 실패작.,0,0.0019,0,1,3
+mbert-nsmc,MFT,10_sad_scary_not_negative,행복한 결말인데도 억지스러워서 짜증났다.,0,0.0019,0,1,3
+mbert-nsmc,MFT,10_sad_scary_not_negative,따뜻한 영화를 표방하지만 오글거리기만 한다.,0,0.0139,0,1,3
+mbert-nsmc,MFT,11_aspect_scope,화질은 별로였지만 영화 자체는 명작.,1,0.9886,1,1,3
+mbert-nsmc,MFT,11_aspect_scope,상영관 의자가 불편했던 것 빼면 영화는 완벽했어요.,1,0.9891,1,1,3
+mbert-nsmc,MFT,11_aspect_scope,자막 오역이 좀 있었지만 작품은 훌륭합니다.,1,0.8905,1,1,3
+mbert-nsmc,MFT,11_aspect_scope,음악은 좋았지만 그것 말고는 볼 게 없다.,0,0.0421,0,1,3
+mbert-nsmc,MFT,11_aspect_scope,포스터만 멋있고 내용은 텅 비었다.,0,0.0102,0,1,2
+mbert-nsmc,MFT,11_aspect_scope,주연은 잘했는데 나머지가 다 망쳤다.,0,0.002,0,1,3
+mbert-nsmc,MFT,11_aspect_scope,러닝타임이 긴 게 유일한 단점일 정도로 좋았습니다.,1,0.9795,1,1,3
+mbert-nsmc,MFT,11_aspect_scope,음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요.,1,0.5922,1,1,3
+mbert-nsmc,MFT,11_aspect_scope,"연출력만 놓고 보면 대단한데, 영화로는 실패했다.",0,0.0021,0,1,3
+mbert-nsmc,MFT,11_aspect_scope,볼거리는 확실한데 남는 게 없습니다.,0,0.0299,0,1,3
+mbert-nsmc,MFT,11_aspect_scope,"배우 팬이라면 만족, 그 외엔 비추.",0,0.0032,0,1,3
+mbert-nsmc,MFT,11_aspect_scope,스토리는 진부하지만 감정선이 살아 있어 좋았다.,1,0.996,1,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,최고라는 말이 많던데 최악이었다.,0,0.0205,0,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,명작이라는 광고에 속았다. 졸작.,0,0.002,0,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,재밌다 재밌다 해서 봤는데 노잼.,0,0.7646,1,0,3
+mbert-nsmc,MFT,12_adversarial_lexical,지루하다는 평이 많았지만 나는 정말 몰입해서 봤다.,1,0.9964,1,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,최악이라는 말은 과했다. 생각보다 괜찮았음.,1,0.421,0,0,3
+mbert-nsmc,MFT,12_adversarial_lexical,쓰레기라던 사람들 다 어디감? 개명작인데.,1,0.9832,1,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,재미없다는 리뷰에 동의할 수 없다. 훌륭했다.,1,0.9918,1,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,걸작이라고? 이건 그냥 시간낭비다.,0,0.002,0,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,재미없을 거라는 편견을 완전히 깨줬습니다.,1,0.1232,0,0,3
+mbert-nsmc,MFT,12_adversarial_lexical,지루하다는 말은 이 영화엔 어울리지 않아요.,1,0.5314,1,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,명작이라는 표현이 아깝지 않습니다.,1,0.9548,1,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,최악이라는 단어로도 부족합니다.,0,0.0019,0,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,훌륭하다는 평가는 도저히 못 하겠네요.,0,0.0467,0,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,감동적이라던데 저는 실소만 나왔습니다.,0,0.2145,0,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,걸작이라는 수식어가 부끄러운 수준.,0,0.0201,0,1,3
+mbert-nsmc,MFT,12_adversarial_lexical,실망이라는 단어를 쓸 일이 없었어요. 계속 좋았습니다.,1,0.9532,1,1,3
+mbert-nsmc,MFT,13_conditional_hypothetical,조금만 더 짧았으면 명작이었을 텐데 아쉽다.,0,0.7938,1,0,3
+mbert-nsmc,MFT,13_conditional_hypothetical,주연이 바뀌었으면 훨씬 좋았을 것 같다.,0,0.3093,0,1,3
+mbert-nsmc,MFT,13_conditional_hypothetical,기대만 안 했으면 괜찮게 봤을 듯.,0,0.1852,0,1,3
+mbert-nsmc,MFT,13_conditional_hypothetical,무료로 봤으면 불만 없었을 텐데 돈 주고 보니 아깝다.,0,0.0027,0,1,3
+mbert-nsmc,MFT,13_conditional_hypothetical,이런 영화가 더 많이 나왔으면 좋겠습니다.,1,0.8347,1,1,2
+mbert-nsmc,MFT,13_conditional_hypothetical,속편이 나온다면 무조건 볼 겁니다.,1,0.8138,1,1,2
+mbert-nsmc,MFT,14_long_review,"친구 추천으로 아무 정보 없이 봤는데, 초반 30분은 인물 소개라 조금 늘어지는 느낌이 있었습니다. 그런데 사건이 터지는 순간부터 몰입도가 확 올라가더군요. 특히 후반 추격 시퀀스는 숨을 쉴 수가 없었어요. 배우들 연기도 과하지 않고 담백했고, 음악도 장면을 방해하지 않으면서 잘 받쳐줬습니다. 극장에서 볼 가치가 충분한 작품이라고 생각합니다.",1,0.9977,1,1,2
+mbert-nsmc,MFT,14_long_review,"예고편이 워낙 좋아서 개봉일에 바로 예매했습니다. 결론부터 말하면 예고편이 전부인 영화였어요. 설정은 흥미로운데 그걸 풀어내는 방식이 너무 안일합니다. 인물들이 왜 저런 선택을 하는지 설명이 없고, 갈등도 우연으로 해결됩니다. 후반 30분은 시계만 봤네요. 배우들은 열심히 했는데 각본이 발목을 잡은 케이스.",0,0.0076,0,1,2
+mbert-nsmc,MFT,14_long_review,"솔직히 상반기 최고작이라는 평은 과장이라고 생각합니다. 다만 그렇다고 못 만든 영화는 절대 아니에요. 촬영과 미술은 정말 공들인 티가 나고, 주연 배우의 눈빛 연기는 오래 기억에 남을 것 같습니다. 몇몇 장면의 편집이 아쉽긴 했지만 전체적으로는 만족스러웠고 주변에도 권할 생각입니다.",1,0.9503,1,1,3
+koelectra-gen,MFT,01_basic_pos_neg,정말 재미있게 봤습니다. 시간 가는 줄 몰랐어요.,1,0.9871,1,1,1
+koelectra-gen,MFT,01_basic_pos_neg,"연출, 연기, 음악 모두 완벽했다.",1,0.9934,1,1,1
+koelectra-gen,MFT,01_basic_pos_neg,올해 본 영화 중 최고. 강력 추천합니다.,1,0.9912,1,1,1
+koelectra-gen,MFT,01_basic_pos_neg,몰입감이 엄청나서 두 번 봤어요.,1,0.9905,1,1,1
+koelectra-gen,MFT,01_basic_pos_neg,기대 이상이었어요. 후회 없는 선택.,1,0.9897,1,1,1
+koelectra-gen,MFT,01_basic_pos_neg,배우들 연기가 정말 훌륭했습니다.,1,0.9931,1,1,1
+koelectra-gen,MFT,01_basic_pos_neg,여운이 오래 남는 좋은 작품이었어요.,1,0.9927,1,1,1
+koelectra-gen,MFT,01_basic_pos_neg,가족들과 보기 딱 좋은 따뜻한 영화.,1,0.9917,1,1,1
+koelectra-gen,MFT,01_basic_pos_neg,각본이 탄탄하고 결말도 만족스러웠다.,1,0.9906,1,1,1
+koelectra-gen,MFT,01_basic_pos_neg,돈이 아깝지 않은 영화였습니다.,1,0.9832,1,1,2
+koelectra-gen,MFT,01_basic_pos_neg,너무 지루해서 중간에 나왔습니다.,0,0.0028,0,1,1
+koelectra-gen,MFT,01_basic_pos_neg,돈이 아까운 영화. 시간 낭비였다.,0,0.0013,0,1,1
+koelectra-gen,MFT,01_basic_pos_neg,스토리에 개연성이 하나도 없다.,0,0.0011,0,1,1
+koelectra-gen,MFT,01_basic_pos_neg,배우들 연기가 어색해서 몰입이 안 됐다.,0,0.0047,0,1,1
+koelectra-gen,MFT,01_basic_pos_neg,기대했는데 정말 실망스러웠어요.,0,0.0014,0,1,1
+koelectra-gen,MFT,01_basic_pos_neg,이런 영화를 왜 만들었는지 모르겠다.,0,0.0353,0,1,2
+koelectra-gen,MFT,01_basic_pos_neg,지루하고 뻔한 전개. 추천하지 않습니다.,0,0.0014,0,1,1
+koelectra-gen,MFT,01_basic_pos_neg,최악이었어요. 절대 보지 마세요.,0,0.0017,0,1,1
+koelectra-gen,MFT,01_basic_pos_neg,졸다가 끝났네요. 재미가 하나도 없음.,0,0.0018,0,1,1
+koelectra-gen,MFT,01_basic_pos_neg,감독이 뭘 말하고 싶었는지 전혀 모르겠다.,0,0.0016,0,1,2
+koelectra-gen,MFT,02_negation,재미없지 않았어요. 오히려 볼만했습니다.,1,0.9647,1,1,2
+koelectra-gen,MFT,02_negation,생각보다 지루하지 않았다.,1,0.9152,1,1,2
+koelectra-gen,MFT,02_negation,돈이 아깝지는 않았습니다.,1,0.6487,1,1,2
+koelectra-gen,MFT,02_negation,실망스럽지 않은 영화였어요.,1,0.9823,1,1,2
+koelectra-gen,MFT,02_negation,결코 나쁘지 않은 작품.,1,0.9714,1,1,2
+koelectra-gen,MFT,02_negation,혹평만큼 형편없진 않았다.,1,0.396,0,0,3
+koelectra-gen,MFT,02_negation,재미있지 않았어요.,0,0.0969,0,1,2
+koelectra-gen,MFT,02_negation,그다지 좋지 않았습니다.,0,0.0172,0,1,2
+koelectra-gen,MFT,02_negation,추천할 만한 영화는 아니에요.,0,0.0091,0,1,2
+koelectra-gen,MFT,02_negation,볼 가치가 없었다.,0,0.0033,0,1,2
+koelectra-gen,MFT,02_negation,전혀 감동적이지 않았다.,0,0.0081,0,1,2
+koelectra-gen,MFT,02_negation,다시 볼 생각은 없습니다.,0,0.0582,0,1,2
+koelectra-gen,MFT,02_negation,나쁘지 않았어요. 볼 만합니다.,1,0.9417,1,1,2
+koelectra-gen,MFT,02_negation,후회하지 않을 영화입니다.,1,0.9771,1,1,2
+koelectra-gen,MFT,02_negation,시간이 아깝지 않았어요.,1,0.9827,1,1,2
+koelectra-gen,MFT,02_negation,기대를 저버리지 않았다.,1,0.8232,1,1,3
+koelectra-gen,MFT,02_negation,지루할 틈이 없었습니다.,1,0.9841,1,1,2
+koelectra-gen,MFT,02_negation,실패하지 않는 선택입니다.,1,0.8408,1,1,3
+koelectra-gen,MFT,02_negation,재미를 느끼지 못했어요.,0,0.0052,0,1,2
+koelectra-gen,MFT,02_negation,공감이 전혀 되지 않았다.,0,0.0028,0,1,2
+koelectra-gen,MFT,02_negation,몰입이 되지 않았습니다.,0,0.0055,0,1,2
+koelectra-gen,MFT,02_negation,돈 값을 못 하는 영화.,0,0.0093,0,1,2
+koelectra-gen,MFT,02_negation,굳이 극장에서 볼 필요는 없어요.,0,0.0329,0,1,3
+koelectra-gen,MFT,02_negation,두 번은 못 보겠다.,0,0.4495,0,1,2
+koelectra-gen,MFT,03_double_negation,재미없다고 할 수 없는 영화.,1,0.9902,1,1,3
+koelectra-gen,MFT,03_double_negation,안 볼 이유가 없다.,1,0.9792,1,1,3
+koelectra-gen,MFT,03_double_negation,싫어할 수 없는 매력이 있다.,1,0.9832,1,1,3
+koelectra-gen,MFT,03_double_negation,칭찬을 안 할 수가 없네요.,1,0.9811,1,1,3
+koelectra-gen,MFT,03_double_negation,실망하지 않을 수 없었다.,0,0.1063,0,1,3
+koelectra-gen,MFT,03_double_negation,화가 안 날 수가 없더군요.,0,0.257,0,1,3
+koelectra-gen,MFT,03_double_negation,지루하지 않다고는 못 하겠다.,0,0.0553,0,1,3
+koelectra-gen,MFT,03_double_negation,좋았다고 말하긴 어렵다.,0,0.0705,0,1,3
+koelectra-gen,MFT,03_double_negation,재미없다는 말이 나올 수가 없다.,1,0.928,1,1,3
+koelectra-gen,MFT,03_double_negation,추천 안 할 이유가 없네요.,1,0.9828,1,1,3
+koelectra-gen,MFT,03_double_negation,감탄하지 않을 수 없는 연출.,1,0.9932,1,1,3
+koelectra-gen,MFT,03_double_negation,불만이 없다고는 못 하지만 그래도 좋았다.,1,0.9836,1,1,3
+koelectra-gen,MFT,03_double_negation,좋다고 안 할 수가 없는 작품.,1,0.9899,1,1,3
+koelectra-gen,MFT,03_double_negation,아쉽지 않다고 하기는 힘들다.,0,0.0652,0,1,3
+koelectra-gen,MFT,03_double_negation,실망 안 할 수가 없는 결말.,0,0.0264,0,1,3
+koelectra-gen,MFT,03_double_negation,돈이 안 아까울 수가 없다.,0,0.0653,0,1,3
+koelectra-gen,MFT,04_contrast_but,초반은 좀 지루했지만 후반부는 정말 압권이었다.,1,0.9904,1,1,2
+koelectra-gen,MFT,04_contrast_but,연출은 화려했지만 알맹이가 하나도 없었다.,0,0.0025,0,1,2
+koelectra-gen,MFT,04_contrast_but,배우들 연기는 좋았는데 각본이 다 망쳤다.,0,0.0172,0,1,2
+koelectra-gen,MFT,04_contrast_but,CG는 조잡했지만 이야기가 너무 좋아서 다 용서됨.,1,0.9801,1,1,2
+koelectra-gen,MFT,04_contrast_but,원작 팬으로서 아쉬운 점도 있었지만 전반적으로 훌륭한 각색.,1,0.9748,1,1,2
+koelectra-gen,MFT,04_contrast_but,소재는 참신했으나 결말이 최악이라 다 날려먹었다.,0,0.0244,0,1,2
+koelectra-gen,MFT,04_contrast_but,한 시간까지는 최고였는데 그 뒤로 완전히 무너진다.,0,0.0294,0,1,3
+koelectra-gen,MFT,04_contrast_but,기대를 안 하고 봐서 그런지 의외로 괜찮았다.,1,0.9855,1,1,2
+koelectra-gen,MFT,04_contrast_but,호불호는 갈리겠지만 나는 정말 좋았다.,1,0.9933,1,1,2
+koelectra-gen,MFT,04_contrast_but,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다.,0,0.3569,0,1,3
+koelectra-gen,MFT,04_contrast_but,전반부는 훌륭했으나 후반부가 다 망쳤습니다.,0,0.0356,0,1,2
+koelectra-gen,MFT,04_contrast_but,단점도 분명 있지만 그걸 덮고도 남는 영화.,1,0.9678,1,1,2
+koelectra-gen,MFT,04_contrast_but,기대작이었는데 딱 기대만큼만 하고 끝났다. 아쉽다.,0,0.2413,0,1,3
+koelectra-gen,MFT,04_contrast_but,화려하진 않지만 담백하고 진심이 느껴졌어요.,1,0.9957,1,1,3
+koelectra-gen,MFT,04_contrast_but,잘 만든 건 알겠는데 제 취향은 전혀 아니었습니다.,0,0.0088,0,1,3
+koelectra-gen,MFT,04_contrast_but,초반 진입장벽만 넘으면 정말 좋은 영화입니다.,1,0.8273,1,1,3
+koelectra-gen,MFT,04_contrast_but,배우는 최고인데 영화는 최악.,0,0.0021,0,1,2
+koelectra-gen,MFT,04_contrast_but,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천.,1,0.6579,1,1,3
+koelectra-gen,MFT,04_contrast_but,결말이 열려 있어 호불호가 갈리겠지만 저는 만족했습니다.,1,0.9896,1,1,2
+koelectra-gen,MFT,04_contrast_but,소재는 좋았는데 그걸 살리지 못했다.,0,0.0213,0,1,2
+koelectra-gen,MFT,05_sarcasm_irony,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니.,0,0.4322,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,역대급입니다. 역대급으로 지루한.,0,0.0048,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요.,0,0.0052,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,감독님 다음 작품도 기대할게요... 안 볼 거지만.,0,0.6692,1,0,3
+koelectra-gen,MFT,05_sarcasm_irony,잠이 안 올 때 보세요. 수면제보다 낫습니다.,0,0.1254,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,시간 순삭이네요. 세 시간이 삼십 시간 같았어요.,0,0.9835,1,0,3
+koelectra-gen,MFT,05_sarcasm_irony,명작이네요 명작. 화장실 갈 타이밍 잡기 딱 좋은.,0,0.9784,1,0,3
+koelectra-gen,MFT,05_sarcasm_irony,주연배우 팬이라 별 하나 드립니다.,0,0.0107,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,이 영화 보고 인생이 바뀌었어요. 극장 가는 걸 끊었거든요.,0,0.4166,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,두 시간 동안 아주 푹 쉬다 왔습니다.,0,0.8011,1,0,3
+koelectra-gen,MFT,05_sarcasm_irony,각본가님 천재 아니신가요? 이런 전개는 아무나 못 씁니다.,0,0.9162,1,0,3
+koelectra-gen,MFT,05_sarcasm_irony,돈 버리는 방법을 알려드립니다. 이 영화 예매하세요.,0,0.0115,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,불면증 있으신 분들께 강력 추천드립니다.,0,0.1788,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,아 정말 좋은 영화네요. 중간에 나올 용기를 줘서.,0,0.9318,1,0,3
+koelectra-gen,MFT,05_sarcasm_irony,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견.,0,0.1413,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,팝콘이 참 맛있었습니다.,0,0.9501,1,0,3
+koelectra-gen,MFT,05_sarcasm_irony,CG에 돈 다 썼나 봐요. 각본 쓸 돈이 없었나.,0,0.002,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,졸음 방지용으로 커피 꼭 챙기세요.,0,0.8434,1,0,3
+koelectra-gen,MFT,05_sarcasm_irony,역시 기대를 저버리지 않네요. 늘 그랬듯 실망시켰습니다.,0,0.0112,0,1,3
+koelectra-gen,MFT,05_sarcasm_irony,이걸 극장에서 봤다는 게 제 인생 최대 업적입니다.,0,0.9314,1,0,3
+koelectra-gen,MFT,05_sarcasm_irony,이 감독 진짜 못됐어요. 사람 울리는 데 선수네요.,1,0.0579,0,0,3
+koelectra-gen,MFT,05_sarcasm_irony,돈 아깝네요. 티켓값이 이 퀄리티에 비해 너무 쌉니다.,1,0.0047,0,0,3
+koelectra-gen,MFT,05_sarcasm_irony,화나네요. 이렇게 좋은 걸 이제야 봤다는 게.,1,0.9922,1,1,3
+koelectra-gen,MFT,05_sarcasm_irony,이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요.,1,0.2216,0,0,3
+koelectra-gen,MFT,05_sarcasm_irony,최악입니다. 이걸 보고 나니 다른 영화가 다 시시해졌어요.,1,0.015,0,0,3
+koelectra-gen,MFT,05_sarcasm_irony,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요.,1,0.9789,1,1,3
+koelectra-gen,MFT,06_comparative,전작보다 훨씬 낫다.,1,0.8727,1,1,2
+koelectra-gen,MFT,06_comparative,전작보다 못하다.,0,0.0515,0,1,2
+koelectra-gen,MFT,06_comparative,원작보다는 못해도 충분히 재밌었다.,1,0.9885,1,1,3
+koelectra-gen,MFT,06_comparative,비슷한 장르 중에선 제일 별로였다.,0,0.0028,0,1,2
+koelectra-gen,MFT,06_comparative,이 감독 작품 중 최고작.,1,0.9855,1,1,1
+koelectra-gen,MFT,06_comparative,이 감독 작품 중 가장 아쉽다.,0,0.0073,0,1,2
+koelectra-gen,MFT,06_comparative,2편이 1편을 뛰어넘었다.,1,0.8904,1,1,2
+koelectra-gen,MFT,06_comparative,1편의 발끝에도 못 미친다.,0,0.0429,0,1,2
+koelectra-gen,MFT,06_comparative,올해 본 영화 중에 이만한 게 없었다.,1,0.9856,1,1,2
+koelectra-gen,MFT,06_comparative,올해 본 영화 중 이만큼 지루한 건 없었다.,0,0.0033,0,1,2
+koelectra-gen,MFT,06_comparative,헐리우드 대작들보다 훨씬 알차다.,1,0.9881,1,1,2
+koelectra-gen,MFT,06_comparative,차라리 예고편만 보는 게 낫다.,0,0.007,0,1,3
+koelectra-gen,MFT,06_comparative,집에서 티비로 봤어도 충분했을 영화.,0,0.983,1,0,3
+koelectra-gen,MFT,06_comparative,극장값이 전혀 아깝지 않은 스케일.,1,0.9837,1,1,2
+koelectra-gen,MFT,07_reported_opinion,평이 좋길래 봤는데 저한텐 별로였어요.,0,0.0091,0,1,2
+koelectra-gen,MFT,07_reported_opinion,혹평이 많던데 전 재밌게 봤습니다.,1,0.9734,1,1,2
+koelectra-gen,MFT,07_reported_opinion,친구는 재밌다는데 저는 도저히 못 보겠더라고요.,0,0.0939,0,1,2
+koelectra-gen,MFT,07_reported_opinion,다들 별로라지만 제 인생영화입니다.,1,0.9904,1,1,2
+koelectra-gen,MFT,07_reported_opinion,예고편은 최고였는데 본편은 실망.,0,0.0168,0,1,2
+koelectra-gen,MFT,07_reported_opinion,광고는 걸작이라던데 실제로는 졸작.,0,0.0067,0,1,2
+koelectra-gen,MFT,07_reported_opinion,평점 믿고 갔다가 후회했습니다.,0,0.0047,0,1,3
+koelectra-gen,MFT,07_reported_opinion,평점이 낮아서 걱정했는데 괜한 걱정이었네요.,1,0.9483,1,1,3
+koelectra-gen,MFT,07_reported_opinion,주변에서 다 말렸는데 보길 잘했어요.,1,0.9775,1,1,3
+koelectra-gen,MFT,07_reported_opinion,평론가 점수는 낮던데 관객 입장에선 충분히 재밌습니다.,1,0.9852,1,1,3
+koelectra-gen,MFT,07_reported_opinion,입소문 듣고 갔다가 시간만 버렸네요.,0,0.0041,0,1,2
+koelectra-gen,MFT,07_reported_opinion,호평 일색이던데 저만 이상한가요? 정말 별로였습니다.,0,0.0028,0,1,2
+koelectra-gen,MFT,07_reported_opinion,악평 보고 기대 없이 갔는데 의외의 수확이었어요.,1,0.3999,0,0,3
+koelectra-gen,MFT,07_reported_opinion,추천해준 친구랑 절교하고 싶습니다.,0,0.0574,0,1,3
+koelectra-gen,MFT,07_reported_opinion,리뷰가 왜 좋은지 알겠더라고요. 정말 잘 만들었습니다.,1,0.9717,1,1,2
+koelectra-gen,MFT,07_reported_opinion,별점 테러가 이해되는 영화였습니다.,0,0.2351,0,1,3
+koelectra-gen,MFT,08_rating_expr,별점 1점도 아깝다.,0,0.0012,0,1,2
+koelectra-gen,MFT,08_rating_expr,10점 만점에 10점.,1,0.9806,1,1,2
+koelectra-gen,MFT,08_rating_expr,★★★★★,1,0.7373,1,1,2
+koelectra-gen,MFT,08_rating_expr,★☆☆☆☆,0,0.4391,0,1,2
+koelectra-gen,MFT,08_rating_expr,5점 만점에 1점 드립니다.,0,0.005,0,1,2
+koelectra-gen,MFT,08_rating_expr,평점 9.5점 인정합니다.,1,0.9894,1,1,2
+koelectra-gen,MFT,08_rating_expr,0점 주고 싶은데 최소가 1점이라 1점 줍니다.,0,0.0014,0,1,3
+koelectra-gen,MFT,08_rating_expr,만점 줍니다 만점.,1,0.969,1,1,2
+koelectra-gen,MFT,09_slang_internet,ㄹㅇ 개꿀잼 ㅋㅋㅋㅋ,1,0.9809,1,1,2
+koelectra-gen,MFT,09_slang_internet,노잼 그 자체,0,0.012,0,1,1
+koelectra-gen,MFT,09_slang_internet,존잼임 강추,1,0.9713,1,1,1
+koelectra-gen,MFT,09_slang_internet,발연기 오지네요 진짜,0,0.025,0,1,2
+koelectra-gen,MFT,09_slang_internet,핵노잼 ㅡㅡ,0,0.0219,0,1,1
+koelectra-gen,MFT,09_slang_internet,인생영화 등극 ㅠㅠ 너무 좋았음,1,0.9886,1,1,1
+koelectra-gen,MFT,09_slang_internet,시간 순삭 ㄱㅇㄷ,1,0.9334,1,1,2
+koelectra-gen,MFT,09_slang_internet,돈아까움 진짜,0,0.1224,0,1,1
+koelectra-gen,MFT,09_slang_internet,띵작 ㅇㅈ,1,0.9686,1,1,3
+koelectra-gen,MFT,09_slang_internet,국뽕 오지지만 그래도 재밌음,1,0.9087,1,1,3
+koelectra-gen,MFT,09_slang_internet,총체적 난국이네요,0,0.0066,0,1,2
+koelectra-gen,MFT,09_slang_internet,보다가 폰만 봤네요,0,0.017,0,1,3
+koelectra-gen,MFT,10_sad_scary_not_negative,너무 슬퍼서 펑펑 울었어요. 정말 좋은 영화입니다.,1,0.9898,1,1,2
+koelectra-gen,MFT,10_sad_scary_not_negative,주인공이 죽는 비극이지만 그래서 더 아름다웠다.,1,0.995,1,1,3
+koelectra-gen,MFT,10_sad_scary_not_negative,무서워서 눈을 못 뜨겠더라고요. 공포영화로는 최고.,1,0.969,1,1,3
+koelectra-gen,MFT,10_sad_scary_not_negative,잔인한 장면이 많지만 그만큼 강렬한 메시지를 남긴다.,1,0.9938,1,1,3
+koelectra-gen,MFT,10_sad_scary_not_negative,불편한 소재를 정말 잘 다뤘습니다.,1,0.6632,1,1,3
+koelectra-gen,MFT,10_sad_scary_not_negative,가슴이 먹먹해지는 영화. 꼭 보세요.,1,0.9922,1,1,2
+koelectra-gen,MFT,10_sad_scary_not_negative,웃긴 장면은 많았지만 코미디로서는 실패작.,0,0.0329,0,1,3
+koelectra-gen,MFT,10_sad_scary_not_negative,행복한 결말인데도 억지스러워서 짜증났다.,0,0.0058,0,1,3
+koelectra-gen,MFT,10_sad_scary_not_negative,따뜻한 영화를 표방하지만 오글거리기만 한다.,0,0.004,0,1,3
+koelectra-gen,MFT,11_aspect_scope,화질은 별로였지만 영화 자체는 명작.,1,0.9269,1,1,3
+koelectra-gen,MFT,11_aspect_scope,상영관 의자가 불편했던 것 빼면 영화는 완벽했어요.,1,0.9383,1,1,3
+koelectra-gen,MFT,11_aspect_scope,자막 오역이 좀 있었지만 작품은 훌륭합니다.,1,0.946,1,1,3
+koelectra-gen,MFT,11_aspect_scope,음악은 좋았지만 그것 말고는 볼 게 없다.,0,0.0535,0,1,3
+koelectra-gen,MFT,11_aspect_scope,포스터만 멋있고 내용은 텅 비었다.,0,0.0023,0,1,2
+koelectra-gen,MFT,11_aspect_scope,주연은 잘했는데 나머지가 다 망쳤다.,0,0.0113,0,1,3
+koelectra-gen,MFT,11_aspect_scope,러닝타임이 긴 게 유일한 단점일 정도로 좋았습니다.,1,0.9926,1,1,3
+koelectra-gen,MFT,11_aspect_scope,음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요.,1,0.8312,1,1,3
+koelectra-gen,MFT,11_aspect_scope,"연출력만 놓고 보면 대단한데, 영화로는 실패했다.",0,0.0155,0,1,3
+koelectra-gen,MFT,11_aspect_scope,볼거리는 확실한데 남는 게 없습니다.,0,0.0941,0,1,3
+koelectra-gen,MFT,11_aspect_scope,"배우 팬이라면 만족, 그 외엔 비추.",0,0.0201,0,1,3
+koelectra-gen,MFT,11_aspect_scope,스토리는 진부하지만 감정선이 살아 있어 좋았다.,1,0.9602,1,1,3
+koelectra-gen,MFT,12_adversarial_lexical,최고라는 말이 많던데 최악이었다.,0,0.0015,0,1,3
+koelectra-gen,MFT,12_adversarial_lexical,명작이라는 광고에 속았다. 졸작.,0,0.0027,0,1,3
+koelectra-gen,MFT,12_adversarial_lexical,재밌다 재밌다 해서 봤는데 노잼.,0,0.1107,0,1,3
+koelectra-gen,MFT,12_adversarial_lexical,지루하다는 평이 많았지만 나는 정말 몰입해서 봤다.,1,0.9892,1,1,3
+koelectra-gen,MFT,12_adversarial_lexical,최악이라는 말은 과했다. 생각보다 괜찮았음.,1,0.4422,0,0,3
+koelectra-gen,MFT,12_adversarial_lexical,쓰레기라던 사람들 다 어디감? 개명작인데.,1,0.982,1,1,3
+koelectra-gen,MFT,12_adversarial_lexical,재미없다는 리뷰에 동의할 수 없다. 훌륭했다.,1,0.9924,1,1,3
+koelectra-gen,MFT,12_adversarial_lexical,걸작이라고? 이건 그냥 시간낭비다.,0,0.0015,0,1,3
+koelectra-gen,MFT,12_adversarial_lexical,재미없을 거라는 편견을 완전히 깨줬습니다.,1,0.9434,1,1,3
+koelectra-gen,MFT,12_adversarial_lexical,지루하다는 말은 이 영화엔 어울리지 않아요.,1,0.3702,0,0,3
+koelectra-gen,MFT,12_adversarial_lexical,명작이라는 표현이 아깝지 않습니다.,1,0.9864,1,1,3
+koelectra-gen,MFT,12_adversarial_lexical,최악이라는 단어로도 부족합니다.,0,0.0534,0,1,3
+koelectra-gen,MFT,12_adversarial_lexical,훌륭하다는 평가는 도저히 못 하겠네요.,0,0.0055,0,1,3
+koelectra-gen,MFT,12_adversarial_lexical,감동적이라던데 저는 실소만 나왔습니다.,0,0.3073,0,1,3
+koelectra-gen,MFT,12_adversarial_lexical,걸작이라는 수식어가 부끄러운 수준.,0,0.0081,0,1,3
+koelectra-gen,MFT,12_adversarial_lexical,실망이라는 단어를 쓸 일이 없었어요. 계속 좋았습니다.,1,0.9771,1,1,3
+koelectra-gen,MFT,13_conditional_hypothetical,조금만 더 짧았으면 명작이었을 텐데 아쉽다.,0,0.9231,1,0,3
+koelectra-gen,MFT,13_conditional_hypothetical,주연이 바뀌었으면 훨씬 좋았을 것 같다.,0,0.5487,1,0,3
+koelectra-gen,MFT,13_conditional_hypothetical,기대만 안 했으면 괜찮게 봤을 듯.,0,0.1329,0,1,3
+koelectra-gen,MFT,13_conditional_hypothetical,무료로 봤으면 불만 없었을 텐데 돈 주고 보니 아깝다.,0,0.0041,0,1,3
+koelectra-gen,MFT,13_conditional_hypothetical,이런 영화가 더 많이 나왔으면 좋겠습니다.,1,0.992,1,1,2
+koelectra-gen,MFT,13_conditional_hypothetical,속편이 나온다면 무조건 볼 겁니다.,1,0.9704,1,1,2
+koelectra-gen,MFT,14_long_review,"친구 추천으로 아무 정보 없이 봤는데, 초반 30분은 인물 소개라 조금 늘어지는 느낌이 있었습니다. 그런데 사건이 터지는 순간부터 몰입도가 확 올라가더군요. 특히 후반 추격 시퀀스는 숨을 쉴 수가 없었어요. 배우들 연기도 과하지 않고 담백했고, 음악도 장면을 방해하지 않으면서 잘 받쳐줬습니다. 극장에서 볼 가치가 충분한 작품이라고 생각합니다.",1,0.9961,1,1,2
+koelectra-gen,MFT,14_long_review,"예고편이 워낙 좋아서 개봉일에 바로 예매했습니다. 결론부터 말하면 예고편이 전부인 영화였어요. 설정은 흥미로운데 그걸 풀어내는 방식이 너무 안일합니다. 인물들이 왜 저런 선택을 하는지 설명이 없고, 갈등도 우연으로 해결됩니다. 후반 30분은 시계만 봤네요. 배우들은 열심히 했는데 각본이 발목을 잡은 케이스.",0,0.0037,0,1,2
+koelectra-gen,MFT,14_long_review,"솔직히 상반기 최고작이라는 평은 과장이라고 생각합니다. 다만 그렇다고 못 만든 영화는 절대 아니에요. 촬영과 미술은 정말 공들인 티가 나고, 주연 배우의 눈빛 연기는 오래 기억에 남을 것 같습니다. 몇몇 장면의 편집이 아쉽긴 했지만 전체적으로는 만족스러웠고 주변에도 권할 생각입니다.",1,0.9868,1,1,3
+kcelectra-ko,MFT,01_basic_pos_neg,정말 재미있게 봤습니다. 시간 가는 줄 몰랐어요.,1,0.9729,1,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,"연출, 연기, 음악 모두 완벽했다.",1,0.9724,1,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,올해 본 영화 중 최고. 강력 추천합니다.,1,0.9748,1,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,몰입감이 엄청나서 두 번 봤어요.,1,0.9744,1,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,기대 이상이었어요. 후회 없는 선택.,1,0.9633,1,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,배우들 연기가 정말 훌륭했습니다.,1,0.9723,1,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,여운이 오래 남는 좋은 작품이었어요.,1,0.9743,1,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,가족들과 보기 딱 좋은 따뜻한 영화.,1,0.9719,1,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,각본이 탄탄하고 결말도 만족스러웠다.,1,0.9729,1,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,돈이 아깝지 않은 영화였습니다.,1,0.9684,1,1,2
+kcelectra-ko,MFT,01_basic_pos_neg,너무 지루해서 중간에 나왔습니다.,0,0.036,0,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,돈이 아까운 영화. 시간 낭비였다.,0,0.0343,0,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,스토리에 개연성이 하나도 없다.,0,0.0338,0,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,배우들 연기가 어색해서 몰입이 안 됐다.,0,0.0413,0,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,기대했는데 정말 실망스러웠어요.,0,0.048,0,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,이런 영화를 왜 만들었는지 모르겠다.,0,0.0346,0,1,2
+kcelectra-ko,MFT,01_basic_pos_neg,지루하고 뻔한 전개. 추천하지 않습니다.,0,0.0397,0,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,최악이었어요. 절대 보지 마세요.,0,0.0417,0,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,졸다가 끝났네요. 재미가 하나도 없음.,0,0.0349,0,1,1
+kcelectra-ko,MFT,01_basic_pos_neg,감독이 뭘 말하고 싶었는지 전혀 모르겠다.,0,0.044,0,1,2
+kcelectra-ko,MFT,02_negation,재미없지 않았어요. 오히려 볼만했습니다.,1,0.9691,1,1,2
+kcelectra-ko,MFT,02_negation,생각보다 지루하지 않았다.,1,0.9554,1,1,2
+kcelectra-ko,MFT,02_negation,돈이 아깝지는 않았습니다.,1,0.8703,1,1,2
+kcelectra-ko,MFT,02_negation,실망스럽지 않은 영화였어요.,1,0.9549,1,1,2
+kcelectra-ko,MFT,02_negation,결코 나쁘지 않은 작품.,1,0.9732,1,1,2
+kcelectra-ko,MFT,02_negation,혹평만큼 형편없진 않았다.,1,0.2463,0,0,3
+kcelectra-ko,MFT,02_negation,재미있지 않았어요.,0,0.0439,0,1,2
+kcelectra-ko,MFT,02_negation,그다지 좋지 않았습니다.,0,0.0449,0,1,2
+kcelectra-ko,MFT,02_negation,추천할 만한 영화는 아니에요.,0,0.114,0,1,2
+kcelectra-ko,MFT,02_negation,볼 가치가 없었다.,0,0.0378,0,1,2
+kcelectra-ko,MFT,02_negation,전혀 감동적이지 않았다.,0,0.0449,0,1,2
+kcelectra-ko,MFT,02_negation,다시 볼 생각은 없습니다.,0,0.0842,0,1,2
+kcelectra-ko,MFT,02_negation,나쁘지 않았어요. 볼 만합니다.,1,0.9726,1,1,2
+kcelectra-ko,MFT,02_negation,후회하지 않을 영화입니다.,1,0.9736,1,1,2
+kcelectra-ko,MFT,02_negation,시간이 아깝지 않았어요.,1,0.9688,1,1,2
+kcelectra-ko,MFT,02_negation,기대를 저버리지 않았다.,1,0.3546,0,0,3
+kcelectra-ko,MFT,02_negation,지루할 틈이 없었습니다.,1,0.9691,1,1,2
+kcelectra-ko,MFT,02_negation,실패하지 않는 선택입니다.,1,0.97,1,1,3
+kcelectra-ko,MFT,02_negation,재미를 느끼지 못했어요.,0,0.042,0,1,2
+kcelectra-ko,MFT,02_negation,공감이 전혀 되지 않았다.,0,0.0424,0,1,2
+kcelectra-ko,MFT,02_negation,몰입이 되지 않았습니다.,0,0.0442,0,1,2
+kcelectra-ko,MFT,02_negation,돈 값을 못 하는 영화.,0,0.0355,0,1,2
+kcelectra-ko,MFT,02_negation,굳이 극장에서 볼 필요는 없어요.,0,0.2827,0,1,3
+kcelectra-ko,MFT,02_negation,두 번은 못 보겠다.,0,0.0854,0,1,2
+kcelectra-ko,MFT,03_double_negation,재미없다고 할 수 없는 영화.,1,0.386,0,0,3
+kcelectra-ko,MFT,03_double_negation,안 볼 이유가 없다.,1,0.9376,1,1,3
+kcelectra-ko,MFT,03_double_negation,싫어할 수 없는 매력이 있다.,1,0.9679,1,1,3
+kcelectra-ko,MFT,03_double_negation,칭찬을 안 할 수가 없네요.,1,0.9701,1,1,3
+kcelectra-ko,MFT,03_double_negation,실망하지 않을 수 없었다.,0,0.0424,0,1,3
+kcelectra-ko,MFT,03_double_negation,화가 안 날 수가 없더군요.,0,0.0646,0,1,3
+kcelectra-ko,MFT,03_double_negation,지루하지 않다고는 못 하겠다.,0,0.0642,0,1,3
+kcelectra-ko,MFT,03_double_negation,좋았다고 말하긴 어렵다.,0,0.4629,0,1,3
+kcelectra-ko,MFT,03_double_negation,재미없다는 말이 나올 수가 없다.,1,0.0433,0,0,3
+kcelectra-ko,MFT,03_double_negation,추천 안 할 이유가 없네요.,1,0.9701,1,1,3
+kcelectra-ko,MFT,03_double_negation,감탄하지 않을 수 없는 연출.,1,0.9642,1,1,3
+kcelectra-ko,MFT,03_double_negation,불만이 없다고는 못 하지만 그래도 좋았다.,1,0.966,1,1,3
+kcelectra-ko,MFT,03_double_negation,좋다고 안 할 수가 없는 작품.,1,0.9723,1,1,3
+kcelectra-ko,MFT,03_double_negation,아쉽지 않다고 하기는 힘들다.,0,0.1802,0,1,3
+kcelectra-ko,MFT,03_double_negation,실망 안 할 수가 없는 결말.,0,0.0454,0,1,3
+kcelectra-ko,MFT,03_double_negation,돈이 안 아까울 수가 없다.,0,0.0609,0,1,3
+kcelectra-ko,MFT,04_contrast_but,초반은 좀 지루했지만 후반부는 정말 압권이었다.,1,0.9693,1,1,2
+kcelectra-ko,MFT,04_contrast_but,연출은 화려했지만 알맹이가 하나도 없었다.,0,0.0436,0,1,2
+kcelectra-ko,MFT,04_contrast_but,배우들 연기는 좋았는데 각본이 다 망쳤다.,0,0.068,0,1,2
+kcelectra-ko,MFT,04_contrast_but,CG는 조잡했지만 이야기가 너무 좋아서 다 용서됨.,1,0.966,1,1,2
+kcelectra-ko,MFT,04_contrast_but,원작 팬으로서 아쉬운 점도 있었지만 전반적으로 훌륭한 각색.,1,0.9705,1,1,2
+kcelectra-ko,MFT,04_contrast_but,소재는 참신했으나 결말이 최악이라 다 날려먹었다.,0,0.0428,0,1,2
+kcelectra-ko,MFT,04_contrast_but,한 시간까지는 최고였는데 그 뒤로 완전히 무너진다.,0,0.0478,0,1,3
+kcelectra-ko,MFT,04_contrast_but,기대를 안 하고 봐서 그런지 의외로 괜찮았다.,1,0.9566,1,1,2
+kcelectra-ko,MFT,04_contrast_but,호불호는 갈리겠지만 나는 정말 좋았다.,1,0.97,1,1,2
+kcelectra-ko,MFT,04_contrast_but,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다.,0,0.3501,0,1,3
+kcelectra-ko,MFT,04_contrast_but,전반부는 훌륭했으나 후반부가 다 망쳤습니다.,0,0.0646,0,1,2
+kcelectra-ko,MFT,04_contrast_but,단점도 분명 있지만 그걸 덮고도 남는 영화.,1,0.9682,1,1,2
+kcelectra-ko,MFT,04_contrast_but,기대작이었는데 딱 기대만큼만 하고 끝났다. 아쉽다.,0,0.0677,0,1,3
+kcelectra-ko,MFT,04_contrast_but,화려하진 않지만 담백하고 진심이 느껴졌어요.,1,0.9726,1,1,3
+kcelectra-ko,MFT,04_contrast_but,잘 만든 건 알겠는데 제 취향은 전혀 아니었습니다.,0,0.0525,0,1,3
+kcelectra-ko,MFT,04_contrast_but,초반 진입장벽만 넘으면 정말 좋은 영화입니다.,1,0.9606,1,1,3
+kcelectra-ko,MFT,04_contrast_but,배우는 최고인데 영화는 최악.,0,0.0587,0,1,2
+kcelectra-ko,MFT,04_contrast_but,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천.,1,0.1355,0,0,3
+kcelectra-ko,MFT,04_contrast_but,결말이 열려 있어 호불호가 갈리겠지만 저는 만족했습니다.,1,0.9705,1,1,2
+kcelectra-ko,MFT,04_contrast_but,소재는 좋았는데 그걸 살리지 못했다.,0,0.0703,0,1,2
+kcelectra-ko,MFT,05_sarcasm_irony,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니.,0,0.3615,0,1,3
+kcelectra-ko,MFT,05_sarcasm_irony,역대급입니다. 역대급으로 지루한.,0,0.041,0,1,3
+kcelectra-ko,MFT,05_sarcasm_irony,돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요.,0,0.5362,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,감독님 다음 작품도 기대할게요... 안 볼 거지만.,0,0.8902,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,잠이 안 올 때 보세요. 수면제보다 낫습니다.,0,0.9606,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,시간 순삭이네요. 세 시간이 삼십 시간 같았어요.,0,0.7471,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,명작이네요 명작. 화장실 갈 타이밍 잡기 딱 좋은.,0,0.9705,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,주연배우 팬이라 별 하나 드립니다.,0,0.1808,0,1,3
+kcelectra-ko,MFT,05_sarcasm_irony,이 영화 보고 인생이 바뀌었어요. 극장 가는 걸 끊었거든요.,0,0.917,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,두 시간 동안 아주 푹 쉬다 왔습니다.,0,0.1089,0,1,3
+kcelectra-ko,MFT,05_sarcasm_irony,각본가님 천재 아니신가요? 이런 전개는 아무나 못 씁니다.,0,0.9707,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,돈 버리는 방법을 알려드립니다. 이 영화 예매하세요.,0,0.171,0,1,3
+kcelectra-ko,MFT,05_sarcasm_irony,불면증 있으신 분들께 강력 추천드립니다.,0,0.9582,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,아 정말 좋은 영화네요. 중간에 나올 용기를 줘서.,0,0.9663,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견.,0,0.4177,0,1,3
+kcelectra-ko,MFT,05_sarcasm_irony,팝콘이 참 맛있었습니다.,0,0.9638,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,CG에 돈 다 썼나 봐요. 각본 쓸 돈이 없었나.,0,0.0454,0,1,3
+kcelectra-ko,MFT,05_sarcasm_irony,졸음 방지용으로 커피 꼭 챙기세요.,0,0.7624,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,역시 기대를 저버리지 않네요. 늘 그랬듯 실망시켰습니다.,0,0.1034,0,1,3
+kcelectra-ko,MFT,05_sarcasm_irony,이걸 극장에서 봤다는 게 제 인생 최대 업적입니다.,0,0.9686,1,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,이 감독 진짜 못됐어요. 사람 울리는 데 선수네요.,1,0.0606,0,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,돈 아깝네요. 티켓값이 이 퀄리티에 비해 너무 쌉니다.,1,0.0529,0,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,화나네요. 이렇게 좋은 걸 이제야 봤다는 게.,1,0.9675,1,1,3
+kcelectra-ko,MFT,05_sarcasm_irony,이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요.,1,0.0697,0,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,최악입니다. 이걸 보고 나니 다른 영화가 다 시시해졌어요.,1,0.0351,0,0,3
+kcelectra-ko,MFT,05_sarcasm_irony,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요.,1,0.2006,0,0,3
+kcelectra-ko,MFT,06_comparative,전작보다 훨씬 낫다.,1,0.9491,1,1,2
+kcelectra-ko,MFT,06_comparative,전작보다 못하다.,0,0.0354,0,1,2
+kcelectra-ko,MFT,06_comparative,원작보다는 못해도 충분히 재밌었다.,1,0.9725,1,1,3
+kcelectra-ko,MFT,06_comparative,비슷한 장르 중에선 제일 별로였다.,0,0.0347,0,1,2
+kcelectra-ko,MFT,06_comparative,이 감독 작품 중 최고작.,1,0.9704,1,1,1
+kcelectra-ko,MFT,06_comparative,이 감독 작품 중 가장 아쉽다.,0,0.061,0,1,2
+kcelectra-ko,MFT,06_comparative,2편이 1편을 뛰어넘었다.,1,0.5505,1,1,2
+kcelectra-ko,MFT,06_comparative,1편의 발끝에도 못 미친다.,0,0.0732,0,1,2
+kcelectra-ko,MFT,06_comparative,올해 본 영화 중에 이만한 게 없었다.,1,0.9692,1,1,2
+kcelectra-ko,MFT,06_comparative,올해 본 영화 중 이만큼 지루한 건 없었다.,0,0.0384,0,1,2
+kcelectra-ko,MFT,06_comparative,헐리우드 대작들보다 훨씬 알차다.,1,0.9604,1,1,2
+kcelectra-ko,MFT,06_comparative,차라리 예고편만 보는 게 낫다.,0,0.0576,0,1,3
+kcelectra-ko,MFT,06_comparative,집에서 티비로 봤어도 충분했을 영화.,0,0.0473,0,1,3
+kcelectra-ko,MFT,06_comparative,극장값이 전혀 아깝지 않은 스케일.,1,0.9589,1,1,2
+kcelectra-ko,MFT,07_reported_opinion,평이 좋길래 봤는데 저한텐 별로였어요.,0,0.0505,0,1,2
+kcelectra-ko,MFT,07_reported_opinion,혹평이 많던데 전 재밌게 봤습니다.,1,0.9702,1,1,2
+kcelectra-ko,MFT,07_reported_opinion,친구는 재밌다는데 저는 도저히 못 보겠더라고요.,0,0.1071,0,1,2
+kcelectra-ko,MFT,07_reported_opinion,다들 별로라지만 제 인생영화입니다.,1,0.9721,1,1,2
+kcelectra-ko,MFT,07_reported_opinion,예고편은 최고였는데 본편은 실망.,0,0.0937,0,1,2
+kcelectra-ko,MFT,07_reported_opinion,광고는 걸작이라던데 실제로는 졸작.,0,0.0469,0,1,2
+kcelectra-ko,MFT,07_reported_opinion,평점 믿고 갔다가 후회했습니다.,0,0.0826,0,1,3
+kcelectra-ko,MFT,07_reported_opinion,평점이 낮아서 걱정했는데 괜한 걱정이었네요.,1,0.7842,1,1,3
+kcelectra-ko,MFT,07_reported_opinion,주변에서 다 말렸는데 보길 잘했어요.,1,0.7169,1,1,3
+kcelectra-ko,MFT,07_reported_opinion,평론가 점수는 낮던데 관객 입장에선 충분히 재밌습니다.,1,0.969,1,1,3
+kcelectra-ko,MFT,07_reported_opinion,입소문 듣고 갔다가 시간만 버렸네요.,0,0.049,0,1,2
+kcelectra-ko,MFT,07_reported_opinion,호평 일색이던데 저만 이상한가요? 정말 별로였습니다.,0,0.1731,0,1,2
+kcelectra-ko,MFT,07_reported_opinion,악평 보고 기대 없이 갔는데 의외의 수확이었어요.,1,0.932,1,1,3
+kcelectra-ko,MFT,07_reported_opinion,추천해준 친구랑 절교하고 싶습니다.,0,0.0449,0,1,3
+kcelectra-ko,MFT,07_reported_opinion,리뷰가 왜 좋은지 알겠더라고요. 정말 잘 만들었습니다.,1,0.9747,1,1,2
+kcelectra-ko,MFT,07_reported_opinion,별점 테러가 이해되는 영화였습니다.,0,0.9072,1,0,3
+kcelectra-ko,MFT,08_rating_expr,별점 1점도 아깝다.,0,0.0559,0,1,2
+kcelectra-ko,MFT,08_rating_expr,10점 만점에 10점.,1,0.9234,1,1,2
+kcelectra-ko,MFT,08_rating_expr,★★★★★,1,0.9037,1,1,2
+kcelectra-ko,MFT,08_rating_expr,★☆☆☆☆,0,0.8594,1,0,2
+kcelectra-ko,MFT,08_rating_expr,5점 만점에 1점 드립니다.,0,0.0877,0,1,2
+kcelectra-ko,MFT,08_rating_expr,평점 9.5점 인정합니다.,1,0.9415,1,1,2
+kcelectra-ko,MFT,08_rating_expr,0점 주고 싶은데 최소가 1점이라 1점 줍니다.,0,0.0798,0,1,3
+kcelectra-ko,MFT,08_rating_expr,만점 줍니다 만점.,1,0.9666,1,1,2
+kcelectra-ko,MFT,09_slang_internet,ㄹㅇ 개꿀잼 ㅋㅋㅋㅋ,1,0.9695,1,1,2
+kcelectra-ko,MFT,09_slang_internet,노잼 그 자체,0,0.0346,0,1,1
+kcelectra-ko,MFT,09_slang_internet,존잼임 강추,1,0.9742,1,1,1
+kcelectra-ko,MFT,09_slang_internet,발연기 오지네요 진짜,0,0.0351,0,1,2
+kcelectra-ko,MFT,09_slang_internet,핵노잼 ㅡㅡ,0,0.0344,0,1,1
+kcelectra-ko,MFT,09_slang_internet,인생영화 등극 ㅠㅠ 너무 좋았음,1,0.9756,1,1,1
+kcelectra-ko,MFT,09_slang_internet,시간 순삭 ㄱㅇㄷ,1,0.6964,1,1,2
+kcelectra-ko,MFT,09_slang_internet,돈아까움 진짜,0,0.0361,0,1,1
+kcelectra-ko,MFT,09_slang_internet,띵작 ㅇㅈ,1,0.8894,1,1,3
+kcelectra-ko,MFT,09_slang_internet,국뽕 오지지만 그래도 재밌음,1,0.9687,1,1,3
+kcelectra-ko,MFT,09_slang_internet,총체적 난국이네요,0,0.048,0,1,2
+kcelectra-ko,MFT,09_slang_internet,보다가 폰만 봤네요,0,0.066,0,1,3
+kcelectra-ko,MFT,10_sad_scary_not_negative,너무 슬퍼서 펑펑 울었어요. 정말 좋은 영화입니다.,1,0.973,1,1,2
+kcelectra-ko,MFT,10_sad_scary_not_negative,주인공이 죽는 비극이지만 그래서 더 아름다웠다.,1,0.9666,1,1,3
+kcelectra-ko,MFT,10_sad_scary_not_negative,무서워서 눈을 못 뜨겠더라고요. 공포영화로는 최고.,1,0.7158,1,1,3
+kcelectra-ko,MFT,10_sad_scary_not_negative,잔인한 장면이 많지만 그만큼 강렬한 메시지를 남긴다.,1,0.9677,1,1,3
+kcelectra-ko,MFT,10_sad_scary_not_negative,불편한 소재를 정말 잘 다뤘습니다.,1,0.9737,1,1,3
+kcelectra-ko,MFT,10_sad_scary_not_negative,가슴이 먹먹해지는 영화. 꼭 보세요.,1,0.9736,1,1,2
+kcelectra-ko,MFT,10_sad_scary_not_negative,웃긴 장면은 많았지만 코미디로서는 실패작.,0,0.0473,0,1,3
+kcelectra-ko,MFT,10_sad_scary_not_negative,행복한 결말인데도 억지스러워서 짜증났다.,0,0.0343,0,1,3
+kcelectra-ko,MFT,10_sad_scary_not_negative,따뜻한 영화를 표방하지만 오글거리기만 한다.,0,0.0355,0,1,3
+kcelectra-ko,MFT,11_aspect_scope,화질은 별로였지만 영화 자체는 명작.,1,0.9588,1,1,3
+kcelectra-ko,MFT,11_aspect_scope,상영관 의자가 불편했던 것 빼면 영화는 완벽했어요.,1,0.9559,1,1,3
+kcelectra-ko,MFT,11_aspect_scope,자막 오역이 좀 있었지만 작품은 훌륭합니다.,1,0.968,1,1,3
+kcelectra-ko,MFT,11_aspect_scope,음악은 좋았지만 그것 말고는 볼 게 없다.,0,0.0409,0,1,3
+kcelectra-ko,MFT,11_aspect_scope,포스터만 멋있고 내용은 텅 비었다.,0,0.0379,0,1,2
+kcelectra-ko,MFT,11_aspect_scope,주연은 잘했는데 나머지가 다 망쳤다.,0,0.0902,0,1,3
+kcelectra-ko,MFT,11_aspect_scope,러닝타임이 긴 게 유일한 단점일 정도로 좋았습니다.,1,0.9716,1,1,3
+kcelectra-ko,MFT,11_aspect_scope,음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요.,1,0.9615,1,1,3
+kcelectra-ko,MFT,11_aspect_scope,"연출력만 놓고 보면 대단한데, 영화로는 실패했다.",0,0.2028,0,1,3
+kcelectra-ko,MFT,11_aspect_scope,볼거리는 확실한데 남는 게 없습니다.,0,0.0402,0,1,3
+kcelectra-ko,MFT,11_aspect_scope,"배우 팬이라면 만족, 그 외엔 비추.",0,0.0608,0,1,3
+kcelectra-ko,MFT,11_aspect_scope,스토리는 진부하지만 감정선이 살아 있어 좋았다.,1,0.9705,1,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,최고라는 말이 많던데 최악이었다.,0,0.0395,0,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,명작이라는 광고에 속았다. 졸작.,0,0.0375,0,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,재밌다 재밌다 해서 봤는데 노잼.,0,0.0474,0,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,지루하다는 평이 많았지만 나는 정말 몰입해서 봤다.,1,0.9703,1,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,최악이라는 말은 과했다. 생각보다 괜찮았음.,1,0.9603,1,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,쓰레기라던 사람들 다 어디감? 개명작인데.,1,0.9272,1,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,재미없다는 리뷰에 동의할 수 없다. 훌륭했다.,1,0.9675,1,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,걸작이라고? 이건 그냥 시간낭비다.,0,0.035,0,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,재미없을 거라는 편견을 완전히 깨줬습니다.,1,0.9572,1,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,지루하다는 말은 이 영화엔 어울리지 않아요.,1,0.1845,0,0,3
+kcelectra-ko,MFT,12_adversarial_lexical,명작이라는 표현이 아깝지 않습니다.,1,0.9727,1,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,최악이라는 단어로도 부족합니다.,0,0.0653,0,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,훌륭하다는 평가는 도저히 못 하겠네요.,0,0.2815,0,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,감동적이라던데 저는 실소만 나왔습니다.,0,0.0665,0,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,걸작이라는 수식어가 부끄러운 수준.,0,0.0412,0,1,3
+kcelectra-ko,MFT,12_adversarial_lexical,실망이라는 단어를 쓸 일이 없었어요. 계속 좋았습니다.,1,0.9713,1,1,3
+kcelectra-ko,MFT,13_conditional_hypothetical,조금만 더 짧았으면 명작이었을 텐데 아쉽다.,0,0.4354,0,1,3
+kcelectra-ko,MFT,13_conditional_hypothetical,주연이 바뀌었으면 훨씬 좋았을 것 같다.,0,0.2526,0,1,3
+kcelectra-ko,MFT,13_conditional_hypothetical,기대만 안 했으면 괜찮게 봤을 듯.,0,0.0917,0,1,3
+kcelectra-ko,MFT,13_conditional_hypothetical,무료로 봤으면 불만 없었을 텐데 돈 주고 보니 아깝다.,0,0.0857,0,1,3
+kcelectra-ko,MFT,13_conditional_hypothetical,이런 영화가 더 많이 나왔으면 좋겠습니다.,1,0.9722,1,1,2
+kcelectra-ko,MFT,13_conditional_hypothetical,속편이 나온다면 무조건 볼 겁니다.,1,0.9726,1,1,2
+kcelectra-ko,MFT,14_long_review,"친구 추천으로 아무 정보 없이 봤는데, 초반 30분은 인물 소개라 조금 늘어지는 느낌이 있었습니다. 그런데 사건이 터지는 순간부터 몰입도가 확 올라가더군요. 특히 후반 추격 시퀀스는 숨을 쉴 수가 없었어요. 배우들 연기도 과하지 않고 담백했고, 음악도 장면을 방해하지 않으면서 잘 받쳐줬습니다. 극장에서 볼 가치가 충분한 작품이라고 생각합니다.",1,0.9724,1,1,2
+kcelectra-ko,MFT,14_long_review,"예고편이 워낙 좋아서 개봉일에 바로 예매했습니다. 결론부터 말하면 예고편이 전부인 영화였어요. 설정은 흥미로운데 그걸 풀어내는 방식이 너무 안일합니다. 인물들이 왜 저런 선택을 하는지 설명이 없고, 갈등도 우연으로 해결됩니다. 후반 30분은 시계만 봤네요. 배우들은 열심히 했는데 각본이 발목을 잡은 케이스.",0,0.1183,0,1,2
+kcelectra-ko,MFT,14_long_review,"솔직히 상반기 최고작이라는 평은 과장이라고 생각합니다. 다만 그렇다고 못 만든 영화는 절대 아니에요. 촬영과 미술은 정말 공들인 티가 나고, 주연 배우의 눈빛 연기는 오래 기억에 남을 것 같습니다. 몇몇 장면의 편집이 아쉽긴 했지만 전체적으로는 만족스러웠고 주변에도 권할 생각입니다.",1,0.9704,1,1,3
+ensemble-mean,MFT,01_basic_pos_neg,정말 재미있게 봤습니다. 시간 가는 줄 몰랐어요.,1,0.9844,1,1,1
+ensemble-mean,MFT,01_basic_pos_neg,"연출, 연기, 음악 모두 완벽했다.",1,0.9872,1,1,1
+ensemble-mean,MFT,01_basic_pos_neg,올해 본 영화 중 최고. 강력 추천합니다.,1,0.9849,1,1,1
+ensemble-mean,MFT,01_basic_pos_neg,몰입감이 엄청나서 두 번 봤어요.,1,0.9869,1,1,1
+ensemble-mean,MFT,01_basic_pos_neg,기대 이상이었어요. 후회 없는 선택.,1,0.9583,1,1,1
+ensemble-mean,MFT,01_basic_pos_neg,배우들 연기가 정말 훌륭했습니다.,1,0.9859,1,1,1
+ensemble-mean,MFT,01_basic_pos_neg,여운이 오래 남는 좋은 작품이었어요.,1,0.9883,1,1,1
+ensemble-mean,MFT,01_basic_pos_neg,가족들과 보기 딱 좋은 따뜻한 영화.,1,0.9843,1,1,1
+ensemble-mean,MFT,01_basic_pos_neg,각본이 탄탄하고 결말도 만족스러웠다.,1,0.9837,1,1,1
+ensemble-mean,MFT,01_basic_pos_neg,돈이 아깝지 않은 영화였습니다.,1,0.8111,1,1,2
+ensemble-mean,MFT,01_basic_pos_neg,너무 지루해서 중간에 나왔습니다.,0,0.0137,0,1,1
+ensemble-mean,MFT,01_basic_pos_neg,돈이 아까운 영화. 시간 낭비였다.,0,0.0124,0,1,1
+ensemble-mean,MFT,01_basic_pos_neg,스토리에 개연성이 하나도 없다.,0,0.0126,0,1,1
+ensemble-mean,MFT,01_basic_pos_neg,배우들 연기가 어색해서 몰입이 안 됐다.,0,0.016,0,1,1
+ensemble-mean,MFT,01_basic_pos_neg,기대했는데 정말 실망스러웠어요.,0,0.0171,0,1,1
+ensemble-mean,MFT,01_basic_pos_neg,이런 영화를 왜 만들었는지 모르겠다.,0,0.0285,0,1,2
+ensemble-mean,MFT,01_basic_pos_neg,지루하고 뻔한 전개. 추천하지 않습니다.,0,0.0143,0,1,1
+ensemble-mean,MFT,01_basic_pos_neg,최악이었어요. 절대 보지 마세요.,0,0.0151,0,1,1
+ensemble-mean,MFT,01_basic_pos_neg,졸다가 끝났네요. 재미가 하나도 없음.,0,0.0128,0,1,1
+ensemble-mean,MFT,01_basic_pos_neg,감독이 뭘 말하고 싶었는지 전혀 모르겠다.,0,0.017,0,1,2
+ensemble-mean,MFT,02_negation,재미없지 않았어요. 오히려 볼만했습니다.,1,0.9602,1,1,2
+ensemble-mean,MFT,02_negation,생각보다 지루하지 않았다.,1,0.8735,1,1,2
+ensemble-mean,MFT,02_negation,돈이 아깝지는 않았습니다.,1,0.5869,1,1,2
+ensemble-mean,MFT,02_negation,실망스럽지 않은 영화였어요.,1,0.9622,1,1,2
+ensemble-mean,MFT,02_negation,결코 나쁘지 않은 작품.,1,0.9724,1,1,2
+ensemble-mean,MFT,02_negation,혹평만큼 형편없진 않았다.,1,0.2453,0,0,3
+ensemble-mean,MFT,02_negation,재미있지 않았어요.,0,0.0578,0,1,2
+ensemble-mean,MFT,02_negation,그다지 좋지 않았습니다.,0,0.0423,0,1,2
+ensemble-mean,MFT,02_negation,추천할 만한 영화는 아니에요.,0,0.1756,0,1,2
+ensemble-mean,MFT,02_negation,볼 가치가 없었다.,0,0.0148,0,1,2
+ensemble-mean,MFT,02_negation,전혀 감동적이지 않았다.,0,0.0223,0,1,2
+ensemble-mean,MFT,02_negation,다시 볼 생각은 없습니다.,0,0.1155,0,1,2
+ensemble-mean,MFT,02_negation,나쁘지 않았어요. 볼 만합니다.,1,0.9635,1,1,2
+ensemble-mean,MFT,02_negation,후회하지 않을 영화입니다.,1,0.9566,1,1,2
+ensemble-mean,MFT,02_negation,시간이 아깝지 않았어요.,1,0.8276,1,1,2
+ensemble-mean,MFT,02_negation,기대를 저버리지 않았다.,1,0.4358,0,0,3
+ensemble-mean,MFT,02_negation,지루할 틈이 없었습니다.,1,0.961,1,1,2
+ensemble-mean,MFT,02_negation,실패하지 않는 선택입니다.,1,0.8796,1,1,3
+ensemble-mean,MFT,02_negation,재미를 느끼지 못했어요.,0,0.0397,0,1,2
+ensemble-mean,MFT,02_negation,공감이 전혀 되지 않았다.,0,0.0212,0,1,2
+ensemble-mean,MFT,02_negation,몰입이 되지 않았습니다.,0,0.1067,0,1,2
+ensemble-mean,MFT,02_negation,돈 값을 못 하는 영화.,0,0.0229,0,1,2
+ensemble-mean,MFT,02_negation,굳이 극장에서 볼 필요는 없어요.,0,0.1469,0,1,3
+ensemble-mean,MFT,02_negation,두 번은 못 보겠다.,0,0.2897,0,1,2
+ensemble-mean,MFT,03_double_negation,재미없다고 할 수 없는 영화.,1,0.4663,0,0,3
+ensemble-mean,MFT,03_double_negation,안 볼 이유가 없다.,1,0.6402,1,1,3
+ensemble-mean,MFT,03_double_negation,싫어할 수 없는 매력이 있다.,1,0.9541,1,1,3
+ensemble-mean,MFT,03_double_negation,칭찬을 안 할 수가 없네요.,1,0.9438,1,1,3
+ensemble-mean,MFT,03_double_negation,실망하지 않을 수 없었다.,0,0.3207,0,1,3
+ensemble-mean,MFT,03_double_negation,화가 안 날 수가 없더군요.,0,0.1736,0,1,3
+ensemble-mean,MFT,03_double_negation,지루하지 않다고는 못 하겠다.,0,0.2612,0,1,3
+ensemble-mean,MFT,03_double_negation,좋았다고 말하긴 어렵다.,0,0.4922,0,1,3
+ensemble-mean,MFT,03_double_negation,재미없다는 말이 나올 수가 없다.,1,0.3537,0,0,3
+ensemble-mean,MFT,03_double_negation,추천 안 할 이유가 없네요.,1,0.6979,1,1,3
+ensemble-mean,MFT,03_double_negation,감탄하지 않을 수 없는 연출.,1,0.84,1,1,3
+ensemble-mean,MFT,03_double_negation,불만이 없다고는 못 하지만 그래도 좋았다.,1,0.9816,1,1,3
+ensemble-mean,MFT,03_double_negation,좋다고 안 할 수가 없는 작품.,1,0.9765,1,1,3
+ensemble-mean,MFT,03_double_negation,아쉽지 않다고 하기는 힘들다.,0,0.1881,0,1,3
+ensemble-mean,MFT,03_double_negation,실망 안 할 수가 없는 결말.,0,0.1572,0,1,3
+ensemble-mean,MFT,03_double_negation,돈이 안 아까울 수가 없다.,0,0.0993,0,1,3
+ensemble-mean,MFT,04_contrast_but,초반은 좀 지루했지만 후반부는 정말 압권이었다.,1,0.9498,1,1,2
+ensemble-mean,MFT,04_contrast_but,연출은 화려했지만 알맹이가 하나도 없었다.,0,0.0225,0,1,2
+ensemble-mean,MFT,04_contrast_but,배우들 연기는 좋았는데 각본이 다 망쳤다.,0,0.0291,0,1,2
+ensemble-mean,MFT,04_contrast_but,CG는 조잡했지만 이야기가 너무 좋아서 다 용서됨.,1,0.943,1,1,2
+ensemble-mean,MFT,04_contrast_but,원작 팬으로서 아쉬운 점도 있었지만 전반적으로 훌륭한 각색.,1,0.9748,1,1,2
+ensemble-mean,MFT,04_contrast_but,소재는 참신했으나 결말이 최악이라 다 날려먹었다.,0,0.023,0,1,2
+ensemble-mean,MFT,04_contrast_but,한 시간까지는 최고였는데 그 뒤로 완전히 무너진다.,0,0.0785,0,1,3
+ensemble-mean,MFT,04_contrast_but,기대를 안 하고 봐서 그런지 의외로 괜찮았다.,1,0.9721,1,1,2
+ensemble-mean,MFT,04_contrast_but,호불호는 갈리겠지만 나는 정말 좋았다.,1,0.9854,1,1,2
+ensemble-mean,MFT,04_contrast_but,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다.,0,0.3115,0,1,3
+ensemble-mean,MFT,04_contrast_but,전반부는 훌륭했으나 후반부가 다 망쳤습니다.,0,0.0477,0,1,2
+ensemble-mean,MFT,04_contrast_but,단점도 분명 있지만 그걸 덮고도 남는 영화.,1,0.9654,1,1,2
+ensemble-mean,MFT,04_contrast_but,기대작이었는데 딱 기대만큼만 하고 끝났다. 아쉽다.,0,0.1205,0,1,3
+ensemble-mean,MFT,04_contrast_but,화려하진 않지만 담백하고 진심이 느껴졌어요.,1,0.9885,1,1,3
+ensemble-mean,MFT,04_contrast_but,잘 만든 건 알겠는데 제 취향은 전혀 아니었습니다.,0,0.0249,0,1,3
+ensemble-mean,MFT,04_contrast_but,초반 진입장벽만 넘으면 정말 좋은 영화입니다.,1,0.9215,1,1,3
+ensemble-mean,MFT,04_contrast_but,배우는 최고인데 영화는 최악.,0,0.0209,0,1,2
+ensemble-mean,MFT,04_contrast_but,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천.,1,0.2812,0,0,3
+ensemble-mean,MFT,04_contrast_but,결말이 열려 있어 호불호가 갈리겠지만 저는 만족했습니다.,1,0.9789,1,1,2
+ensemble-mean,MFT,04_contrast_but,소재는 좋았는데 그걸 살리지 못했다.,0,0.0355,0,1,2
+ensemble-mean,MFT,05_sarcasm_irony,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니.,0,0.3129,0,1,3
+ensemble-mean,MFT,05_sarcasm_irony,역대급입니다. 역대급으로 지루한.,0,0.019,0,1,3
+ensemble-mean,MFT,05_sarcasm_irony,돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요.,0,0.1834,0,1,3
+ensemble-mean,MFT,05_sarcasm_irony,감독님 다음 작품도 기대할게요... 안 볼 거지만.,0,0.8295,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,잠이 안 올 때 보세요. 수면제보다 낫습니다.,0,0.3857,0,1,3
+ensemble-mean,MFT,05_sarcasm_irony,시간 순삭이네요. 세 시간이 삼십 시간 같았어요.,0,0.807,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,명작이네요 명작. 화장실 갈 타이밍 잡기 딱 좋은.,0,0.9707,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,주연배우 팬이라 별 하나 드립니다.,0,0.0658,0,1,3
+ensemble-mean,MFT,05_sarcasm_irony,이 영화 보고 인생이 바뀌었어요. 극장 가는 걸 끊었거든요.,0,0.7666,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,두 시간 동안 아주 푹 쉬다 왔습니다.,0,0.6006,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,각본가님 천재 아니신가요? 이런 전개는 아무나 못 씁니다.,0,0.6329,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,돈 버리는 방법을 알려드립니다. 이 영화 예매하세요.,0,0.0768,0,1,3
+ensemble-mean,MFT,05_sarcasm_irony,불면증 있으신 분들께 강력 추천드립니다.,0,0.6671,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,아 정말 좋은 영화네요. 중간에 나올 용기를 줘서.,0,0.9592,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견.,0,0.1959,0,1,3
+ensemble-mean,MFT,05_sarcasm_irony,팝콘이 참 맛있었습니다.,0,0.9004,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,CG에 돈 다 썼나 봐요. 각본 쓸 돈이 없었나.,0,0.0167,0,1,3
+ensemble-mean,MFT,05_sarcasm_irony,졸음 방지용으로 커피 꼭 챙기세요.,0,0.6881,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,역시 기대를 저버리지 않네요. 늘 그랬듯 실망시켰습니다.,0,0.0394,0,1,3
+ensemble-mean,MFT,05_sarcasm_irony,이걸 극장에서 봤다는 게 제 인생 최대 업적입니다.,0,0.7635,1,0,3
+ensemble-mean,MFT,05_sarcasm_irony,이 감독 진짜 못됐어요. 사람 울리는 데 선수네요.,1,0.0923,0,0,3
+ensemble-mean,MFT,05_sarcasm_irony,돈 아깝네요. 티켓값이 이 퀄리티에 비해 너무 쌉니다.,1,0.0201,0,0,3
+ensemble-mean,MFT,05_sarcasm_irony,화나네요. 이렇게 좋은 걸 이제야 봤다는 게.,1,0.8942,1,1,3
+ensemble-mean,MFT,05_sarcasm_irony,이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요.,1,0.4213,0,0,3
+ensemble-mean,MFT,05_sarcasm_irony,최악입니다. 이걸 보고 나니 다른 영화가 다 시시해졌어요.,1,0.0174,0,0,3
+ensemble-mean,MFT,05_sarcasm_irony,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요.,1,0.5163,1,1,3
+ensemble-mean,MFT,06_comparative,전작보다 훨씬 낫다.,1,0.9024,1,1,2
+ensemble-mean,MFT,06_comparative,전작보다 못하다.,0,0.0435,0,1,2
+ensemble-mean,MFT,06_comparative,원작보다는 못해도 충분히 재밌었다.,1,0.9485,1,1,3
+ensemble-mean,MFT,06_comparative,비슷한 장르 중에선 제일 별로였다.,0,0.0134,0,1,2
+ensemble-mean,MFT,06_comparative,이 감독 작품 중 최고작.,1,0.9812,1,1,1
+ensemble-mean,MFT,06_comparative,이 감독 작품 중 가장 아쉽다.,0,0.2569,0,1,2
+ensemble-mean,MFT,06_comparative,2편이 1편을 뛰어넘었다.,1,0.6175,1,1,2
+ensemble-mean,MFT,06_comparative,1편의 발끝에도 못 미친다.,0,0.0459,0,1,2
+ensemble-mean,MFT,06_comparative,올해 본 영화 중에 이만한 게 없었다.,1,0.9638,1,1,2
+ensemble-mean,MFT,06_comparative,올해 본 영화 중 이만큼 지루한 건 없었다.,0,0.2947,0,1,2
+ensemble-mean,MFT,06_comparative,헐리우드 대작들보다 훨씬 알차다.,1,0.8688,1,1,2
+ensemble-mean,MFT,06_comparative,차라리 예고편만 보는 게 낫다.,0,0.0229,0,1,3
+ensemble-mean,MFT,06_comparative,집에서 티비로 봤어도 충분했을 영화.,0,0.5957,1,0,3
+ensemble-mean,MFT,06_comparative,극장값이 전혀 아깝지 않은 스케일.,1,0.7804,1,1,2
+ensemble-mean,MFT,07_reported_opinion,평이 좋길래 봤는데 저한텐 별로였어요.,0,0.0212,0,1,2
+ensemble-mean,MFT,07_reported_opinion,혹평이 많던데 전 재밌게 봤습니다.,1,0.9763,1,1,2
+ensemble-mean,MFT,07_reported_opinion,친구는 재밌다는데 저는 도저히 못 보겠더라고요.,0,0.0885,0,1,2
+ensemble-mean,MFT,07_reported_opinion,다들 별로라지만 제 인생영화입니다.,1,0.9835,1,1,2
+ensemble-mean,MFT,07_reported_opinion,예고편은 최고였는데 본편은 실망.,0,0.0383,0,1,2
+ensemble-mean,MFT,07_reported_opinion,광고는 걸작이라던데 실제로는 졸작.,0,0.0185,0,1,2
+ensemble-mean,MFT,07_reported_opinion,평점 믿고 갔다가 후회했습니다.,0,0.0761,0,1,3
+ensemble-mean,MFT,07_reported_opinion,평점이 낮아서 걱정했는데 괜한 걱정이었네요.,1,0.9,1,1,3
+ensemble-mean,MFT,07_reported_opinion,주변에서 다 말렸는데 보길 잘했어요.,1,0.8904,1,1,3
+ensemble-mean,MFT,07_reported_opinion,평론가 점수는 낮던데 관객 입장에선 충분히 재밌습니다.,1,0.9625,1,1,3
+ensemble-mean,MFT,07_reported_opinion,입소문 듣고 갔다가 시간만 버렸네요.,0,0.0185,0,1,2
+ensemble-mean,MFT,07_reported_opinion,호평 일색이던데 저만 이상한가요? 정말 별로였습니다.,0,0.0594,0,1,2
+ensemble-mean,MFT,07_reported_opinion,악평 보고 기대 없이 갔는데 의외의 수확이었어요.,1,0.5982,1,1,3
+ensemble-mean,MFT,07_reported_opinion,추천해준 친구랑 절교하고 싶습니다.,0,0.2661,0,1,3
+ensemble-mean,MFT,07_reported_opinion,리뷰가 왜 좋은지 알겠더라고요. 정말 잘 만들었습니다.,1,0.9785,1,1,2
+ensemble-mean,MFT,07_reported_opinion,별점 테러가 이해되는 영화였습니다.,0,0.6051,1,0,3
+ensemble-mean,MFT,08_rating_expr,별점 1점도 아깝다.,0,0.0196,0,1,2
+ensemble-mean,MFT,08_rating_expr,10점 만점에 10점.,1,0.9655,1,1,2
+ensemble-mean,MFT,08_rating_expr,★★★★★,1,0.804,1,1,2
+ensemble-mean,MFT,08_rating_expr,★☆☆☆☆,0,0.7407,1,0,2
+ensemble-mean,MFT,08_rating_expr,5점 만점에 1점 드립니다.,0,0.0383,0,1,2
+ensemble-mean,MFT,08_rating_expr,평점 9.5점 인정합니다.,1,0.9306,1,1,2
+ensemble-mean,MFT,08_rating_expr,0점 주고 싶은데 최소가 1점이라 1점 줍니다.,0,0.0277,0,1,3
+ensemble-mean,MFT,08_rating_expr,만점 줍니다 만점.,1,0.9612,1,1,2
+ensemble-mean,MFT,09_slang_internet,ㄹㅇ 개꿀잼 ㅋㅋㅋㅋ,1,0.8757,1,1,2
+ensemble-mean,MFT,09_slang_internet,노잼 그 자체,0,0.3059,0,1,1
+ensemble-mean,MFT,09_slang_internet,존잼임 강추,1,0.9728,1,1,1
+ensemble-mean,MFT,09_slang_internet,발연기 오지네요 진짜,0,0.0212,0,1,2
+ensemble-mean,MFT,09_slang_internet,핵노잼 ㅡㅡ,0,0.259,0,1,1
+ensemble-mean,MFT,09_slang_internet,인생영화 등극 ㅠㅠ 너무 좋았음,1,0.987,1,1,1
+ensemble-mean,MFT,09_slang_internet,시간 순삭 ㄱㅇㄷ,1,0.6629,1,1,2
+ensemble-mean,MFT,09_slang_internet,돈아까움 진짜,0,0.0535,0,1,1
+ensemble-mean,MFT,09_slang_internet,띵작 ㅇㅈ,1,0.8596,1,1,3
+ensemble-mean,MFT,09_slang_internet,국뽕 오지지만 그래도 재밌음,1,0.9354,1,1,3
+ensemble-mean,MFT,09_slang_internet,총체적 난국이네요,0,0.0199,0,1,2
+ensemble-mean,MFT,09_slang_internet,보다가 폰만 봤네요,0,0.054,0,1,3
+ensemble-mean,MFT,10_sad_scary_not_negative,너무 슬퍼서 펑펑 울었어요. 정말 좋은 영화입니다.,1,0.9865,1,1,2
+ensemble-mean,MFT,10_sad_scary_not_negative,주인공이 죽는 비극이지만 그래서 더 아름다웠다.,1,0.9592,1,1,3
+ensemble-mean,MFT,10_sad_scary_not_negative,무서워서 눈을 못 뜨겠더라고요. 공포영화로는 최고.,1,0.8777,1,1,3
+ensemble-mean,MFT,10_sad_scary_not_negative,잔인한 장면이 많지만 그만큼 강렬한 메시지를 남긴다.,1,0.9852,1,1,3
+ensemble-mean,MFT,10_sad_scary_not_negative,불편한 소재를 정말 잘 다뤘습니다.,1,0.5729,1,1,3
+ensemble-mean,MFT,10_sad_scary_not_negative,가슴이 먹먹해지는 영화. 꼭 보세요.,1,0.9873,1,1,2
+ensemble-mean,MFT,10_sad_scary_not_negative,웃긴 장면은 많았지만 코미디로서는 실패작.,0,0.0273,0,1,3
+ensemble-mean,MFT,10_sad_scary_not_negative,행복한 결말인데도 억지스러워서 짜증났다.,0,0.014,0,1,3
+ensemble-mean,MFT,10_sad_scary_not_negative,따뜻한 영화를 표방하지만 오글거리기만 한다.,0,0.0178,0,1,3
+ensemble-mean,MFT,11_aspect_scope,화질은 별로였지만 영화 자체는 명작.,1,0.9581,1,1,3
+ensemble-mean,MFT,11_aspect_scope,상영관 의자가 불편했던 것 빼면 영화는 완벽했어요.,1,0.9611,1,1,3
+ensemble-mean,MFT,11_aspect_scope,자막 오역이 좀 있었지만 작품은 훌륭합니다.,1,0.9348,1,1,3
+ensemble-mean,MFT,11_aspect_scope,음악은 좋았지만 그것 말고는 볼 게 없다.,0,0.0455,0,1,3
+ensemble-mean,MFT,11_aspect_scope,포스터만 멋있고 내용은 텅 비었다.,0,0.0168,0,1,2
+ensemble-mean,MFT,11_aspect_scope,주연은 잘했는데 나머지가 다 망쳤다.,0,0.0345,0,1,3
+ensemble-mean,MFT,11_aspect_scope,러닝타임이 긴 게 유일한 단점일 정도로 좋았습니다.,1,0.9812,1,1,3
+ensemble-mean,MFT,11_aspect_scope,음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요.,1,0.795,1,1,3
+ensemble-mean,MFT,11_aspect_scope,"연출력만 놓고 보면 대단한데, 영화로는 실패했다.",0,0.0735,0,1,3
+ensemble-mean,MFT,11_aspect_scope,볼거리는 확실한데 남는 게 없습니다.,0,0.0547,0,1,3
+ensemble-mean,MFT,11_aspect_scope,"배우 팬이라면 만족, 그 외엔 비추.",0,0.028,0,1,3
+ensemble-mean,MFT,11_aspect_scope,스토리는 진부하지만 감정선이 살아 있어 좋았다.,1,0.9756,1,1,3
+ensemble-mean,MFT,12_adversarial_lexical,최고라는 말이 많던데 최악이었다.,0,0.0205,0,1,3
+ensemble-mean,MFT,12_adversarial_lexical,명작이라는 광고에 속았다. 졸작.,0,0.0141,0,1,3
+ensemble-mean,MFT,12_adversarial_lexical,재밌다 재밌다 해서 봤는데 노잼.,0,0.3076,0,1,3
+ensemble-mean,MFT,12_adversarial_lexical,지루하다는 평이 많았지만 나는 정말 몰입해서 봤다.,1,0.9853,1,1,3
+ensemble-mean,MFT,12_adversarial_lexical,최악이라는 말은 과했다. 생각보다 괜찮았음.,1,0.6078,1,1,3
+ensemble-mean,MFT,12_adversarial_lexical,쓰레기라던 사람들 다 어디감? 개명작인데.,1,0.9641,1,1,3
+ensemble-mean,MFT,12_adversarial_lexical,재미없다는 리뷰에 동의할 수 없다. 훌륭했다.,1,0.9839,1,1,3
+ensemble-mean,MFT,12_adversarial_lexical,걸작이라고? 이건 그냥 시간낭비다.,0,0.0128,0,1,3
+ensemble-mean,MFT,12_adversarial_lexical,재미없을 거라는 편견을 완전히 깨줬습니다.,1,0.6746,1,1,3
+ensemble-mean,MFT,12_adversarial_lexical,지루하다는 말은 이 영화엔 어울리지 않아요.,1,0.3621,0,0,3
+ensemble-mean,MFT,12_adversarial_lexical,명작이라는 표현이 아깝지 않습니다.,1,0.9713,1,1,3
+ensemble-mean,MFT,12_adversarial_lexical,최악이라는 단어로도 부족합니다.,0,0.0402,0,1,3
+ensemble-mean,MFT,12_adversarial_lexical,훌륭하다는 평가는 도저히 못 하겠네요.,0,0.1112,0,1,3
+ensemble-mean,MFT,12_adversarial_lexical,감동적이라던데 저는 실소만 나왔습니다.,0,0.1961,0,1,3
+ensemble-mean,MFT,12_adversarial_lexical,걸작이라는 수식어가 부끄러운 수준.,0,0.0231,0,1,3
+ensemble-mean,MFT,12_adversarial_lexical,실망이라는 단어를 쓸 일이 없었어요. 계속 좋았습니다.,1,0.9672,1,1,3
+ensemble-mean,MFT,13_conditional_hypothetical,조금만 더 짧았으면 명작이었을 텐데 아쉽다.,0,0.7174,1,0,3
+ensemble-mean,MFT,13_conditional_hypothetical,주연이 바뀌었으면 훨씬 좋았을 것 같다.,0,0.3702,0,1,3
+ensemble-mean,MFT,13_conditional_hypothetical,기대만 안 했으면 괜찮게 봤을 듯.,0,0.1366,0,1,3
+ensemble-mean,MFT,13_conditional_hypothetical,무료로 봤으면 불만 없었을 텐데 돈 주고 보니 아깝다.,0,0.0308,0,1,3
+ensemble-mean,MFT,13_conditional_hypothetical,이런 영화가 더 많이 나왔으면 좋겠습니다.,1,0.933,1,1,2
+ensemble-mean,MFT,13_conditional_hypothetical,속편이 나온다면 무조건 볼 겁니다.,1,0.9189,1,1,2
+ensemble-mean,MFT,14_long_review,"친구 추천으로 아무 정보 없이 봤는데, 초반 30분은 인물 소개라 조금 늘어지는 느낌이 있었습니다. 그런데 사건이 터지는 순간부터 몰입도가 확 올라가더군요. 특히 후반 추격 시퀀스는 숨을 쉴 수가 없었어요. 배우들 연기도 과하지 않고 담백했고, 음악도 장면을 방해하지 않으면서 잘 받쳐줬습니다. 극장에서 볼 가치가 충분한 작품이라고 생각합니다.",1,0.9887,1,1,2
+ensemble-mean,MFT,14_long_review,"예고편이 워낙 좋아서 개봉일에 바로 예매했습니다. 결론부터 말하면 예고편이 전부인 영화였어요. 설정은 흥미로운데 그걸 풀어내는 방식이 너무 안일합니다. 인물들이 왜 저런 선택을 하는지 설명이 없고, 갈등도 우연으로 해결됩니다. 후반 30분은 시계만 봤네요. 배우들은 열심히 했는데 각본이 발목을 잡은 케이스.",0,0.0432,0,1,2
+ensemble-mean,MFT,14_long_review,"솔직히 상반기 최고작이라는 평은 과장이라고 생각합니다. 다만 그렇다고 못 만든 영화는 절대 아니에요. 촬영과 미술은 정말 공들인 티가 나고, 주연 배우의 눈빛 연기는 오래 기억에 남을 것 같습니다. 몇몇 장면의 편집이 아쉽긴 했지만 전체적으로는 만족스러웠고 주변에도 권할 생각입니다.",1,0.9691,1,1,3
+tfidf-lr,MFT,01_basic_pos_neg,정말 재미있게 봤습니다. 시간 가는 줄 몰랐어요.,1,0.9813,1,1,1
+tfidf-lr,MFT,01_basic_pos_neg,"연출, 연기, 음악 모두 완벽했다.",1,0.9769,1,1,1
+tfidf-lr,MFT,01_basic_pos_neg,올해 본 영화 중 최고. 강력 추천합니다.,1,0.9968,1,1,1
+tfidf-lr,MFT,01_basic_pos_neg,몰입감이 엄청나서 두 번 봤어요.,1,0.9653,1,1,1
+tfidf-lr,MFT,01_basic_pos_neg,기대 이상이었어요. 후회 없는 선택.,1,0.6419,1,1,1
+tfidf-lr,MFT,01_basic_pos_neg,배우들 연기가 정말 훌륭했습니다.,1,0.9052,1,1,1
+tfidf-lr,MFT,01_basic_pos_neg,여운이 오래 남는 좋은 작품이었어요.,1,0.9997,1,1,1
+tfidf-lr,MFT,01_basic_pos_neg,가족들과 보기 딱 좋은 따뜻한 영화.,1,0.9173,1,1,1
+tfidf-lr,MFT,01_basic_pos_neg,각본이 탄탄하고 결말도 만족스러웠다.,1,0.8956,1,1,1
+tfidf-lr,MFT,01_basic_pos_neg,돈이 아깝지 않은 영화였습니다.,1,0.669,1,1,2
+tfidf-lr,MFT,01_basic_pos_neg,너무 지루해서 중간에 나왔습니다.,0,0.0081,0,1,1
+tfidf-lr,MFT,01_basic_pos_neg,돈이 아까운 영화. 시간 낭비였다.,0,0.0008,0,1,1
+tfidf-lr,MFT,01_basic_pos_neg,스토리에 개연성이 하나도 없다.,0,0.0016,0,1,1
+tfidf-lr,MFT,01_basic_pos_neg,배우들 연기가 어색해서 몰입이 안 됐다.,0,0.0241,0,1,1
+tfidf-lr,MFT,01_basic_pos_neg,기대했는데 정말 실망스러웠어요.,0,0.0137,0,1,1
+tfidf-lr,MFT,01_basic_pos_neg,이런 영화를 왜 만들었는지 모르겠다.,0,0.0127,0,1,2
+tfidf-lr,MFT,01_basic_pos_neg,지루하고 뻔한 전개. 추천하지 않습니다.,0,0.0117,0,1,1
+tfidf-lr,MFT,01_basic_pos_neg,최악이었어요. 절대 보지 마세요.,0,0.0087,0,1,1
+tfidf-lr,MFT,01_basic_pos_neg,졸다가 끝났네요. 재미가 하나도 없음.,0,0.0038,0,1,1
+tfidf-lr,MFT,01_basic_pos_neg,감독이 뭘 말하고 싶었는지 전혀 모르겠다.,0,0.0039,0,1,2
+tfidf-lr,MFT,02_negation,재미없지 않았어요. 오히려 볼만했습니다.,1,0.6644,1,1,2
+tfidf-lr,MFT,02_negation,생각보다 지루하지 않았다.,1,0.907,1,1,2
+tfidf-lr,MFT,02_negation,돈이 아깝지는 않았습니다.,1,0.2757,0,0,2
+tfidf-lr,MFT,02_negation,실망스럽지 않은 영화였어요.,1,0.2313,0,0,2
+tfidf-lr,MFT,02_negation,결코 나쁘지 않은 작품.,1,0.9655,1,1,2
+tfidf-lr,MFT,02_negation,혹평만큼 형편없진 않았다.,1,0.2565,0,0,3
+tfidf-lr,MFT,02_negation,재미있지 않았어요.,0,0.7206,1,0,2
+tfidf-lr,MFT,02_negation,그다지 좋지 않았습니다.,0,0.0988,0,1,2
+tfidf-lr,MFT,02_negation,추천할 만한 영화는 아니에요.,0,0.6398,1,0,2
+tfidf-lr,MFT,02_negation,볼 가치가 없었다.,0,0.1726,0,1,2
+tfidf-lr,MFT,02_negation,전혀 감동적이지 않았다.,0,0.3515,0,1,2
+tfidf-lr,MFT,02_negation,다시 볼 생각은 없습니다.,0,0.4947,0,1,2
+tfidf-lr,MFT,02_negation,나쁘지 않았어요. 볼 만합니다.,1,0.8945,1,1,2
+tfidf-lr,MFT,02_negation,후회하지 않을 영화입니다.,1,0.8294,1,1,2
+tfidf-lr,MFT,02_negation,시간이 아깝지 않았어요.,1,0.8304,1,1,2
+tfidf-lr,MFT,02_negation,기대를 저버리지 않았다.,1,0.3407,0,0,3
+tfidf-lr,MFT,02_negation,지루할 틈이 없었습니다.,1,0.8522,1,1,2
+tfidf-lr,MFT,02_negation,실패하지 않는 선택입니다.,1,0.1942,0,0,3
+tfidf-lr,MFT,02_negation,재미를 느끼지 못했어요.,0,0.814,1,0,2
+tfidf-lr,MFT,02_negation,공감이 전혀 되지 않았다.,0,0.1547,0,1,2
+tfidf-lr,MFT,02_negation,몰입이 되지 않았습니다.,0,0.3811,0,1,2
+tfidf-lr,MFT,02_negation,돈 값을 못 하는 영화.,0,0.0363,0,1,2
+tfidf-lr,MFT,02_negation,굳이 극장에서 볼 필요는 없어요.,0,0.0787,0,1,3
+tfidf-lr,MFT,02_negation,두 번은 못 보겠다.,0,0.1841,0,1,2
+tfidf-lr,MFT,03_double_negation,재미없다고 할 수 없는 영화.,1,0.0615,0,0,3
+tfidf-lr,MFT,03_double_negation,안 볼 이유가 없다.,1,0.0125,0,0,3
+tfidf-lr,MFT,03_double_negation,싫어할 수 없는 매력이 있다.,1,0.2114,0,0,3
+tfidf-lr,MFT,03_double_negation,칭찬을 안 할 수가 없네요.,1,0.0968,0,0,3
+tfidf-lr,MFT,03_double_negation,실망하지 않을 수 없었다.,0,0.0614,0,1,3
+tfidf-lr,MFT,03_double_negation,화가 안 날 수가 없더군요.,0,0.3044,0,1,3
+tfidf-lr,MFT,03_double_negation,지루하지 않다고는 못 하겠다.,0,0.1232,0,1,3
+tfidf-lr,MFT,03_double_negation,좋았다고 말하긴 어렵다.,0,0.7307,1,0,3
+tfidf-lr,MFT,03_double_negation,재미없다는 말이 나올 수가 없다.,1,0.1414,0,0,3
+tfidf-lr,MFT,03_double_negation,추천 안 할 이유가 없네요.,1,0.0984,0,0,3
+tfidf-lr,MFT,03_double_negation,감탄하지 않을 수 없는 연출.,1,0.5566,1,1,3
+tfidf-lr,MFT,03_double_negation,불만이 없다고는 못 하지만 그래도 좋았다.,1,0.5404,1,1,3
+tfidf-lr,MFT,03_double_negation,좋다고 안 할 수가 없는 작품.,1,0.217,0,0,3
+tfidf-lr,MFT,03_double_negation,아쉽지 않다고 하기는 힘들다.,0,0.1428,0,1,3
+tfidf-lr,MFT,03_double_negation,실망 안 할 수가 없는 결말.,0,0.0057,0,1,3
+tfidf-lr,MFT,03_double_negation,돈이 안 아까울 수가 없다.,0,0.0019,0,1,3
+tfidf-lr,MFT,04_contrast_but,초반은 좀 지루했지만 후반부는 정말 압권이었다.,1,0.4908,0,0,2
+tfidf-lr,MFT,04_contrast_but,연출은 화려했지만 알맹이가 하나도 없었다.,0,0.0332,0,1,2
+tfidf-lr,MFT,04_contrast_but,배우들 연기는 좋았는데 각본이 다 망쳤다.,0,0.0334,0,1,2
+tfidf-lr,MFT,04_contrast_but,CG는 조잡했지만 이야기가 너무 좋아서 다 용서됨.,1,0.2132,0,0,2
+tfidf-lr,MFT,04_contrast_but,원작 팬으로서 아쉬운 점도 있었지만 전반적으로 훌륭한 각색.,1,0.4942,0,0,2
+tfidf-lr,MFT,04_contrast_but,소재는 참신했으나 결말이 최악이라 다 날려먹었다.,0,0.0056,0,1,2
+tfidf-lr,MFT,04_contrast_but,한 시간까지는 최고였는데 그 뒤로 완전히 무너진다.,0,0.7154,1,0,3
+tfidf-lr,MFT,04_contrast_but,기대를 안 하고 봐서 그런지 의외로 괜찮았다.,1,0.6648,1,1,2
+tfidf-lr,MFT,04_contrast_but,호불호는 갈리겠지만 나는 정말 좋았다.,1,0.9429,1,1,2
+tfidf-lr,MFT,04_contrast_but,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다.,0,0.1802,0,1,3
+tfidf-lr,MFT,04_contrast_but,전반부는 훌륭했으나 후반부가 다 망쳤습니다.,0,0.4325,0,1,2
+tfidf-lr,MFT,04_contrast_but,단점도 분명 있지만 그걸 덮고도 남는 영화.,1,0.6981,1,1,2
+tfidf-lr,MFT,04_contrast_but,기대작이었는데 딱 기대만큼만 하고 끝났다. 아쉽다.,0,0.1093,0,1,3
+tfidf-lr,MFT,04_contrast_but,화려하진 않지만 담백하고 진심이 느껴졌어요.,1,0.9732,1,1,3
+tfidf-lr,MFT,04_contrast_but,잘 만든 건 알겠는데 제 취향은 전혀 아니었습니다.,0,0.0237,0,1,3
+tfidf-lr,MFT,04_contrast_but,초반 진입장벽만 넘으면 정말 좋은 영화입니다.,1,0.4586,0,0,3
+tfidf-lr,MFT,04_contrast_but,배우는 최고인데 영화는 최악.,0,0.0145,0,1,2
+tfidf-lr,MFT,04_contrast_but,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천.,1,0.077,0,0,3
+tfidf-lr,MFT,04_contrast_but,결말이 열려 있어 호불호가 갈리겠지만 저는 만족했습니다.,1,0.9176,1,1,2
+tfidf-lr,MFT,04_contrast_but,소재는 좋았는데 그걸 살리지 못했다.,0,0.0213,0,1,2
+tfidf-lr,MFT,05_sarcasm_irony,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니.,0,0.5035,1,0,3
+tfidf-lr,MFT,05_sarcasm_irony,역대급입니다. 역대급으로 지루한.,0,0.5586,1,0,3
+tfidf-lr,MFT,05_sarcasm_irony,돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요.,0,0.6108,1,0,3
+tfidf-lr,MFT,05_sarcasm_irony,감독님 다음 작품도 기대할게요... 안 볼 거지만.,0,0.5446,1,0,3
+tfidf-lr,MFT,05_sarcasm_irony,잠이 안 올 때 보세요. 수면제보다 낫습니다.,0,0.2279,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,시간 순삭이네요. 세 시간이 삼십 시간 같았어요.,0,0.3398,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,명작이네요 명작. 화장실 갈 타이밍 잡기 딱 좋은.,0,0.8711,1,0,3
+tfidf-lr,MFT,05_sarcasm_irony,주연배우 팬이라 별 하나 드립니다.,0,0.0721,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,이 영화 보고 인생이 바뀌었어요. 극장 가는 걸 끊었거든요.,0,0.6818,1,0,3
+tfidf-lr,MFT,05_sarcasm_irony,두 시간 동안 아주 푹 쉬다 왔습니다.,0,0.4901,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,각본가님 천재 아니신가요? 이런 전개는 아무나 못 씁니다.,0,0.1282,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,돈 버리는 방법을 알려드립니다. 이 영화 예매하세요.,0,0.188,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,불면증 있으신 분들께 강력 추천드립니다.,0,0.4114,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,아 정말 좋은 영화네요. 중간에 나올 용기를 줘서.,0,0.8039,1,0,3
+tfidf-lr,MFT,05_sarcasm_irony,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견.,0,0.7412,1,0,3
+tfidf-lr,MFT,05_sarcasm_irony,팝콘이 참 맛있었습니다.,0,0.561,1,0,3
+tfidf-lr,MFT,05_sarcasm_irony,CG에 돈 다 썼나 봐요. 각본 쓸 돈이 없었나.,0,0.0027,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,졸음 방지용으로 커피 꼭 챙기세요.,0,0.1618,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,역시 기대를 저버리지 않네요. 늘 그랬듯 실망시켰습니다.,0,0.297,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,이걸 극장에서 봤다는 게 제 인생 최대 업적입니다.,0,0.296,0,1,3
+tfidf-lr,MFT,05_sarcasm_irony,이 감독 진짜 못됐어요. 사람 울리는 데 선수네요.,1,0.8517,1,1,3
+tfidf-lr,MFT,05_sarcasm_irony,돈 아깝네요. 티켓값이 이 퀄리티에 비해 너무 쌉니다.,1,0.135,0,0,3
+tfidf-lr,MFT,05_sarcasm_irony,화나네요. 이렇게 좋은 걸 이제야 봤다는 게.,1,0.9028,1,1,3
+tfidf-lr,MFT,05_sarcasm_irony,이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요.,1,0.4503,0,0,3
+tfidf-lr,MFT,05_sarcasm_irony,최악입니다. 이걸 보고 나니 다른 영화가 다 시시해졌어요.,1,0.0959,0,0,3
+tfidf-lr,MFT,05_sarcasm_irony,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요.,1,0.1476,0,0,3
+tfidf-lr,MFT,06_comparative,전작보다 훨씬 낫다.,1,0.3704,0,0,2
+tfidf-lr,MFT,06_comparative,전작보다 못하다.,0,0.0761,0,1,2
+tfidf-lr,MFT,06_comparative,원작보다는 못해도 충분히 재밌었다.,1,0.9808,1,1,3
+tfidf-lr,MFT,06_comparative,비슷한 장르 중에선 제일 별로였다.,0,0.053,0,1,2
+tfidf-lr,MFT,06_comparative,이 감독 작품 중 최고작.,1,0.9257,1,1,1
+tfidf-lr,MFT,06_comparative,이 감독 작품 중 가장 아쉽다.,0,0.6766,1,0,2
+tfidf-lr,MFT,06_comparative,2편이 1편을 뛰어넘었다.,1,0.8066,1,1,2
+tfidf-lr,MFT,06_comparative,1편의 발끝에도 못 미친다.,0,0.0673,0,1,2
+tfidf-lr,MFT,06_comparative,올해 본 영화 중에 이만한 게 없었다.,1,0.9148,1,1,2
+tfidf-lr,MFT,06_comparative,올해 본 영화 중 이만큼 지루한 건 없었다.,0,0.1047,0,1,2
+tfidf-lr,MFT,06_comparative,헐리우드 대작들보다 훨씬 알차다.,1,0.7606,1,1,2
+tfidf-lr,MFT,06_comparative,차라리 예고편만 보는 게 낫다.,0,0.0037,0,1,3
+tfidf-lr,MFT,06_comparative,집에서 티비로 봤어도 충분했을 영화.,0,0.6599,1,0,3
+tfidf-lr,MFT,06_comparative,극장값이 전혀 아깝지 않은 스케일.,1,0.711,1,1,2
+tfidf-lr,MFT,07_reported_opinion,평이 좋길래 봤는데 저한텐 별로였어요.,0,0.1061,0,1,2
+tfidf-lr,MFT,07_reported_opinion,혹평이 많던데 전 재밌게 봤습니다.,1,0.9622,1,1,2
+tfidf-lr,MFT,07_reported_opinion,친구는 재밌다는데 저는 도저히 못 보겠더라고요.,0,0.1273,0,1,2
+tfidf-lr,MFT,07_reported_opinion,다들 별로라지만 제 인생영화입니다.,1,0.7029,1,1,2
+tfidf-lr,MFT,07_reported_opinion,예고편은 최고였는데 본편은 실망.,0,0.1332,0,1,2
+tfidf-lr,MFT,07_reported_opinion,광고는 걸작이라던데 실제로는 졸작.,0,0.1814,0,1,2
+tfidf-lr,MFT,07_reported_opinion,평점 믿고 갔다가 후회했습니다.,0,0.2687,0,1,3
+tfidf-lr,MFT,07_reported_opinion,평점이 낮아서 걱정했는데 괜한 걱정이었네요.,1,0.984,1,1,3
+tfidf-lr,MFT,07_reported_opinion,주변에서 다 말렸는데 보길 잘했어요.,1,0.9193,1,1,3
+tfidf-lr,MFT,07_reported_opinion,평론가 점수는 낮던데 관객 입장에선 충분히 재밌습니다.,1,0.9707,1,1,3
+tfidf-lr,MFT,07_reported_opinion,입소문 듣고 갔다가 시간만 버렸네요.,0,0.076,0,1,2
+tfidf-lr,MFT,07_reported_opinion,호평 일색이던데 저만 이상한가요? 정말 별로였습니다.,0,0.0607,0,1,2
+tfidf-lr,MFT,07_reported_opinion,악평 보고 기대 없이 갔는데 의외의 수확이었어요.,1,0.9772,1,1,3
+tfidf-lr,MFT,07_reported_opinion,추천해준 친구랑 절교하고 싶습니다.,0,0.5111,1,0,3
+tfidf-lr,MFT,07_reported_opinion,리뷰가 왜 좋은지 알겠더라고요. 정말 잘 만들었습니다.,1,0.7605,1,1,2
+tfidf-lr,MFT,07_reported_opinion,별점 테러가 이해되는 영화였습니다.,0,0.7846,1,0,3
+tfidf-lr,MFT,08_rating_expr,별점 1점도 아깝다.,0,0.0001,0,1,2
+tfidf-lr,MFT,08_rating_expr,10점 만점에 10점.,1,0.9909,1,1,2
+tfidf-lr,MFT,08_rating_expr,★★★★★,1,0.7607,1,1,2
+tfidf-lr,MFT,08_rating_expr,★☆☆☆☆,0,0.7572,1,0,2
+tfidf-lr,MFT,08_rating_expr,5점 만점에 1점 드립니다.,0,0.1502,0,1,2
+tfidf-lr,MFT,08_rating_expr,평점 9.5점 인정합니다.,1,0.8094,1,1,2
+tfidf-lr,MFT,08_rating_expr,0점 주고 싶은데 최소가 1점이라 1점 줍니다.,0,0.0149,0,1,3
+tfidf-lr,MFT,08_rating_expr,만점 줍니다 만점.,1,0.9217,1,1,2
+tfidf-lr,MFT,09_slang_internet,ㄹㅇ 개꿀잼 ㅋㅋㅋㅋ,1,0.9457,1,1,2
+tfidf-lr,MFT,09_slang_internet,노잼 그 자체,0,0.0059,0,1,1
+tfidf-lr,MFT,09_slang_internet,존잼임 강추,1,0.8975,1,1,1
+tfidf-lr,MFT,09_slang_internet,발연기 오지네요 진짜,0,0.0545,0,1,2
+tfidf-lr,MFT,09_slang_internet,핵노잼 ㅡㅡ,0,0.0011,0,1,1
+tfidf-lr,MFT,09_slang_internet,인생영화 등극 ㅠㅠ 너무 좋았음,1,0.989,1,1,1
+tfidf-lr,MFT,09_slang_internet,시간 순삭 ㄱㅇㄷ,1,0.3685,0,0,2
+tfidf-lr,MFT,09_slang_internet,돈아까움 진짜,0,0.0032,0,1,1
+tfidf-lr,MFT,09_slang_internet,띵작 ㅇㅈ,1,0.4517,0,0,3
+tfidf-lr,MFT,09_slang_internet,국뽕 오지지만 그래도 재밌음,1,0.9653,1,1,3
+tfidf-lr,MFT,09_slang_internet,총체적 난국이네요,0,0.1303,0,1,2
+tfidf-lr,MFT,09_slang_internet,보다가 폰만 봤네요,0,0.276,0,1,3
+tfidf-lr,MFT,10_sad_scary_not_negative,너무 슬퍼서 펑펑 울었어요. 정말 좋은 영화입니다.,1,0.9992,1,1,2
+tfidf-lr,MFT,10_sad_scary_not_negative,주인공이 죽는 비극이지만 그래서 더 아름다웠다.,1,0.7356,1,1,3
+tfidf-lr,MFT,10_sad_scary_not_negative,무서워서 눈을 못 뜨겠더라고요. 공포영화로는 최고.,1,0.9163,1,1,3
+tfidf-lr,MFT,10_sad_scary_not_negative,잔인한 장면이 많지만 그만큼 강렬한 메시지를 남긴다.,1,0.9594,1,1,3
+tfidf-lr,MFT,10_sad_scary_not_negative,불편한 소재를 정말 잘 다뤘습니다.,1,0.3337,0,0,3
+tfidf-lr,MFT,10_sad_scary_not_negative,가슴이 먹먹해지는 영화. 꼭 보세요.,1,0.9991,1,1,2
+tfidf-lr,MFT,10_sad_scary_not_negative,웃긴 장면은 많았지만 코미디로서는 실패작.,0,0.0622,0,1,3
+tfidf-lr,MFT,10_sad_scary_not_negative,행복한 결말인데도 억지스러워서 짜증났다.,0,0.1467,0,1,3
+tfidf-lr,MFT,10_sad_scary_not_negative,따뜻한 영화를 표방하지만 오글거리기만 한다.,0,0.1627,0,1,3
+tfidf-lr,MFT,11_aspect_scope,화질은 별로였지만 영화 자체는 명작.,1,0.5274,1,1,3
+tfidf-lr,MFT,11_aspect_scope,상영관 의자가 불편했던 것 빼면 영화는 완벽했어요.,1,0.7394,1,1,3
+tfidf-lr,MFT,11_aspect_scope,자막 오역이 좀 있었지만 작품은 훌륭합니다.,1,0.851,1,1,3
+tfidf-lr,MFT,11_aspect_scope,음악은 좋았지만 그것 말고는 볼 게 없다.,0,0.0463,0,1,3
+tfidf-lr,MFT,11_aspect_scope,포스터만 멋있고 내용은 텅 비었다.,0,0.398,0,1,2
+tfidf-lr,MFT,11_aspect_scope,주연은 잘했는데 나머지가 다 망쳤다.,0,0.1757,0,1,3
+tfidf-lr,MFT,11_aspect_scope,러닝타임이 긴 게 유일한 단점일 정도로 좋았습니다.,1,0.8829,1,1,3
+tfidf-lr,MFT,11_aspect_scope,음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요.,1,0.6817,1,1,3
+tfidf-lr,MFT,11_aspect_scope,"연출력만 놓고 보면 대단한데, 영화로는 실패했다.",0,0.1455,0,1,3
+tfidf-lr,MFT,11_aspect_scope,볼거리는 확실한데 남는 게 없습니다.,0,0.2735,0,1,3
+tfidf-lr,MFT,11_aspect_scope,"배우 팬이라면 만족, 그 외엔 비추.",0,0.1111,0,1,3
+tfidf-lr,MFT,11_aspect_scope,스토리는 진부하지만 감정선이 살아 있어 좋았다.,1,0.8728,1,1,3
+tfidf-lr,MFT,12_adversarial_lexical,최고라는 말이 많던데 최악이었다.,0,0.6546,1,0,3
+tfidf-lr,MFT,12_adversarial_lexical,명작이라는 광고에 속았다. 졸작.,0,0.0165,0,1,3
+tfidf-lr,MFT,12_adversarial_lexical,재밌다 재밌다 해서 봤는데 노잼.,0,0.5774,1,0,3
+tfidf-lr,MFT,12_adversarial_lexical,지루하다는 평이 많았지만 나는 정말 몰입해서 봤다.,1,0.6712,1,1,3
+tfidf-lr,MFT,12_adversarial_lexical,최악이라는 말은 과했다. 생각보다 괜찮았음.,1,0.3672,0,0,3
+tfidf-lr,MFT,12_adversarial_lexical,쓰레기라던 사람들 다 어디감? 개명작인데.,1,0.1816,0,0,3
+tfidf-lr,MFT,12_adversarial_lexical,재미없다는 리뷰에 동의할 수 없다. 훌륭했다.,1,0.5276,1,1,3
+tfidf-lr,MFT,12_adversarial_lexical,걸작이라고? 이건 그냥 시간낭비다.,0,0.011,0,1,3
+tfidf-lr,MFT,12_adversarial_lexical,재미없을 거라는 편견을 완전히 깨줬습니다.,1,0.6298,1,1,3
+tfidf-lr,MFT,12_adversarial_lexical,지루하다는 말은 이 영화엔 어울리지 않아요.,1,0.2782,0,0,3
+tfidf-lr,MFT,12_adversarial_lexical,명작이라는 표현이 아깝지 않습니다.,1,0.9592,1,1,3
+tfidf-lr,MFT,12_adversarial_lexical,최악이라는 단어로도 부족합니다.,0,0.0274,0,1,3
+tfidf-lr,MFT,12_adversarial_lexical,훌륭하다는 평가는 도저히 못 하겠네요.,0,0.4778,0,1,3
+tfidf-lr,MFT,12_adversarial_lexical,감동적이라던데 저는 실소만 나왔습니다.,0,0.4794,0,1,3
+tfidf-lr,MFT,12_adversarial_lexical,걸작이라는 수식어가 부끄러운 수준.,0,0.3786,0,1,3
+tfidf-lr,MFT,12_adversarial_lexical,실망이라는 단어를 쓸 일이 없었어요. 계속 좋았습니다.,1,0.4352,0,0,3
+tfidf-lr,MFT,13_conditional_hypothetical,조금만 더 짧았으면 명작이었을 텐데 아쉽다.,0,0.8002,1,0,3
+tfidf-lr,MFT,13_conditional_hypothetical,주연이 바뀌었으면 훨씬 좋았을 것 같다.,0,0.3971,0,1,3
+tfidf-lr,MFT,13_conditional_hypothetical,기대만 안 했으면 괜찮게 봤을 듯.,0,0.2702,0,1,3
+tfidf-lr,MFT,13_conditional_hypothetical,무료로 봤으면 불만 없었을 텐데 돈 주고 보니 아깝다.,0,0.0019,0,1,3
+tfidf-lr,MFT,13_conditional_hypothetical,이런 영화가 더 많이 나왔으면 좋겠습니다.,1,0.825,1,1,2
+tfidf-lr,MFT,13_conditional_hypothetical,속편이 나온다면 무조건 볼 겁니다.,1,0.5323,1,1,2
+tfidf-lr,MFT,14_long_review,"친구 추천으로 아무 정보 없이 봤는데, 초반 30분은 인물 소개라 조금 늘어지는 느낌이 있었습니다. 그런데 사건이 터지는 순간부터 몰입도가 확 올라가더군요. 특히 후반 추격 시퀀스는 숨을 쉴 수가 없었어요. 배우들 연기도 과하지 않고 담백했고, 음악도 장면을 방해하지 않으면서 잘 받쳐줬습니다. 극장에서 볼 가치가 충분한 작품이라고 생각합니다.",1,0.9803,1,1,2
+tfidf-lr,MFT,14_long_review,"예고편이 워낙 좋아서 개봉일에 바로 예매했습니다. 결론부터 말하면 예고편이 전부인 영화였어요. 설정은 흥미로운데 그걸 풀어내는 방식이 너무 안일합니다. 인물들이 왜 저런 선택을 하는지 설명이 없고, 갈등도 우연으로 해결됩니다. 후반 30분은 시계만 봤네요. 배우들은 열심히 했는데 각본이 발목을 잡은 케이스.",0,0.1424,0,1,2
+tfidf-lr,MFT,14_long_review,"솔직히 상반기 최고작이라는 평은 과장이라고 생각합니다. 다만 그렇다고 못 만든 영화는 절대 아니에요. 촬영과 미술은 정말 공들인 티가 나고, 주연 배우의 눈빛 연기는 오래 기억에 남을 것 같습니다. 몇몇 장면의 편집이 아쉽긴 했지만 전체적으로는 만족스러웠고 주변에도 권할 생각입니다.",1,0.9486,1,1,3
+lexicon-baseline,MFT,01_basic_pos_neg,정말 재미있게 봤습니다. 시간 가는 줄 몰랐어요.,1,0.9241,1,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,"연출, 연기, 음악 모두 완벽했다.",1,0.9241,1,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,올해 본 영화 중 최고. 강력 추천합니다.,1,0.9241,1,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,몰입감이 엄청나서 두 번 봤어요.,1,0.9241,1,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,기대 이상이었어요. 후회 없는 선택.,1,0.5,1,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,배우들 연기가 정말 훌륭했습니다.,1,0.9241,1,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,여운이 오래 남는 좋은 작품이었어요.,1,0.9241,1,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,가족들과 보기 딱 좋은 따뜻한 영화.,1,0.9241,1,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,각본이 탄탄하고 결말도 만족스러웠다.,1,0.9241,1,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,돈이 아깝지 않은 영화였습니다.,1,0.5,1,1,2
+lexicon-baseline,MFT,01_basic_pos_neg,너무 지루해서 중간에 나왔습니다.,0,0.0759,0,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,돈이 아까운 영화. 시간 낭비였다.,0,0.0759,0,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,스토리에 개연성이 하나도 없다.,0,0.5,1,0,1
+lexicon-baseline,MFT,01_basic_pos_neg,배우들 연기가 어색해서 몰입이 안 됐다.,0,0.5,1,0,1
+lexicon-baseline,MFT,01_basic_pos_neg,기대했는데 정말 실망스러웠어요.,0,0.0759,0,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,이런 영화를 왜 만들었는지 모르겠다.,0,0.5,1,0,2
+lexicon-baseline,MFT,01_basic_pos_neg,지루하고 뻔한 전개. 추천하지 않습니다.,0,0.3029,0,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,최악이었어요. 절대 보지 마세요.,0,0.0759,0,1,1
+lexicon-baseline,MFT,01_basic_pos_neg,졸다가 끝났네요. 재미가 하나도 없음.,0,0.9241,1,0,1
+lexicon-baseline,MFT,01_basic_pos_neg,감독이 뭘 말하고 싶었는지 전혀 모르겠다.,0,0.5,1,0,2
+lexicon-baseline,MFT,02_negation,재미없지 않았어요. 오히려 볼만했습니다.,1,0.5,1,1,2
+lexicon-baseline,MFT,02_negation,생각보다 지루하지 않았다.,1,0.0759,0,0,2
+lexicon-baseline,MFT,02_negation,돈이 아깝지는 않았습니다.,1,0.5,1,1,2
+lexicon-baseline,MFT,02_negation,실망스럽지 않은 영화였어요.,1,0.0759,0,0,2
+lexicon-baseline,MFT,02_negation,결코 나쁘지 않은 작품.,1,0.5,1,1,2
+lexicon-baseline,MFT,02_negation,혹평만큼 형편없진 않았다.,1,0.0759,0,0,3
+lexicon-baseline,MFT,02_negation,재미있지 않았어요.,0,0.9241,1,0,2
+lexicon-baseline,MFT,02_negation,그다지 좋지 않았습니다.,0,0.9241,1,0,2
+lexicon-baseline,MFT,02_negation,추천할 만한 영화는 아니에요.,0,0.9241,1,0,2
+lexicon-baseline,MFT,02_negation,볼 가치가 없었다.,0,0.5,1,0,2
+lexicon-baseline,MFT,02_negation,전혀 감동적이지 않았다.,0,0.9241,1,0,2
+lexicon-baseline,MFT,02_negation,다시 볼 생각은 없습니다.,0,0.5,1,0,2
+lexicon-baseline,MFT,02_negation,나쁘지 않았어요. 볼 만합니다.,1,0.5,1,1,2
+lexicon-baseline,MFT,02_negation,후회하지 않을 영화입니다.,1,0.5,1,1,2
+lexicon-baseline,MFT,02_negation,시간이 아깝지 않았어요.,1,0.5,1,1,2
+lexicon-baseline,MFT,02_negation,기대를 저버리지 않았다.,1,0.5,1,1,3
+lexicon-baseline,MFT,02_negation,지루할 틈이 없었습니다.,1,0.0759,0,0,2
+lexicon-baseline,MFT,02_negation,실패하지 않는 선택입니다.,1,0.5,1,1,3
+lexicon-baseline,MFT,02_negation,재미를 느끼지 못했어요.,0,0.9241,1,0,2
+lexicon-baseline,MFT,02_negation,공감이 전혀 되지 않았다.,0,0.5,1,0,2
+lexicon-baseline,MFT,02_negation,몰입이 되지 않았습니다.,0,0.9241,1,0,2
+lexicon-baseline,MFT,02_negation,돈 값을 못 하는 영화.,0,0.5,1,0,2
+lexicon-baseline,MFT,02_negation,굳이 극장에서 볼 필요는 없어요.,0,0.5,1,0,3
+lexicon-baseline,MFT,02_negation,두 번은 못 보겠다.,0,0.5,1,0,2
+lexicon-baseline,MFT,03_double_negation,재미없다고 할 수 없는 영화.,1,0.5,1,1,3
+lexicon-baseline,MFT,03_double_negation,안 볼 이유가 없다.,1,0.5,1,1,3
+lexicon-baseline,MFT,03_double_negation,싫어할 수 없는 매력이 있다.,1,0.5,1,1,3
+lexicon-baseline,MFT,03_double_negation,칭찬을 안 할 수가 없네요.,1,0.5,1,1,3
+lexicon-baseline,MFT,03_double_negation,실망하지 않을 수 없었다.,0,0.0759,0,1,3
+lexicon-baseline,MFT,03_double_negation,화가 안 날 수가 없더군요.,0,0.5,1,0,3
+lexicon-baseline,MFT,03_double_negation,지루하지 않다고는 못 하겠다.,0,0.0759,0,1,3
+lexicon-baseline,MFT,03_double_negation,좋았다고 말하긴 어렵다.,0,0.9241,1,0,3
+lexicon-baseline,MFT,03_double_negation,재미없다는 말이 나올 수가 없다.,1,0.5,1,1,3
+lexicon-baseline,MFT,03_double_negation,추천 안 할 이유가 없네요.,1,0.9241,1,1,3
+lexicon-baseline,MFT,03_double_negation,감탄하지 않을 수 없는 연출.,1,0.5,1,1,3
+lexicon-baseline,MFT,03_double_negation,불만이 없다고는 못 하지만 그래도 좋았다.,1,0.9241,1,1,3
+lexicon-baseline,MFT,03_double_negation,좋다고 안 할 수가 없는 작품.,1,0.9241,1,1,3
+lexicon-baseline,MFT,03_double_negation,아쉽지 않다고 하기는 힘들다.,0,0.5,1,0,3
+lexicon-baseline,MFT,03_double_negation,실망 안 할 수가 없는 결말.,0,0.0759,0,1,3
+lexicon-baseline,MFT,03_double_negation,돈이 안 아까울 수가 없다.,0,0.0759,0,1,3
+lexicon-baseline,MFT,04_contrast_but,초반은 좀 지루했지만 후반부는 정말 압권이었다.,1,0.5,1,1,2
+lexicon-baseline,MFT,04_contrast_but,연출은 화려했지만 알맹이가 하나도 없었다.,0,0.5,1,0,2
+lexicon-baseline,MFT,04_contrast_but,배우들 연기는 좋았는데 각본이 다 망쳤다.,0,0.5,1,0,2
+lexicon-baseline,MFT,04_contrast_but,CG는 조잡했지만 이야기가 너무 좋아서 다 용서됨.,1,0.9241,1,1,2
+lexicon-baseline,MFT,04_contrast_but,원작 팬으로서 아쉬운 점도 있었지만 전반적으로 훌륭한 각색.,1,0.9241,1,1,2
+lexicon-baseline,MFT,04_contrast_but,소재는 참신했으나 결말이 최악이라 다 날려먹었다.,0,0.0759,0,1,2
+lexicon-baseline,MFT,04_contrast_but,한 시간까지는 최고였는데 그 뒤로 완전히 무너진다.,0,0.9241,1,0,3
+lexicon-baseline,MFT,04_contrast_but,기대를 안 하고 봐서 그런지 의외로 괜찮았다.,1,0.5,1,1,2
+lexicon-baseline,MFT,04_contrast_but,호불호는 갈리겠지만 나는 정말 좋았다.,1,0.9241,1,1,2
+lexicon-baseline,MFT,04_contrast_but,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,04_contrast_but,전반부는 훌륭했으나 후반부가 다 망쳤습니다.,0,0.5,1,0,2
+lexicon-baseline,MFT,04_contrast_but,단점도 분명 있지만 그걸 덮고도 남는 영화.,1,0.5,1,1,2
+lexicon-baseline,MFT,04_contrast_but,기대작이었는데 딱 기대만큼만 하고 끝났다. 아쉽다.,0,0.5,1,0,3
+lexicon-baseline,MFT,04_contrast_but,화려하진 않지만 담백하고 진심이 느껴졌어요.,1,0.5,1,1,3
+lexicon-baseline,MFT,04_contrast_but,잘 만든 건 알겠는데 제 취향은 전혀 아니었습니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,04_contrast_but,초반 진입장벽만 넘으면 정말 좋은 영화입니다.,1,0.9241,1,1,3
+lexicon-baseline,MFT,04_contrast_but,배우는 최고인데 영화는 최악.,0,0.5,1,0,2
+lexicon-baseline,MFT,04_contrast_but,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천.,1,0.6971,1,1,3
+lexicon-baseline,MFT,04_contrast_but,결말이 열려 있어 호불호가 갈리겠지만 저는 만족했습니다.,1,0.9241,1,1,2
+lexicon-baseline,MFT,04_contrast_but,소재는 좋았는데 그걸 살리지 못했다.,0,0.9241,1,0,2
+lexicon-baseline,MFT,05_sarcasm_irony,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,역대급입니다. 역대급으로 지루한.,0,0.0759,0,1,3
+lexicon-baseline,MFT,05_sarcasm_irony,돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,감독님 다음 작품도 기대할게요... 안 볼 거지만.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,잠이 안 올 때 보세요. 수면제보다 낫습니다.,0,0.9241,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,시간 순삭이네요. 세 시간이 삼십 시간 같았어요.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,명작이네요 명작. 화장실 갈 타이밍 잡기 딱 좋은.,0,0.9241,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,주연배우 팬이라 별 하나 드립니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,이 영화 보고 인생이 바뀌었어요. 극장 가는 걸 끊었거든요.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,두 시간 동안 아주 푹 쉬다 왔습니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,각본가님 천재 아니신가요? 이런 전개는 아무나 못 씁니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,돈 버리는 방법을 알려드립니다. 이 영화 예매하세요.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,불면증 있으신 분들께 강력 추천드립니다.,0,0.9241,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,아 정말 좋은 영화네요. 중간에 나올 용기를 줘서.,0,0.9241,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,팝콘이 참 맛있었습니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,CG에 돈 다 썼나 봐요. 각본 쓸 돈이 없었나.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,졸음 방지용으로 커피 꼭 챙기세요.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,역시 기대를 저버리지 않네요. 늘 그랬듯 실망시켰습니다.,0,0.0759,0,1,3
+lexicon-baseline,MFT,05_sarcasm_irony,이걸 극장에서 봤다는 게 제 인생 최대 업적입니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,이 감독 진짜 못됐어요. 사람 울리는 데 선수네요.,1,0.5,1,1,3
+lexicon-baseline,MFT,05_sarcasm_irony,돈 아깝네요. 티켓값이 이 퀄리티에 비해 너무 쌉니다.,1,0.5,1,1,3
+lexicon-baseline,MFT,05_sarcasm_irony,화나네요. 이렇게 좋은 걸 이제야 봤다는 게.,1,0.9241,1,1,3
+lexicon-baseline,MFT,05_sarcasm_irony,이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요.,1,0.5,1,1,3
+lexicon-baseline,MFT,05_sarcasm_irony,최악입니다. 이걸 보고 나니 다른 영화가 다 시시해졌어요.,1,0.0759,0,0,3
+lexicon-baseline,MFT,05_sarcasm_irony,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요.,1,0.5,1,1,3
+lexicon-baseline,MFT,06_comparative,전작보다 훨씬 낫다.,1,0.9241,1,1,2
+lexicon-baseline,MFT,06_comparative,전작보다 못하다.,0,0.5,1,0,2
+lexicon-baseline,MFT,06_comparative,원작보다는 못해도 충분히 재밌었다.,1,0.9241,1,1,3
+lexicon-baseline,MFT,06_comparative,비슷한 장르 중에선 제일 별로였다.,0,0.0759,0,1,2
+lexicon-baseline,MFT,06_comparative,이 감독 작품 중 최고작.,1,0.9241,1,1,1
+lexicon-baseline,MFT,06_comparative,이 감독 작품 중 가장 아쉽다.,0,0.5,1,0,2
+lexicon-baseline,MFT,06_comparative,2편이 1편을 뛰어넘었다.,1,0.5,1,1,2
+lexicon-baseline,MFT,06_comparative,1편의 발끝에도 못 미친다.,0,0.5,1,0,2
+lexicon-baseline,MFT,06_comparative,올해 본 영화 중에 이만한 게 없었다.,1,0.5,1,1,2
+lexicon-baseline,MFT,06_comparative,올해 본 영화 중 이만큼 지루한 건 없었다.,0,0.0759,0,1,2
+lexicon-baseline,MFT,06_comparative,헐리우드 대작들보다 훨씬 알차다.,1,0.5,1,1,2
+lexicon-baseline,MFT,06_comparative,차라리 예고편만 보는 게 낫다.,0,0.9241,1,0,3
+lexicon-baseline,MFT,06_comparative,집에서 티비로 봤어도 충분했을 영화.,0,0.5,1,0,3
+lexicon-baseline,MFT,06_comparative,극장값이 전혀 아깝지 않은 스케일.,1,0.5,1,1,2
+lexicon-baseline,MFT,07_reported_opinion,평이 좋길래 봤는데 저한텐 별로였어요.,0,0.5,1,0,2
+lexicon-baseline,MFT,07_reported_opinion,혹평이 많던데 전 재밌게 봤습니다.,1,0.5,1,1,2
+lexicon-baseline,MFT,07_reported_opinion,친구는 재밌다는데 저는 도저히 못 보겠더라고요.,0,0.9241,1,0,2
+lexicon-baseline,MFT,07_reported_opinion,다들 별로라지만 제 인생영화입니다.,1,0.5,1,1,2
+lexicon-baseline,MFT,07_reported_opinion,예고편은 최고였는데 본편은 실망.,0,0.3029,0,1,2
+lexicon-baseline,MFT,07_reported_opinion,광고는 걸작이라던데 실제로는 졸작.,0,0.0759,0,1,2
+lexicon-baseline,MFT,07_reported_opinion,평점 믿고 갔다가 후회했습니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,07_reported_opinion,평점이 낮아서 걱정했는데 괜한 걱정이었네요.,1,0.5,1,1,3
+lexicon-baseline,MFT,07_reported_opinion,주변에서 다 말렸는데 보길 잘했어요.,1,0.5,1,1,3
+lexicon-baseline,MFT,07_reported_opinion,평론가 점수는 낮던데 관객 입장에선 충분히 재밌습니다.,1,0.9241,1,1,3
+lexicon-baseline,MFT,07_reported_opinion,입소문 듣고 갔다가 시간만 버렸네요.,0,0.5,1,0,2
+lexicon-baseline,MFT,07_reported_opinion,호평 일색이던데 저만 이상한가요? 정말 별로였습니다.,0,0.0759,0,1,2
+lexicon-baseline,MFT,07_reported_opinion,악평 보고 기대 없이 갔는데 의외의 수확이었어요.,1,0.5,1,1,3
+lexicon-baseline,MFT,07_reported_opinion,추천해준 친구랑 절교하고 싶습니다.,0,0.9241,1,0,3
+lexicon-baseline,MFT,07_reported_opinion,리뷰가 왜 좋은지 알겠더라고요. 정말 잘 만들었습니다.,1,0.9241,1,1,2
+lexicon-baseline,MFT,07_reported_opinion,별점 테러가 이해되는 영화였습니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,08_rating_expr,별점 1점도 아깝다.,0,0.5,1,0,2
+lexicon-baseline,MFT,08_rating_expr,10점 만점에 10점.,1,0.5,1,1,2
+lexicon-baseline,MFT,08_rating_expr,★★★★★,1,0.5,1,1,2
+lexicon-baseline,MFT,08_rating_expr,★☆☆☆☆,0,0.5,1,0,2
+lexicon-baseline,MFT,08_rating_expr,5점 만점에 1점 드립니다.,0,0.5,1,0,2
+lexicon-baseline,MFT,08_rating_expr,평점 9.5점 인정합니다.,1,0.5,1,1,2
+lexicon-baseline,MFT,08_rating_expr,0점 주고 싶은데 최소가 1점이라 1점 줍니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,08_rating_expr,만점 줍니다 만점.,1,0.5,1,1,2
+lexicon-baseline,MFT,09_slang_internet,ㄹㅇ 개꿀잼 ㅋㅋㅋㅋ,1,0.9241,1,1,2
+lexicon-baseline,MFT,09_slang_internet,노잼 그 자체,0,0.0759,0,1,1
+lexicon-baseline,MFT,09_slang_internet,존잼임 강추,1,0.9241,1,1,1
+lexicon-baseline,MFT,09_slang_internet,발연기 오지네요 진짜,0,0.0759,0,1,2
+lexicon-baseline,MFT,09_slang_internet,핵노잼 ㅡㅡ,0,0.0759,0,1,1
+lexicon-baseline,MFT,09_slang_internet,인생영화 등극 ㅠㅠ 너무 좋았음,1,0.9241,1,1,1
+lexicon-baseline,MFT,09_slang_internet,시간 순삭 ㄱㅇㄷ,1,0.5,1,1,2
+lexicon-baseline,MFT,09_slang_internet,돈아까움 진짜,0,0.0759,0,1,1
+lexicon-baseline,MFT,09_slang_internet,띵작 ㅇㅈ,1,0.9241,1,1,3
+lexicon-baseline,MFT,09_slang_internet,국뽕 오지지만 그래도 재밌음,1,0.9241,1,1,3
+lexicon-baseline,MFT,09_slang_internet,총체적 난국이네요,0,0.5,1,0,2
+lexicon-baseline,MFT,09_slang_internet,보다가 폰만 봤네요,0,0.5,1,0,3
+lexicon-baseline,MFT,10_sad_scary_not_negative,너무 슬퍼서 펑펑 울었어요. 정말 좋은 영화입니다.,1,0.9241,1,1,2
+lexicon-baseline,MFT,10_sad_scary_not_negative,주인공이 죽는 비극이지만 그래서 더 아름다웠다.,1,0.5,1,1,3
+lexicon-baseline,MFT,10_sad_scary_not_negative,무서워서 눈을 못 뜨겠더라고요. 공포영화로는 최고.,1,0.9241,1,1,3
+lexicon-baseline,MFT,10_sad_scary_not_negative,잔인한 장면이 많지만 그만큼 강렬한 메시지를 남긴다.,1,0.5,1,1,3
+lexicon-baseline,MFT,10_sad_scary_not_negative,불편한 소재를 정말 잘 다뤘습니다.,1,0.5,1,1,3
+lexicon-baseline,MFT,10_sad_scary_not_negative,가슴이 먹먹해지는 영화. 꼭 보세요.,1,0.5,1,1,2
+lexicon-baseline,MFT,10_sad_scary_not_negative,웃긴 장면은 많았지만 코미디로서는 실패작.,0,0.5,1,0,3
+lexicon-baseline,MFT,10_sad_scary_not_negative,행복한 결말인데도 억지스러워서 짜증났다.,0,0.0759,0,1,3
+lexicon-baseline,MFT,10_sad_scary_not_negative,따뜻한 영화를 표방하지만 오글거리기만 한다.,0,0.5,1,0,3
+lexicon-baseline,MFT,11_aspect_scope,화질은 별로였지만 영화 자체는 명작.,1,0.5,1,1,3
+lexicon-baseline,MFT,11_aspect_scope,상영관 의자가 불편했던 것 빼면 영화는 완벽했어요.,1,0.9241,1,1,3
+lexicon-baseline,MFT,11_aspect_scope,자막 오역이 좀 있었지만 작품은 훌륭합니다.,1,0.9241,1,1,3
+lexicon-baseline,MFT,11_aspect_scope,음악은 좋았지만 그것 말고는 볼 게 없다.,0,0.9241,1,0,3
+lexicon-baseline,MFT,11_aspect_scope,포스터만 멋있고 내용은 텅 비었다.,0,0.5,1,0,2
+lexicon-baseline,MFT,11_aspect_scope,주연은 잘했는데 나머지가 다 망쳤다.,0,0.0759,0,1,3
+lexicon-baseline,MFT,11_aspect_scope,러닝타임이 긴 게 유일한 단점일 정도로 좋았습니다.,1,0.9241,1,1,3
+lexicon-baseline,MFT,11_aspect_scope,음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요.,1,0.5,1,1,3
+lexicon-baseline,MFT,11_aspect_scope,"연출력만 놓고 보면 대단한데, 영화로는 실패했다.",0,0.5,1,0,3
+lexicon-baseline,MFT,11_aspect_scope,볼거리는 확실한데 남는 게 없습니다.,0,0.5,1,0,3
+lexicon-baseline,MFT,11_aspect_scope,"배우 팬이라면 만족, 그 외엔 비추.",0,0.5,1,0,3
+lexicon-baseline,MFT,11_aspect_scope,스토리는 진부하지만 감정선이 살아 있어 좋았다.,1,0.9241,1,1,3
+lexicon-baseline,MFT,12_adversarial_lexical,최고라는 말이 많던데 최악이었다.,0,0.5,1,0,3
+lexicon-baseline,MFT,12_adversarial_lexical,명작이라는 광고에 속았다. 졸작.,0,0.5,1,0,3
+lexicon-baseline,MFT,12_adversarial_lexical,재밌다 재밌다 해서 봤는데 노잼.,0,0.5,1,0,3
+lexicon-baseline,MFT,12_adversarial_lexical,지루하다는 평이 많았지만 나는 정말 몰입해서 봤다.,1,0.5,1,1,3
+lexicon-baseline,MFT,12_adversarial_lexical,최악이라는 말은 과했다. 생각보다 괜찮았음.,1,0.0759,0,0,3
+lexicon-baseline,MFT,12_adversarial_lexical,쓰레기라던 사람들 다 어디감? 개명작인데.,1,0.5,1,1,3
+lexicon-baseline,MFT,12_adversarial_lexical,재미없다는 리뷰에 동의할 수 없다. 훌륭했다.,1,0.6971,1,1,3
+lexicon-baseline,MFT,12_adversarial_lexical,걸작이라고? 이건 그냥 시간낭비다.,0,0.0759,0,1,3
+lexicon-baseline,MFT,12_adversarial_lexical,재미없을 거라는 편견을 완전히 깨줬습니다.,1,0.5,1,1,3
+lexicon-baseline,MFT,12_adversarial_lexical,지루하다는 말은 이 영화엔 어울리지 않아요.,1,0.0759,0,0,3
+lexicon-baseline,MFT,12_adversarial_lexical,명작이라는 표현이 아깝지 않습니다.,1,0.9241,1,1,3
+lexicon-baseline,MFT,12_adversarial_lexical,최악이라는 단어로도 부족합니다.,0,0.0759,0,1,3
+lexicon-baseline,MFT,12_adversarial_lexical,훌륭하다는 평가는 도저히 못 하겠네요.,0,0.9241,1,0,3
+lexicon-baseline,MFT,12_adversarial_lexical,감동적이라던데 저는 실소만 나왔습니다.,0,0.9241,1,0,3
+lexicon-baseline,MFT,12_adversarial_lexical,걸작이라는 수식어가 부끄러운 수준.,0,0.5,1,0,3
+lexicon-baseline,MFT,12_adversarial_lexical,실망이라는 단어를 쓸 일이 없었어요. 계속 좋았습니다.,1,0.3029,0,0,3
+lexicon-baseline,MFT,13_conditional_hypothetical,조금만 더 짧았으면 명작이었을 텐데 아쉽다.,0,0.9241,1,0,3
+lexicon-baseline,MFT,13_conditional_hypothetical,주연이 바뀌었으면 훨씬 좋았을 것 같다.,0,0.9241,1,0,3
+lexicon-baseline,MFT,13_conditional_hypothetical,기대만 안 했으면 괜찮게 봤을 듯.,0,0.5,1,0,3
+lexicon-baseline,MFT,13_conditional_hypothetical,무료로 봤으면 불만 없었을 텐데 돈 주고 보니 아깝다.,0,0.5,1,0,3
+lexicon-baseline,MFT,13_conditional_hypothetical,이런 영화가 더 많이 나왔으면 좋겠습니다.,1,0.9241,1,1,2
+lexicon-baseline,MFT,13_conditional_hypothetical,속편이 나온다면 무조건 볼 겁니다.,1,0.5,1,1,2
+lexicon-baseline,MFT,14_long_review,"친구 추천으로 아무 정보 없이 봤는데, 초반 30분은 인물 소개라 조금 늘어지는 느낌이 있었습니다. 그런데 사건이 터지는 순간부터 몰입도가 확 올라가더군요. 특히 후반 추격 시퀀스는 숨을 쉴 수가 없었어요. 배우들 연기도 과하지 않고 담백했고, 음악도 장면을 방해하지 않으면서 잘 받쳐줬습니다. 극장에서 볼 가치가 충분한 작품이라고 생각합니다.",1,0.9241,1,1,2
+lexicon-baseline,MFT,14_long_review,"예고편이 워낙 좋아서 개봉일에 바로 예매했습니다. 결론부터 말하면 예고편이 전부인 영화였어요. 설정은 흥미로운데 그걸 풀어내는 방식이 너무 안일합니다. 인물들이 왜 저런 선택을 하는지 설명이 없고, 갈등도 우연으로 해결됩니다. 후반 30분은 시계만 봤네요. 배우들은 열심히 했는데 각본이 발목을 잡은 케이스.",0,0.9241,1,0,2
+lexicon-baseline,MFT,14_long_review,"솔직히 상반기 최고작이라는 평은 과장이라고 생각합니다. 다만 그렇다고 못 만든 영화는 절대 아니에요. 촬영과 미술은 정말 공들인 티가 나고, 주연 배우의 눈빛 연기는 오래 기억에 남을 것 같습니다. 몇몇 장면의 편집이 아쉽긴 했지만 전체적으로는 만족스러웠고 주변에도 권할 생각입니다.",1,0.9241,1,1,3
+mbert-nsmc,UNC,neutral,2시간 15분짜리 영화이고 12세 관람가입니다.,,0.1002,0,,
+mbert-nsmc,UNC,neutral,1980년대 서울을 배경으로 한 시대극입니다.,,0.7715,1,,
+mbert-nsmc,UNC,neutral,주인공은 형사이고 연쇄살인범을 쫓습니다.,,0.3052,0,,
+mbert-nsmc,UNC,neutral,쿠키영상은 두 개 있습니다.,,0.2554,0,,
+mbert-nsmc,UNC,neutral,아이맥스관에서 봤습니다.,,0.6847,1,,
+mbert-nsmc,UNC,neutral,감독은 이 영화로 장편 데뷔했습니다.,,0.3465,0,,
+mbert-nsmc,UNC,neutral,상영시간은 100분입니다.,,0.0227,0,,
+mbert-nsmc,UNC,neutral,원작은 동명의 웹툰입니다.,,0.1798,0,,
+mbert-nsmc,UNC,neutral,주말 오후에 관람했고 좌석은 F열이었습니다.,,0.4876,0,,
+mbert-nsmc,UNC,neutral,영어 자막판으로 관람했습니다.,,0.4322,0,,
+koelectra-gen,UNC,neutral,2시간 15분짜리 영화이고 12세 관람가입니다.,,0.8364,1,,
+koelectra-gen,UNC,neutral,1980년대 서울을 배경으로 한 시대극입니다.,,0.8578,1,,
+koelectra-gen,UNC,neutral,주인공은 형사이고 연쇄살인범을 쫓습니다.,,0.8423,1,,
+koelectra-gen,UNC,neutral,쿠키영상은 두 개 있습니다.,,0.4462,0,,
+koelectra-gen,UNC,neutral,아이맥스관에서 봤습니다.,,0.8647,1,,
+koelectra-gen,UNC,neutral,감독은 이 영화로 장편 데뷔했습니다.,,0.9008,1,,
+koelectra-gen,UNC,neutral,상영시간은 100분입니다.,,0.3958,0,,
+koelectra-gen,UNC,neutral,원작은 동명의 웹툰입니다.,,0.418,0,,
+koelectra-gen,UNC,neutral,주말 오후에 관람했고 좌석은 F열이었습니다.,,0.3656,0,,
+koelectra-gen,UNC,neutral,영어 자막판으로 관람했습니다.,,0.5842,1,,
+kcelectra-ko,UNC,neutral,2시간 15분짜리 영화이고 12세 관람가입니다.,,0.3145,0,,
+kcelectra-ko,UNC,neutral,1980년대 서울을 배경으로 한 시대극입니다.,,0.9412,1,,
+kcelectra-ko,UNC,neutral,주인공은 형사이고 연쇄살인범을 쫓습니다.,,0.3939,0,,
+kcelectra-ko,UNC,neutral,쿠키영상은 두 개 있습니다.,,0.4142,0,,
+kcelectra-ko,UNC,neutral,아이맥스관에서 봤습니다.,,0.8596,1,,
+kcelectra-ko,UNC,neutral,감독은 이 영화로 장편 데뷔했습니다.,,0.7316,1,,
+kcelectra-ko,UNC,neutral,상영시간은 100분입니다.,,0.2515,0,,
+kcelectra-ko,UNC,neutral,원작은 동명의 웹툰입니다.,,0.4277,0,,
+kcelectra-ko,UNC,neutral,주말 오후에 관람했고 좌석은 F열이었습니다.,,0.095,0,,
+kcelectra-ko,UNC,neutral,영어 자막판으로 관람했습니다.,,0.9425,1,,
+ensemble-mean,UNC,neutral,2시간 15분짜리 영화이고 12세 관람가입니다.,,0.417,0,,
+ensemble-mean,UNC,neutral,1980년대 서울을 배경으로 한 시대극입니다.,,0.8568,1,,
+ensemble-mean,UNC,neutral,주인공은 형사이고 연쇄살인범을 쫓습니다.,,0.5138,1,,
+ensemble-mean,UNC,neutral,쿠키영상은 두 개 있습니다.,,0.3719,0,,
+ensemble-mean,UNC,neutral,아이맥스관에서 봤습니다.,,0.803,1,,
+ensemble-mean,UNC,neutral,감독은 이 영화로 장편 데뷔했습니다.,,0.6596,1,,
+ensemble-mean,UNC,neutral,상영시간은 100분입니다.,,0.2233,0,,
+ensemble-mean,UNC,neutral,원작은 동명의 웹툰입니다.,,0.3418,0,,
+ensemble-mean,UNC,neutral,주말 오후에 관람했고 좌석은 F열이었습니다.,,0.3161,0,,
+ensemble-mean,UNC,neutral,영어 자막판으로 관람했습니다.,,0.653,1,,
+tfidf-lr,UNC,neutral,2시간 15분짜리 영화이고 12세 관람가입니다.,,0.1777,0,,
+tfidf-lr,UNC,neutral,1980년대 서울을 배경으로 한 시대극입니다.,,0.4884,0,,
+tfidf-lr,UNC,neutral,주인공은 형사이고 연쇄살인범을 쫓습니다.,,0.1635,0,,
+tfidf-lr,UNC,neutral,쿠키영상은 두 개 있습니다.,,0.0921,0,,
+tfidf-lr,UNC,neutral,아이맥스관에서 봤습니다.,,0.8339,1,,
+tfidf-lr,UNC,neutral,감독은 이 영화로 장편 데뷔했습니다.,,0.3628,0,,
+tfidf-lr,UNC,neutral,상영시간은 100분입니다.,,0.3411,0,,
+tfidf-lr,UNC,neutral,원작은 동명의 웹툰입니다.,,0.3212,0,,
+tfidf-lr,UNC,neutral,주말 오후에 관람했고 좌석은 F열이었습니다.,,0.5604,1,,
+tfidf-lr,UNC,neutral,영어 자막판으로 관람했습니다.,,0.7196,1,,
+lexicon-baseline,UNC,neutral,2시간 15분짜리 영화이고 12세 관람가입니다.,,0.5,1,,
+lexicon-baseline,UNC,neutral,1980년대 서울을 배경으로 한 시대극입니다.,,0.5,1,,
+lexicon-baseline,UNC,neutral,주인공은 형사이고 연쇄살인범을 쫓습니다.,,0.5,1,,
+lexicon-baseline,UNC,neutral,쿠키영상은 두 개 있습니다.,,0.5,1,,
+lexicon-baseline,UNC,neutral,아이맥스관에서 봤습니다.,,0.5,1,,
+lexicon-baseline,UNC,neutral,감독은 이 영화로 장편 데뷔했습니다.,,0.5,1,,
+lexicon-baseline,UNC,neutral,상영시간은 100분입니다.,,0.5,1,,
+lexicon-baseline,UNC,neutral,원작은 동명의 웹툰입니다.,,0.5,1,,
+lexicon-baseline,UNC,neutral,주말 오후에 관람했고 좌석은 F열이었습니다.,,0.5,1,,
+lexicon-baseline,UNC,neutral,영어 자막판으로 관람했습니다.,,0.5,1,,
+mbert-nsmc,DIR,intensify_pos_1,이 영화 괜찮았어요. => 이 영화 정말 괜찮았어요.,up,0.9938,,0,
+mbert-nsmc,DIR,intensify_pos_2,재미있었다. => 정말 너무 재미있었다.,up,0.9893,,0,
+mbert-nsmc,DIR,intensify_pos_3,추천합니다. => 강력 추천합니다.,up,0.9714,,0,
+mbert-nsmc,DIR,intensify_neg_1,별로였어요. => 정말 최악이었어요.,down,0.0025,,0,
+mbert-nsmc,DIR,intensify_neg_2,지루했다. => 너무너무 지루했다.,down,0.0022,,0,
+mbert-nsmc,DIR,negate_pos_1,재미있었다. => 재미없었다.,down,0.0015,,1,
+mbert-nsmc,DIR,negate_pos_2,좋았어요. => 좋지 않았어요.,down,0.1818,,1,
+mbert-nsmc,DIR,negate_pos_3,추천합니다. => 추천하지 않습니다.,down,0.273,,1,
+mbert-nsmc,DIR,negate_neg_1,실망스러웠다. => 실망스럽지 않았다.,up,0.5194,,1,
+mbert-nsmc,DIR,negate_neg_2,지루했어요. => 지루하지 않았어요.,up,0.9116,,1,
+mbert-nsmc,DIR,hedge_pos,재미있었다. => 그럭저럭 재미있었다.,down,0.7045,,1,
+mbert-nsmc,DIR,hedge_neg,지루했다. => 조금 지루했다.,up,0.0021,,0,
+mbert-nsmc,DIR,add_complaint,괜찮은 영화였다. => 괜찮은 영화였다. 다만 결말이 많이 아쉬웠다.,down,0.9957,,0,
+mbert-nsmc,DIR,add_praise,아쉬운 영화였다. => 아쉬운 영화였다. 그래도 배우 연기는 정말 좋았다.,up,0.8184,,1,
+koelectra-gen,DIR,intensify_pos_1,이 영화 괜찮았어요. => 이 영화 정말 괜찮았어요.,up,0.9866,,0,
+koelectra-gen,DIR,intensify_pos_2,재미있었다. => 정말 너무 재미있었다.,up,0.9821,,0,
+koelectra-gen,DIR,intensify_pos_3,추천합니다. => 강력 추천합니다.,up,0.9713,,1,
+koelectra-gen,DIR,intensify_neg_1,별로였어요. => 정말 최악이었어요.,down,0.0022,,0,
+koelectra-gen,DIR,intensify_neg_2,지루했다. => 너무너무 지루했다.,down,0.0068,,0,
+koelectra-gen,DIR,negate_pos_1,재미있었다. => 재미없었다.,down,0.0053,,1,
+koelectra-gen,DIR,negate_pos_2,좋았어요. => 좋지 않았어요.,down,0.0194,,1,
+koelectra-gen,DIR,negate_pos_3,추천합니다. => 추천하지 않습니다.,down,0.007,,1,
+koelectra-gen,DIR,negate_neg_1,실망스러웠다. => 실망스럽지 않았다.,up,0.8764,,1,
+koelectra-gen,DIR,negate_neg_2,지루했어요. => 지루하지 않았어요.,up,0.9543,,1,
+koelectra-gen,DIR,hedge_pos,재미있었다. => 그럭저럭 재미있었다.,down,0.148,,1,
+koelectra-gen,DIR,hedge_neg,지루했다. => 조금 지루했다.,up,0.0874,,1,
+koelectra-gen,DIR,add_complaint,괜찮은 영화였다. => 괜찮은 영화였다. 다만 결말이 많이 아쉬웠다.,down,0.9543,,0,
+koelectra-gen,DIR,add_praise,아쉬운 영화였다. => 아쉬운 영화였다. 그래도 배우 연기는 정말 좋았다.,up,0.7152,,0,
+kcelectra-ko,DIR,intensify_pos_1,이 영화 괜찮았어요. => 이 영화 정말 괜찮았어요.,up,0.9744,,0,
+kcelectra-ko,DIR,intensify_pos_2,재미있었다. => 정말 너무 재미있었다.,up,0.9729,,0,
+kcelectra-ko,DIR,intensify_pos_3,추천합니다. => 강력 추천합니다.,up,0.9642,,0,
+kcelectra-ko,DIR,intensify_neg_1,별로였어요. => 정말 최악이었어요.,down,0.0394,,0,
+kcelectra-ko,DIR,intensify_neg_2,지루했다. => 너무너무 지루했다.,down,0.0346,,0,
+kcelectra-ko,DIR,negate_pos_1,재미있었다. => 재미없었다.,down,0.0358,,1,
+kcelectra-ko,DIR,negate_pos_2,좋았어요. => 좋지 않았어요.,down,0.043,,1,
+kcelectra-ko,DIR,negate_pos_3,추천합니다. => 추천하지 않습니다.,down,0.0728,,1,
+kcelectra-ko,DIR,negate_neg_1,실망스러웠다. => 실망스럽지 않았다.,up,0.8774,,1,
+kcelectra-ko,DIR,negate_neg_2,지루했어요. => 지루하지 않았어요.,up,0.9675,,1,
+kcelectra-ko,DIR,hedge_pos,재미있었다. => 그럭저럭 재미있었다.,down,0.6952,,1,
+kcelectra-ko,DIR,hedge_neg,지루했다. => 조금 지루했다.,up,0.0367,,0,
+kcelectra-ko,DIR,add_complaint,괜찮은 영화였다. => 괜찮은 영화였다. 다만 결말이 많이 아쉬웠다.,down,0.9615,,0,
+kcelectra-ko,DIR,add_praise,아쉬운 영화였다. => 아쉬운 영화였다. 그래도 배우 연기는 정말 좋았다.,up,0.961,,1,
+ensemble-mean,DIR,intensify_pos_1,이 영화 괜찮았어요. => 이 영화 정말 괜찮았어요.,up,0.9849,,0,
+ensemble-mean,DIR,intensify_pos_2,재미있었다. => 정말 너무 재미있었다.,up,0.9814,,0,
+ensemble-mean,DIR,intensify_pos_3,추천합니다. => 강력 추천합니다.,up,0.969,,0,
+ensemble-mean,DIR,intensify_neg_1,별로였어요. => 정말 최악이었어요.,down,0.0147,,0,
+ensemble-mean,DIR,intensify_neg_2,지루했다. => 너무너무 지루했다.,down,0.0146,,0,
+ensemble-mean,DIR,negate_pos_1,재미있었다. => 재미없었다.,down,0.0142,,1,
+ensemble-mean,DIR,negate_pos_2,좋았어요. => 좋지 않았어요.,down,0.0814,,1,
+ensemble-mean,DIR,negate_pos_3,추천합니다. => 추천하지 않습니다.,down,0.1176,,1,
+ensemble-mean,DIR,negate_neg_1,실망스러웠다. => 실망스럽지 않았다.,up,0.7577,,1,
+ensemble-mean,DIR,negate_neg_2,지루했어요. => 지루하지 않았어요.,up,0.9445,,1,
+ensemble-mean,DIR,hedge_pos,재미있었다. => 그럭저럭 재미있었다.,down,0.5159,,1,
+ensemble-mean,DIR,hedge_neg,지루했다. => 조금 지루했다.,up,0.0421,,1,
+ensemble-mean,DIR,add_complaint,괜찮은 영화였다. => 괜찮은 영화였다. 다만 결말이 많이 아쉬웠다.,down,0.9705,,0,
+ensemble-mean,DIR,add_praise,아쉬운 영화였다. => 아쉬운 영화였다. 그래도 배우 연기는 정말 좋았다.,up,0.8315,,1,
+tfidf-lr,DIR,intensify_pos_1,이 영화 괜찮았어요. => 이 영화 정말 괜찮았어요.,up,0.9938,,0,
+tfidf-lr,DIR,intensify_pos_2,재미있었다. => 정말 너무 재미있었다.,up,0.9876,,0,
+tfidf-lr,DIR,intensify_pos_3,추천합니다. => 강력 추천합니다.,up,0.9613,,1,
+tfidf-lr,DIR,intensify_neg_1,별로였어요. => 정말 최악이었어요.,down,0.0501,,0,
+tfidf-lr,DIR,intensify_neg_2,지루했다. => 너무너무 지루했다.,down,0.0196,,0,
+tfidf-lr,DIR,negate_pos_1,재미있었다. => 재미없었다.,down,0.0008,,1,
+tfidf-lr,DIR,negate_pos_2,좋았어요. => 좋지 않았어요.,down,0.6567,,1,
+tfidf-lr,DIR,negate_pos_3,추천합니다. => 추천하지 않습니다.,down,0.4745,,1,
+tfidf-lr,DIR,negate_neg_1,실망스러웠다. => 실망스럽지 않았다.,up,0.0322,,1,
+tfidf-lr,DIR,negate_neg_2,지루했어요. => 지루하지 않았어요.,up,0.9195,,1,
+tfidf-lr,DIR,hedge_pos,재미있었다. => 그럭저럭 재미있었다.,down,0.8462,,1,
+tfidf-lr,DIR,hedge_neg,지루했다. => 조금 지루했다.,up,0.0105,,0,
+tfidf-lr,DIR,add_complaint,괜찮은 영화였다. => 괜찮은 영화였다. 다만 결말이 많이 아쉬웠다.,down,0.9764,,0,
+tfidf-lr,DIR,add_praise,아쉬운 영화였다. => 아쉬운 영화였다. 그래도 배우 연기는 정말 좋았다.,up,0.8929,,1,
+lexicon-baseline,DIR,intensify_pos_1,이 영화 괜찮았어요. => 이 영화 정말 괜찮았어요.,up,0.5,,0,
+lexicon-baseline,DIR,intensify_pos_2,재미있었다. => 정말 너무 재미있었다.,up,0.9241,,0,
+lexicon-baseline,DIR,intensify_pos_3,추천합니다. => 강력 추천합니다.,up,0.9241,,0,
+lexicon-baseline,DIR,intensify_neg_1,별로였어요. => 정말 최악이었어요.,down,0.0759,,0,
+lexicon-baseline,DIR,intensify_neg_2,지루했다. => 너무너무 지루했다.,down,0.0759,,0,
+lexicon-baseline,DIR,negate_pos_1,재미있었다. => 재미없었다.,down,0.5,,1,
+lexicon-baseline,DIR,negate_pos_2,좋았어요. => 좋지 않았어요.,down,0.9241,,0,
+lexicon-baseline,DIR,negate_pos_3,추천합니다. => 추천하지 않습니다.,down,0.9241,,0,
+lexicon-baseline,DIR,negate_neg_1,실망스러웠다. => 실망스럽지 않았다.,up,0.0759,,0,
+lexicon-baseline,DIR,negate_neg_2,지루했어요. => 지루하지 않았어요.,up,0.0759,,0,
+lexicon-baseline,DIR,hedge_pos,재미있었다. => 그럭저럭 재미있었다.,down,0.9241,,0,
+lexicon-baseline,DIR,hedge_neg,지루했다. => 조금 지루했다.,up,0.0759,,0,
+lexicon-baseline,DIR,add_complaint,괜찮은 영화였다. => 괜찮은 영화였다. 다만 결말이 많이 아쉬웠다.,down,0.5,,0,
+lexicon-baseline,DIR,add_praise,아쉬운 영화였다. => 아쉬운 영화였다. 그래도 배우 연기는 정말 좋았다.,up,0.9241,,1,
+mbert-nsmc,INV,despace,돈이 아깝지 않은 영화였습니다. => 돈이아깝지않은영화였습니다.,1,0.8707,1,0,
+mbert-nsmc,INV,despace,감독이 뭘 말하고 싶었는지 전혀 모르겠다. => 감독이뭘말하고싶었는지전혀모르겠다.,0,0.7136,1,0,
+mbert-nsmc,INV,despace,재미있지 않았어요. => 재미있지않았어요.,0,0.723,1,0,
+mbert-nsmc,INV,despace,추천할 만한 영화는 아니에요. => 추천할만한영화는아니에요.,0,0.5315,1,0,
+mbert-nsmc,INV,despace,공감이 전혀 되지 않았다. => 공감이전혀되지않았다.,0,0.7413,1,0,
+mbert-nsmc,INV,despace,몰입이 되지 않았습니다. => 몰입이되지않았습니다.,0,0.7801,1,0,
+mbert-nsmc,INV,despace,아쉽지 않다고 하기는 힘들다. => 아쉽지않다고하기는힘들다.,0,0.5409,1,0,
+mbert-nsmc,INV,despace,실망 안 할 수가 없는 결말. => 실망안할수가없는결말.,0,0.5571,1,0,
+mbert-nsmc,INV,despace,초반은 좀 지루했지만 후반부는 정말 압권이었다. => 초반은좀지루했지만후반부는정말압권이었다.,1,0.4885,0,0,
+mbert-nsmc,INV,despace,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다. => 만듦새는준수하다.다만두번볼영화는아니다.,0,0.6388,1,0,
+mbert-nsmc,INV,despace,결말이 열려 있어 호불호가 갈리겠지만 저는 만족했습니다. => 결말이열려있어호불호가갈리겠지만저는만족했습니다.,1,0.4195,0,0,
+mbert-nsmc,INV,despace,시간 순삭이네요. 세 시간이 삼십 시간 같았어요. => 시간순삭이네요.세시간이삼십시간같았어요.,0,0.4277,0,0,
+mbert-nsmc,INV,despace,팝콘이 참 맛있었습니다. => 팝콘이참맛있었습니다.,0,0.2836,0,0,
+mbert-nsmc,INV,despace,화나네요. 이렇게 좋은 걸 이제야 봤다는 게. => 화나네요.이렇게좋은걸이제야봤다는게.,1,0.3789,0,0,
+mbert-nsmc,INV,despace,헐리우드 대작들보다 훨씬 알차다. => 헐리우드대작들보다훨씬알차다.,1,0.2708,0,0,
+mbert-nsmc,INV,despace,집에서 티비로 봤어도 충분했을 영화. => 집에서티비로봤어도충분했을영화.,0,0.3122,0,0,
+mbert-nsmc,INV,despace,극장값이 전혀 아깝지 않은 스케일. => 극장값이전혀아깝지않은스케일.,1,0.5829,1,0,
+mbert-nsmc,INV,despace,친구는 재밌다는데 저는 도저히 못 보겠더라고요. => 친구는재밌다는데저는도저히못보겠더라고요.,0,0.7136,1,0,
+mbert-nsmc,INV,despace,악평 보고 기대 없이 갔는데 의외의 수확이었어요. => 악평보고기대없이갔는데의외의수확이었어요.,1,0.6724,1,0,
+mbert-nsmc,INV,despace,별점 테러가 이해되는 영화였습니다. => 별점테러가이해되는영화였습니다.,0,0.0908,0,0,
+mbert-nsmc,INV,despace,0점 주고 싶은데 최소가 1점이라 1점 줍니다. => 0점주고싶은데최소가1점이라1점줍니다.,0,0.7136,1,0,
+mbert-nsmc,INV,despace,시간 순삭 ㄱㅇㄷ => 시간순삭ㄱㅇㄷ,1,0.6813,1,0,
+mbert-nsmc,INV,despace,불편한 소재를 정말 잘 다뤘습니다. => 불편한소재를정말잘다뤘습니다.,1,0.7178,1,0,
+mbert-nsmc,INV,despace,포스터만 멋있고 내용은 텅 비었다. => 포스터만멋있고내용은텅비었다.,0,0.7136,1,0,
+mbert-nsmc,INV,despace,음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요. => 음향이아쉬웠지만그외엔나무랄데가없어요.,1,0.3397,0,0,
+mbert-nsmc,INV,despace,감동적이라던데 저는 실소만 나왔습니다. => 감동적이라던데저는실소만나왔습니다.,0,0.9398,1,0,
+mbert-nsmc,INV,despace,기대만 안 했으면 괜찮게 봤을 듯. => 기대만안했으면괜찮게봤을듯.,0,0.6252,1,0,
+mbert-nsmc,INV,punct_strip,돈이 아깝지 않은 영화였습니다. => 돈이 아깝지 않은 영화였습니다,1,0.5405,1,0,
+mbert-nsmc,INV,punct_strip,추천할 만한 영화는 아니에요. => 추천할 만한 영화는 아니에요,0,0.5344,1,0,
+mbert-nsmc,INV,punct_strip,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요. => 감독님 반성하세요 이렇게 잘 만들면 다른 영화는 어쩌라고요,1,0.6009,1,0,
+mbert-nsmc,INV,emoji_append,돈이 아깝지 않은 영화였습니다. => 돈이 아깝지 않은 영화였습니다. 🎬,1,0.6595,1,0,
+mbert-nsmc,INV,emoji_append,돈이 아깝지는 않았습니다. => 돈이 아깝지는 않았습니다. 🎬,1,0.5143,1,0,
+mbert-nsmc,INV,emoji_append,추천할 만한 영화는 아니에요. => 추천할 만한 영화는 아니에요. 🎬,0,0.5978,1,0,
+mbert-nsmc,INV,emoji_append,기대를 저버리지 않았다. => 기대를 저버리지 않았다. 🎬,1,0.5006,1,0,
+mbert-nsmc,INV,emoji_append,몰입이 되지 않았습니다. => 몰입이 되지 않았습니다. 🎬,0,0.6641,1,0,
+mbert-nsmc,INV,emoji_append,두 번은 못 보겠다. => 두 번은 못 보겠다. 🎬,0,0.5207,1,0,
+mbert-nsmc,INV,emoji_append,아쉽지 않다고 하기는 힘들다. => 아쉽지 않다고 하기는 힘들다. 🎬,0,0.7519,1,0,
+mbert-nsmc,INV,emoji_append,실망 안 할 수가 없는 결말. => 실망 안 할 수가 없는 결말. 🎬,0,0.7108,1,0,
+mbert-nsmc,INV,emoji_append,졸음 방지용으로 커피 꼭 챙기세요. => 졸음 방지용으로 커피 꼭 챙기세요. 🎬,0,0.5762,1,0,
+mbert-nsmc,INV,emoji_append,이걸 극장에서 봤다는 게 제 인생 최대 업적입니다. => 이걸 극장에서 봤다는 게 제 인생 최대 업적입니다. 🎬,0,0.5536,1,0,
+mbert-nsmc,INV,emoji_append,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요. => 감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요. 🎬,1,0.5345,1,0,
+mbert-nsmc,INV,emoji_append,2편이 1편을 뛰어넘었다. => 2편이 1편을 뛰어넘었다. 🎬,1,0.5895,1,0,
+mbert-nsmc,INV,emoji_append,극장값이 전혀 아깝지 않은 스케일. => 극장값이 전혀 아깝지 않은 스케일. 🎬,1,0.6521,1,0,
+mbert-nsmc,INV,emoji_append,악평 보고 기대 없이 갔는데 의외의 수확이었어요. => 악평 보고 기대 없이 갔는데 의외의 수확이었어요. 🎬,1,0.5808,1,0,
+mbert-nsmc,INV,emoji_append,최악이라는 말은 과했다. 생각보다 괜찮았음. => 최악이라는 말은 과했다. 생각보다 괜찮았음. 🎬,1,0.561,1,0,
+mbert-nsmc,INV,emoji_append,주연이 바뀌었으면 훨씬 좋았을 것 같다. => 주연이 바뀌었으면 훨씬 좋았을 것 같다. 🎬,0,0.6874,1,0,
+mbert-nsmc,INV,emoji_append,기대만 안 했으면 괜찮게 봤을 듯. => 기대만 안 했으면 괜찮게 봤을 듯. 🎬,0,0.661,1,0,
+mbert-nsmc,INV,drop_jongseong,가족들과 보기 딱 좋은 따뜻한 영화. => 가족들과 보기 딱 좋은 따뜨한 영화.,1,0.3602,0,0,
+mbert-nsmc,INV,drop_jongseong,돈이 아깝지 않은 영화였습니다. => 돈이 아깝지 않은 여화였습니다.,1,0.9242,1,0,
+mbert-nsmc,INV,drop_jongseong,지루할 틈이 없었습니다. => 지루하 틈이 없었습니다.,1,0.4986,0,0,
+mbert-nsmc,INV,drop_jongseong,칭찬을 안 할 수가 없네요. => 치찬을 안 할 수가 없네요.,1,0.3952,0,0,
+mbert-nsmc,INV,drop_jongseong,감탄하지 않을 수 없는 연출. => 감탄하지 않을 수 없는 여출.,1,0.4962,0,0,
+mbert-nsmc,INV,drop_jongseong,좋다고 안 할 수가 없는 작품. => 좋다고 안 할 수가 없는 자품.,1,0.07,0,0,
+mbert-nsmc,INV,drop_jongseong,시간 순삭이네요. 세 시간이 삼십 시간 같았어요. => 시간 순삭이네요. 세 시간이 삼시 시간 같았어요.,0,0.3979,0,0,
+mbert-nsmc,INV,drop_jongseong,졸음 방지용으로 커피 꼭 챙기세요. => 조음 방지용으로 커피 꼭 챙기세요.,0,0.7512,1,0,
+mbert-nsmc,INV,drop_jongseong,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요. => 가독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요.,1,0.6258,1,0,
+mbert-nsmc,INV,drop_jongseong,이 감독 작품 중 가장 아쉽다. => 이 감독 작푸 중 가장 아쉽다.,0,0.2029,0,0,
+mbert-nsmc,INV,drop_jongseong,집에서 티비로 봤어도 충분했을 영화. => 집에서 티비로 봤어도 충부했을 영화.,0,0.2526,0,0,
+mbert-nsmc,INV,drop_jongseong,별점 테러가 이해되는 영화였습니다. => 별점 테러가 이해되느 영화였습니다.,0,0.3236,0,0,
+mbert-nsmc,INV,drop_jongseong,시간 순삭 ㄱㅇㄷ => 시가 순삭 ㄱㅇㄷ,1,0.8563,1,0,
+mbert-nsmc,INV,drop_jongseong,음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요. => 음향이 아쉬웠지만 그 외에 나무랄 데가 없어요.,1,0.4898,0,0,
+mbert-nsmc,INV,drop_jongseong,재밌다 재밌다 해서 봤는데 노잼. => 재밌다 재밌다 해서 봤느데 노잼.,0,0.4727,0,0,
+mbert-nsmc,INV,drop_jongseong,최악이라는 말은 과했다. 생각보다 괜찮았음. => 최악이라는 말은 과해다. 생각보다 괜찮았음.,1,0.5457,1,0,
+mbert-nsmc,INV,drop_jongseong,지루하다는 말은 이 영화엔 어울리지 않아요. => 지루하다느 말은 이 영화엔 어울리지 않아요.,1,0.4544,0,0,
+mbert-nsmc,INV,drop_jongseong,주연이 바뀌었으면 훨씬 좋았을 것 같다. => 주연이 바뀌어으면 훨씬 좋았을 것 같다.,0,0.5091,1,0,
+mbert-nsmc,INV,swap_adjacent,가족들과 보기 딱 좋은 따뜻한 영화. => 가족들과 보기 딱 좋은 뜻따한 영화.,1,0.062,0,0,
+mbert-nsmc,INV,swap_adjacent,두 번은 못 보겠다. => 두 은번 못 보겠다.,0,0.5198,1,0,
+mbert-nsmc,INV,swap_adjacent,칭찬을 안 할 수가 없네요. => 찬칭을 안 할 수가 없네요.,1,0.3065,0,0,
+mbert-nsmc,INV,swap_adjacent,감탄하지 않을 수 없는 연출. => 감탄하지 않을 수 없는 출연.,1,0.4074,0,0,
+mbert-nsmc,INV,swap_adjacent,시간 순삭이네요. 세 시간이 삼십 시간 같았어요. => 시간 순삭이네요. 세 시간이 삼십 시간 았같어요.,0,0.3166,0,0,
+mbert-nsmc,INV,swap_adjacent,이 감독 진짜 못됐어요. 사람 울리는 데 선수네요. => 이 감독 짜진 못됐어요. 사람 울리는 데 선수네요.,1,0.8557,1,0,
+mbert-nsmc,INV,swap_adjacent,화나네요. 이렇게 좋은 걸 이제야 봤다는 게. => 화나네요. 이게렇 좋은 걸 이제야 봤다는 게.,1,0.0923,0,0,
+mbert-nsmc,INV,swap_adjacent,전작보다 훨씬 낫다. => 전작다보 훨씬 낫다.,1,0.1925,0,0,
+mbert-nsmc,INV,swap_adjacent,원작보다는 못해도 충분히 재밌었다. => 원작보다는 못해도 분충히 재밌었다.,1,0.1494,0,0,
+mbert-nsmc,INV,swap_adjacent,2편이 1편을 뛰어넘었다. => 2편이 1을편 뛰어넘었다.,1,0.6711,1,0,
+mbert-nsmc,INV,swap_adjacent,추천해준 친구랑 절교하고 싶습니다. => 추천해준 친구랑 절교하고 싶습다니.,0,0.1031,0,0,
+mbert-nsmc,INV,swap_adjacent,별점 테러가 이해되는 영화였습니다. => 별점 테러가 이해되는 화영였습니다.,0,0.2272,0,0,
+mbert-nsmc,INV,swap_adjacent,노잼 그 자체 => 노잼 그 체자,0,0.4596,0,0,
+mbert-nsmc,INV,swap_adjacent,보다가 폰만 봤네요 => 다보가 폰만 봤네요,0,0.5859,1,0,
+mbert-nsmc,INV,swap_adjacent,음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요. => 음향이 아쉬웠지만 그 엔외 나무랄 데가 없어요.,1,0.493,0,0,
+mbert-nsmc,INV,swap_adjacent,최악이라는 말은 과했다. 생각보다 괜찮았음. => 최악이라는 말은 했과다. 생각보다 괜찮았음.,1,0.5028,1,0,
+mbert-nsmc,INV,swap_adjacent,지루하다는 말은 이 영화엔 어울리지 않아요. => 지루다하는 말은 이 영화엔 어울리지 않아요.,1,0.4909,0,0,
+mbert-nsmc,INV,swap_adjacent,명작이라는 표현이 아깝지 않습니다. => 명작라이는 표현이 아깝지 않습니다.,1,0.4072,0,0,
+mbert-nsmc,INV,swap_adjacent,주연이 바뀌었으면 훨씬 좋았을 것 같다. => 연주이 바뀌었으면 훨씬 좋았을 것 같다.,0,0.5812,1,0,
+mbert-nsmc,INV,swap_adjacent,속편이 나온다면 무조건 볼 겁니다. => 속편이 나온다면 무건조 볼 겁니다.,1,0.2677,0,0,
+mbert-nsmc,INV,pad_context,기대 이상이었어요. 후회 없는 선택. => 어제 친구랑 같이 극장에서 봤습니다. 기대 이상이었어요. 후회 없는 선택. 참고로 주차는 3시간 무료였습니다.,1,0.1653,0,0,
+mbert-nsmc,INV,pad_context,재미없지 않았어요. 오히려 볼만했습니다. => 어제 친구랑 같이 극장에서 봤습니다. 재미없지 않았어요. 오히려 볼만했습니다. 참고로 주차는 3시간 무료였습니다.,1,0.3844,0,0,
+mbert-nsmc,INV,pad_context,생각보다 지루하지 않았다. => 어제 친구랑 같이 극장에서 봤습니다. 생각보다 지루하지 않았다. 참고로 주차는 3시간 무료였습니다.,1,0.0383,0,0,
+mbert-nsmc,INV,pad_context,실망스럽지 않은 영화였어요. => 어제 친구랑 같이 극장에서 봤습니다. 실망스럽지 않은 영화였어요. 참고로 주차는 3시간 무료였습니다.,1,0.0115,0,0,
+mbert-nsmc,INV,pad_context,결코 나쁘지 않은 작품. => 어제 친구랑 같이 극장에서 봤습니다. 결코 나쁘지 않은 작품. 참고로 주차는 3시간 무료였습니다.,1,0.12,0,0,
+mbert-nsmc,INV,pad_context,나쁘지 않았어요. 볼 만합니다. => 어제 친구랑 같이 극장에서 봤습니다. 나쁘지 않았어요. 볼 만합니다. 참고로 주차는 3시간 무료였습니다.,1,0.3218,0,0,
+mbert-nsmc,INV,pad_context,후회하지 않을 영화입니다. => 어제 친구랑 같이 극장에서 봤습니다. 후회하지 않을 영화입니다. 참고로 주차는 3시간 무료였습니다.,1,0.019,0,0,
+mbert-nsmc,INV,pad_context,시간이 아깝지 않았어요. => 어제 친구랑 같이 극장에서 봤습니다. 시간이 아깝지 않았어요. 참고로 주차는 3시간 무료였습니다.,1,0.0195,0,0,
+mbert-nsmc,INV,pad_context,지루할 틈이 없었습니다. => 어제 친구랑 같이 극장에서 봤습니다. 지루할 틈이 없었습니다. 참고로 주차는 3시간 무료였습니다.,1,0.0324,0,0,
+mbert-nsmc,INV,pad_context,실패하지 않는 선택입니다. => 어제 친구랑 같이 극장에서 봤습니다. 실패하지 않는 선택입니다. 참고로 주차는 3시간 무료였습니다.,1,0.0121,0,0,
+mbert-nsmc,INV,pad_context,싫어할 수 없는 매력이 있다. => 어제 친구랑 같이 극장에서 봤습니다. 싫어할 수 없는 매력이 있다. 참고로 주차는 3시간 무료였습니다.,1,0.3985,0,0,
+mbert-nsmc,INV,pad_context,칭찬을 안 할 수가 없네요. => 어제 친구랑 같이 극장에서 봤습니다. 칭찬을 안 할 수가 없네요. 참고로 주차는 3시간 무료였습니다.,1,0.0244,0,0,
+mbert-nsmc,INV,pad_context,실망하지 않을 수 없었다. => 어제 친구랑 같이 극장에서 봤습니다. 실망하지 않을 수 없었다. 참고로 주차는 3시간 무료였습니다.,0,0.0212,0,0,
+mbert-nsmc,INV,pad_context,지루하지 않다고는 못 하겠다. => 어제 친구랑 같이 극장에서 봤습니다. 지루하지 않다고는 못 하겠다. 참고로 주차는 3시간 무료였습니다.,0,0.0186,0,0,
+mbert-nsmc,INV,pad_context,좋았다고 말하긴 어렵다. => 어제 친구랑 같이 극장에서 봤습니다. 좋았다고 말하긴 어렵다. 참고로 주차는 3시간 무료였습니다.,0,0.1222,0,0,
+mbert-nsmc,INV,pad_context,감탄하지 않을 수 없는 연출. => 어제 친구랑 같이 극장에서 봤습니다. 감탄하지 않을 수 없는 연출. 참고로 주차는 3시간 무료였습니다.,1,0.017,0,0,
+mbert-nsmc,INV,pad_context,좋다고 안 할 수가 없는 작품. => 어제 친구랑 같이 극장에서 봤습니다. 좋다고 안 할 수가 없는 작품. 참고로 주차는 3시간 무료였습니다.,1,0.0352,0,0,
+mbert-nsmc,INV,pad_context,초반은 좀 지루했지만 후반부는 정말 압권이었다. => 어제 친구랑 같이 극장에서 봤습니다. 초반은 좀 지루했지만 후반부는 정말 압권이었다. 참고로 주차는 3시간 무료였습니다.,1,0.387,0,0,
+mbert-nsmc,INV,pad_context,CG는 조잡했지만 이야기가 너무 좋아서 다 용서됨. => 어제 친구랑 같이 극장에서 봤습니다. CG는 조잡했지만 이야기가 너무 좋아서 다 용서됨. 참고로 주차는 3시간 무료였습니다.,1,0.4722,0,0,
+mbert-nsmc,INV,pad_context,기대를 안 하고 봐서 그런지 의외로 괜찮았다. => 어제 친구랑 같이 극장에서 봤습니다. 기대를 안 하고 봐서 그런지 의외로 괜찮았다. 참고로 주차는 3시간 무료였습니다.,1,0.4716,0,0,
+mbert-nsmc,INV,pad_context,단점도 분명 있지만 그걸 덮고도 남는 영화. => 어제 친구랑 같이 극장에서 봤습니다. 단점도 분명 있지만 그걸 덮고도 남는 영화. 참고로 주차는 3시간 무료였습니다.,1,0.0748,0,0,
+mbert-nsmc,INV,pad_context,초반 진입장벽만 넘으면 정말 좋은 영화입니다. => 어제 친구랑 같이 극장에서 봤습니다. 초반 진입장벽만 넘으면 정말 좋은 영화입니다. 참고로 주차는 3시간 무료였습니다.,1,0.4596,0,0,
+mbert-nsmc,INV,pad_context,결말이 열려 있어 호불호가 갈리겠지만 저는 만족했습니다. => 어제 친구랑 같이 극장에서 봤습니다. 결말이 열려 있어 호불호가 갈리겠지만 저는 만족했습니다. 참고로 주차는 3시간 무료였습니다.,1,0.4348,0,0,
+mbert-nsmc,INV,pad_context,감독님 다음 작품도 기대할게요... 안 볼 거지만. => 어제 친구랑 같이 극장에서 봤습니다. 감독님 다음 작품도 기대할게요... 안 볼 거지만. 참고로 주차는 3시간 무료였습니다.,0,0.2509,0,0,
+mbert-nsmc,INV,pad_context,시간 순삭이네요. 세 시간이 삼십 시간 같았어요. => 어제 친구랑 같이 극장에서 봤습니다. 시간 순삭이네요. 세 시간이 삼십 시간 같았어요. 참고로 주차는 3시간 무료였습니다.,0,0.0592,0,0,
+mbert-nsmc,INV,pad_context,두 시간 동안 아주 푹 쉬다 왔습니다. => 어제 친구랑 같이 극장에서 봤습니다. 두 시간 동안 아주 푹 쉬다 왔습니다. 참고로 주차는 3시간 무료였습니다.,0,0.1081,0,0,
+mbert-nsmc,INV,pad_context,불면증 있으신 분들께 강력 추천드립니다. => 어제 친구랑 같이 극장에서 봤습니다. 불면증 있으신 분들께 강력 추천드립니다. 참고로 주차는 3시간 무료였습니다.,0,0.0911,0,0,
+mbert-nsmc,INV,pad_context,팝콘이 참 맛있었습니다. => 어제 친구랑 같이 극장에서 봤습니다. 팝콘이 참 맛있었습니다. 참고로 주차는 3시간 무료였습니다.,0,0.3207,0,0,
+mbert-nsmc,INV,pad_context,화나네요. 이렇게 좋은 걸 이제야 봤다는 게. => 어제 친구랑 같이 극장에서 봤습니다. 화나네요. 이렇게 좋은 걸 이제야 봤다는 게. 참고로 주차는 3시간 무료였습니다.,1,0.206,0,0,
+mbert-nsmc,INV,pad_context,이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요. => 어제 친구랑 같이 극장에서 봤습니다. 이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요. 참고로 주차는 3시간 무료였습니다.,1,0.109,0,0,
+mbert-nsmc,INV,pad_context,전작보다 훨씬 낫다. => 어제 친구랑 같이 극장에서 봤습니다. 전작보다 훨씬 낫다. 참고로 주차는 3시간 무료였습니다.,1,0.2174,0,0,
+mbert-nsmc,INV,pad_context,원작보다는 못해도 충분히 재밌었다. => 어제 친구랑 같이 극장에서 봤습니다. 원작보다는 못해도 충분히 재밌었다. 참고로 주차는 3시간 무료였습니다.,1,0.3191,0,0,
+mbert-nsmc,INV,pad_context,이 감독 작품 중 가장 아쉽다. => 어제 친구랑 같이 극장에서 봤습니다. 이 감독 작품 중 가장 아쉽다. 참고로 주차는 3시간 무료였습니다.,0,0.0715,0,0,
+mbert-nsmc,INV,pad_context,올해 본 영화 중 이만큼 지루한 건 없었다. => 어제 친구랑 같이 극장에서 봤습니다. 올해 본 영화 중 이만큼 지루한 건 없었다. 참고로 주차는 3시간 무료였습니다.,0,0.0684,0,0,
+mbert-nsmc,INV,pad_context,헐리우드 대작들보다 훨씬 알차다. => 어제 친구랑 같이 극장에서 봤습니다. 헐리우드 대작들보다 훨씬 알차다. 참고로 주차는 3시간 무료였습니다.,1,0.1448,0,0,
+mbert-nsmc,INV,pad_context,집에서 티비로 봤어도 충분했을 영화. => 어제 친구랑 같이 극장에서 봤습니다. 집에서 티비로 봤어도 충분했을 영화. 참고로 주차는 3시간 무료였습니다.,0,0.1101,0,0,
+mbert-nsmc,INV,pad_context,혹평이 많던데 전 재밌게 봤습니다. => 어제 친구랑 같이 극장에서 봤습니다. 혹평이 많던데 전 재밌게 봤습니다. 참고로 주차는 3시간 무료였습니다.,1,0.3712,0,0,
+mbert-nsmc,INV,pad_context,평점이 낮아서 걱정했는데 괜한 걱정이었네요. => 어제 친구랑 같이 극장에서 봤습니다. 평점이 낮아서 걱정했는데 괜한 걱정이었네요. 참고로 주차는 3시간 무료였습니다.,1,0.0683,0,0,
+mbert-nsmc,INV,pad_context,평론가 점수는 낮던데 관객 입장에선 충분히 재밌습니다. => 어제 친구랑 같이 극장에서 봤습니다. 평론가 점수는 낮던데 관객 입장에선 충분히 재밌습니다. 참고로 주차는 3시간 무료였습니다.,1,0.1858,0,0,
+mbert-nsmc,INV,pad_context,추천해준 친구랑 절교하고 싶습니다. => 어제 친구랑 같이 극장에서 봤습니다. 추천해준 친구랑 절교하고 싶습니다. 참고로 주차는 3시간 무료였습니다.,0,0.0226,0,0,
+mbert-nsmc,INV,pad_context,별점 테러가 이해되는 영화였습니다. => 어제 친구랑 같이 극장에서 봤습니다. 별점 테러가 이해되는 영화였습니다. 참고로 주차는 3시간 무료였습니다.,0,0.0214,0,0,
+mbert-nsmc,INV,pad_context,★★★★★ => 어제 친구랑 같이 극장에서 봤습니다. ★★★★★ 참고로 주차는 3시간 무료였습니다.,1,0.0329,0,0,
+mbert-nsmc,INV,pad_context,★☆☆☆☆ => 어제 친구랑 같이 극장에서 봤습니다. ★☆☆☆☆ 참고로 주차는 3시간 무료였습니다.,0,0.0653,0,0,
+mbert-nsmc,INV,pad_context,평점 9.5점 인정합니다. => 어제 친구랑 같이 극장에서 봤습니다. 평점 9.5점 인정합니다. 참고로 주차는 3시간 무료였습니다.,1,0.3905,0,0,
+mbert-nsmc,INV,pad_context,ㄹㅇ 개꿀잼 ㅋㅋㅋㅋ => 어제 친구랑 같이 극장에서 봤습니다. ㄹㅇ 개꿀잼 ㅋㅋㅋㅋ 참고로 주차는 3시간 무료였습니다.,1,0.0723,0,0,
+mbert-nsmc,INV,pad_context,노잼 그 자체 => 어제 친구랑 같이 극장에서 봤습니다. 노잼 그 자체 참고로 주차는 3시간 무료였습니다.,0,0.0358,0,0,
+mbert-nsmc,INV,pad_context,존잼임 강추 => 어제 친구랑 같이 극장에서 봤습니다. 존잼임 강추 참고로 주차는 3시간 무료였습니다.,1,0.036,0,0,
+mbert-nsmc,INV,pad_context,핵노잼 ㅡㅡ => 어제 친구랑 같이 극장에서 봤습니다. 핵노잼 ㅡㅡ 참고로 주차는 3시간 무료였습니다.,0,0.0574,0,0,
+mbert-nsmc,INV,pad_context,띵작 ㅇㅈ => 어제 친구랑 같이 극장에서 봤습니다. 띵작 ㅇㅈ 참고로 주차는 3시간 무료였습니다.,1,0.0574,0,0,
+mbert-nsmc,INV,pad_context,국뽕 오지지만 그래도 재밌음 => 어제 친구랑 같이 극장에서 봤습니다. 국뽕 오지지만 그래도 재밌음 참고로 주차는 3시간 무료였습니다.,1,0.0703,0,0,
+mbert-nsmc,INV,pad_context,무서워서 눈을 못 뜨겠더라고요. 공포영화로는 최고. => 어제 친구랑 같이 극장에서 봤습니다. 무서워서 눈을 못 뜨겠더라고요. 공포영화로는 최고. 참고로 주차는 3시간 무료였습니다.,1,0.1976,0,0,
+mbert-nsmc,INV,pad_context,자막 오역이 좀 있었지만 작품은 훌륭합니다. => 어제 친구랑 같이 극장에서 봤습니다. 자막 오역이 좀 있었지만 작품은 훌륭합니다. 참고로 주차는 3시간 무료였습니다.,1,0.1402,0,0,
+mbert-nsmc,INV,pad_context,음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요. => 어제 친구랑 같이 극장에서 봤습니다. 음향이 아쉬웠지만 그 외엔 나무랄 데가 없어요. 참고로 주차는 3시간 무료였습니다.,1,0.0265,0,0,
+mbert-nsmc,INV,pad_context,재밌다 재밌다 해서 봤는데 노잼. => 어제 친구랑 같이 극장에서 봤습니다. 재밌다 재밌다 해서 봤는데 노잼. 참고로 주차는 3시간 무료였습니다.,0,0.0823,0,0,
+mbert-nsmc,INV,pad_context,쓰레기라던 사람들 다 어디감? 개명작인데. => 어제 친구랑 같이 극장에서 봤습니다. 쓰레기라던 사람들 다 어디감? 개명작인데. 참고로 주차는 3시간 무료였습니다.,1,0.2796,0,0,
+mbert-nsmc,INV,pad_context,지루하다는 말은 이 영화엔 어울리지 않아요. => 어제 친구랑 같이 극장에서 봤습니다. 지루하다는 말은 이 영화엔 어울리지 않아요. 참고로 주차는 3시간 무료였습니다.,1,0.0193,0,0,
+mbert-nsmc,INV,pad_context,명작이라는 표현이 아깝지 않습니다. => 어제 친구랑 같이 극장에서 봤습니다. 명작이라는 표현이 아깝지 않습니다. 참고로 주차는 3시간 무료였습니다.,1,0.173,0,0,
+mbert-nsmc,INV,pad_context,조금만 더 짧았으면 명작이었을 텐데 아쉽다. => 어제 친구랑 같이 극장에서 봤습니다. 조금만 더 짧았으면 명작이었을 텐데 아쉽다. 참고로 주차는 3시간 무료였습니다.,0,0.0732,0,0,
+mbert-nsmc,INV,pad_context,이런 영화가 더 많이 나왔으면 좋겠습니다. => 어제 친구랑 같이 극장에서 봤습니다. 이런 영화가 더 많이 나왔으면 좋겠습니다. 참고로 주차는 3시간 무료였습니다.,1,0.0653,0,0,
+mbert-nsmc,INV,pad_context,속편이 나온다면 무조건 볼 겁니다. => 어제 친구랑 같이 극장에서 봤습니다. 속편이 나온다면 무조건 볼 겁니다. 참고로 주차는 3시간 무료였습니다.,1,0.0398,0,0,
+mbert-nsmc,INV,pad_context,"솔직히 상반기 최고작이라는 평은 과장이라고 생각합니다. 다만 그렇다고 못 만든 영화는 절대 아니에요. 촬영과 미술은 정말 공들인 티가 나고, 주연 배우의 눈빛 연기는 오래 기억에 남을 것 같습니다. 몇몇 장면의 편집이 아쉽긴 했지만 전체적으로는 만족스러웠고 주변에도 권할 생각입니다. => 어제 친구랑 같이 극장에서 봤습니다. 솔직히 상반기 최고작이라는 평은 과장이라고 생각합니다. 다만 그렇다고 못 만든 영화는 절대 아니에요. 촬영과 미술은 정말 공들인 티가 나고, 주연 배우의 눈빛 연기는 오래 기억에 남을 것 같습니다. 몇몇 장면의 편집이 아쉽긴 했지만 전체적으로는 만족스러웠고 주변에도 권할 생각입니다. 참고로 주차는 3시간 무료였습니다.",1,0.3858,0,0,
+koelectra-gen,INV,despace,재미있지 않았어요. => 재미있지않았어요.,0,0.5636,1,0,
+koelectra-gen,INV,despace,실망 안 할 수가 없는 결말. => 실망안할수가없는결말.,0,0.9049,1,0,
+koelectra-gen,INV,despace,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니. => 와진짜대단하네요.이런걸영화라고개봉하다니.,0,0.8015,1,0,
+koelectra-gen,INV,despace,감독님 다음 작품도 기대할게요... 안 볼 거지만. => 감독님다음작품도기대할게요...안볼거지만.,0,0.4917,0,0,
+koelectra-gen,INV,despace,두 시간 동안 아주 푹 쉬다 왔습니다. => 두시간동안아주푹쉬다왔습니다.,0,0.3385,0,0,
+koelectra-gen,INV,despace,각본가님 천재 아니신가요? 이런 전개는 아무나 못 씁니다. => 각본가님천재아니신가요?이런전개는아무나못씁니다.,0,0.0579,0,0,
+koelectra-gen,INV,despace,불면증 있으신 분들께 강력 추천드립니다. => 불면증있으신분들께강력추천드립니다.,0,0.5597,1,0,
+koelectra-gen,INV,despace,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견. => 올해의발견입니다.이렇게까지못만들수있다는발견.,0,0.8551,1,0,
+koelectra-gen,INV,despace,이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요. => 이영화고소하고싶습니다.제주말을통째로뺏어가서세번이나보게만들었거든요.,1,0.9387,1,0,
+koelectra-gen,INV,despace,이 감독 작품 중 가장 아쉽다. => 이감독작품중가장아쉽다.,0,0.8061,1,0,
+koelectra-gen,INV,despace,악평 보고 기대 없이 갔는데 의외의 수확이었어요. => 악평보고기대없이갔는데의외의수확이었어요.,1,0.7141,1,0,
+koelectra-gen,INV,despace,추천해준 친구랑 절교하고 싶습니다. => 추천해준친구랑절교하고싶습니다.,0,0.5044,1,0,
+koelectra-gen,INV,despace,잔인한 장면이 많지만 그만큼 강렬한 메시지를 남긴다. => 잔인한장면이많지만그만큼강렬한메시지를남긴다.,1,0.1666,0,0,
+koelectra-gen,INV,despace,감동적이라던데 저는 실소만 나왔습니다. => 감동적이라던데저는실소만나왔습니다.,0,0.9289,1,0,
+koelectra-gen,INV,punct_strip,재미있지 않았어요. => 재미있지 않았어요,0,0.713,1,0,
+koelectra-gen,INV,punct_strip,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천. => 영화는 좋았는데 같이 간 사람이 별로였음 영화는 추천,1,0.4887,0,0,
+koelectra-gen,INV,punct_strip,악평 보고 기대 없이 갔는데 의외의 수확이었어요. => 악평 보고 기대 없이 갔는데 의외의 수확이었어요,1,0.5822,1,0,
+koelectra-gen,INV,emoji_append,다시 볼 생각은 없습니다. => 다시 볼 생각은 없습니다. 🎬,0,0.5421,1,0,
+koelectra-gen,INV,emoji_append,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천. => 영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천. 🎬,1,0.4561,0,0,
+koelectra-gen,INV,emoji_append,★☆☆☆☆ => ★☆☆☆☆ 🎬,0,0.5152,1,0,
+koelectra-gen,INV,drop_jongseong,두 번은 못 보겠다. => 두 번은 못 보게다.,0,0.6315,1,0,
+koelectra-gen,INV,drop_jongseong,재미없다는 말이 나올 수가 없다. => 재미없다는 마이 나올 수가 없다.,1,0.3555,0,0,
+koelectra-gen,INV,drop_jongseong,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다. => 만듦새는 준수하다. 다마 두 번 볼 영화는 아니다.,0,0.687,1,0,
+koelectra-gen,INV,drop_jongseong,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니. => 와 지짜 대단하네요. 이런 걸 영화라고 개봉하다니.,0,0.5872,1,0,
+koelectra-gen,INV,drop_jongseong,감독님 다음 작품도 기대할게요... 안 볼 거지만. => 감독님 다음 작품도 기대할게요... 안 볼 거지마.,0,0.3448,0,0,
+koelectra-gen,INV,drop_jongseong,불편한 소재를 정말 잘 다뤘습니다. => 불편한 소재를 정말 잘 다뤘스니다.,1,0.416,0,0,
+koelectra-gen,INV,drop_jongseong,최악이라는 말은 과했다. 생각보다 괜찮았음. => 최악이라는 말은 과해다. 생각보다 괜찮았음.,1,0.5815,1,0,
+koelectra-gen,INV,drop_jongseong,지루하다는 말은 이 영화엔 어울리지 않아요. => 지루하다느 말은 이 영화엔 어울리지 않아요.,1,0.521,1,0,
+koelectra-gen,INV,swap_adjacent,다시 볼 생각은 없습니다. => 다시 볼 생은각 없습니다.,0,0.5284,1,0,
+koelectra-gen,INV,swap_adjacent,화가 안 날 수가 없더군요. => 화가 안 날 가수 없더군요.,0,0.6222,1,0,
+koelectra-gen,INV,swap_adjacent,재미없다는 말이 나올 수가 없다. => 재미없다는 말이 나올 가수 없다.,1,0.0301,0,0,
+koelectra-gen,INV,swap_adjacent,추천 안 할 이유가 없네요. => 추천 안 할 이가유 없네요.,1,0.3614,0,0,
+koelectra-gen,INV,swap_adjacent,단점도 분명 있지만 그걸 덮고도 남는 영화. => 단도점 분명 있지만 그걸 덮고도 남는 영화.,1,0.2357,0,0,
+koelectra-gen,INV,swap_adjacent,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천. => 영화는 좋는았데 같이 간 사람이 별로였음. 영화는 추천.,1,0.4777,0,0,
+koelectra-gen,INV,swap_adjacent,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견. => 올해의 발견입니다. 이렇게까지 못 만들 수 있는다 발견.,0,0.7363,1,0,
+koelectra-gen,INV,swap_adjacent,졸음 방지용으로 커피 꼭 챙기세요. => 졸음 지방용으로 커피 꼭 챙기세요.,0,0.2082,0,0,
+koelectra-gen,INV,swap_adjacent,별점 테러가 이해되는 영화였습니다. => 별점 테러가 이해되는 화영였습니다.,0,0.7864,1,0,
+koelectra-gen,INV,swap_adjacent,총체적 난국이네요 => 총체적 국난이네요,0,0.808,1,0,
+koelectra-gen,INV,swap_adjacent,최악이라는 말은 과했다. 생각보다 괜찮았음. => 최악이라는 말은 했과다. 생각보다 괜찮았음.,1,0.6517,1,0,
+koelectra-gen,INV,swap_adjacent,감동적이라던데 저는 실소만 나왔습니다. => 감동적이라던데 저는 실소만 나습왔니다.,0,0.6052,1,0,
+koelectra-gen,INV,pad_context,혹평만큼 형편없진 않았다. => 어제 친구랑 같이 극장에서 봤습니다. 혹평만큼 형편없진 않았다. 참고로 주차는 3시간 무료였습니다.,1,0.5164,1,0,
+koelectra-gen,INV,pad_context,감독님 다음 작품도 기대할게요... 안 볼 거지만. => 어제 친구랑 같이 극장에서 봤습니다. 감독님 다음 작품도 기대할게요... 안 볼 거지만. 참고로 주차는 3시간 무료였습니다.,0,0.293,0,0,
+koelectra-gen,INV,pad_context,악평 보고 기대 없이 갔는데 의외의 수확이었어요. => 어제 친구랑 같이 극장에서 봤습니다. 악평 보고 기대 없이 갔는데 의외의 수확이었어요. 참고로 주차는 3시간 무료였습니다.,1,0.9322,1,0,
+koelectra-gen,INV,pad_context,★☆☆☆☆ => 어제 친구랑 같이 극장에서 봤습니다. ★☆☆☆☆ 참고로 주차는 3시간 무료였습니다.,0,0.5649,1,0,
+koelectra-gen,INV,pad_context,최악이라는 말은 과했다. 생각보다 괜찮았음. => 어제 친구랑 같이 극장에서 봤습니다. 최악이라는 말은 과했다. 생각보다 괜찮았음. 참고로 주차는 3시간 무료였습니다.,1,0.7427,1,0,
+koelectra-gen,INV,pad_context,지루하다는 말은 이 영화엔 어울리지 않아요. => 어제 친구랑 같이 극장에서 봤습니다. 지루하다는 말은 이 영화엔 어울리지 않아요. 참고로 주차는 3시간 무료였습니다.,1,0.9419,1,0,
+kcelectra-ko,INV,despace,기대를 저버리지 않았다. => 기대를저버리지않았다.,1,0.7071,1,0,
+kcelectra-ko,INV,despace,재미없다고 할 수 없는 영화. => 재미없다고할수없는영화.,1,0.7958,1,0,
+kcelectra-ko,INV,despace,좋았다고 말하긴 어렵다. => 좋았다고말하긴어렵다.,0,0.7696,1,0,
+kcelectra-ko,INV,despace,돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요. => 돈주고볼기회를주셔서감사합니다.다시는안볼게요.,0,0.0997,0,0,
+kcelectra-ko,INV,despace,시간 순삭이네요. 세 시간이 삼십 시간 같았어요. => 시간순삭이네요.세시간이삼십시간같았어요.,0,0.4488,0,0,
+kcelectra-ko,INV,despace,돈 버리는 방법을 알려드립니다. 이 영화 예매하세요. => 돈버리는방법을알려드립니다.이영화예매하세요.,0,0.6435,1,0,
+kcelectra-ko,INV,despace,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견. => 올해의발견입니다.이렇게까지못만들수있다는발견.,0,0.7961,1,0,
+kcelectra-ko,INV,despace,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요. => 감독님반성하세요.이렇게잘만들면다른영화는어쩌라고요.,1,0.8685,1,0,
+kcelectra-ko,INV,despace,극장값이 전혀 아깝지 않은 스케일. => 극장값이전혀아깝지않은스케일.,1,0.3572,0,0,
+kcelectra-ko,INV,despace,시간 순삭 ㄱㅇㄷ => 시간순삭ㄱㅇㄷ,1,0.3585,0,0,
+kcelectra-ko,INV,despace,감동적이라던데 저는 실소만 나왔습니다. => 감동적이라던데저는실소만나왔습니다.,0,0.9437,1,0,
+kcelectra-ko,INV,despace,조금만 더 짧았으면 명작이었을 텐데 아쉽다. => 조금만더짧았으면명작이었을텐데아쉽다.,0,0.8942,1,0,
+kcelectra-ko,INV,punct_strip,재미없다고 할 수 없는 영화. => 재미없다고 할 수 없는 영화,1,0.5735,1,0,
+kcelectra-ko,INV,punct_strip,좋았다고 말하긴 어렵다. => 좋았다고 말하긴 어렵다,0,0.5235,1,0,
+kcelectra-ko,INV,punct_strip,돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요. => 돈 주고 볼 기회를 주셔서 감사합니다 다시는 안 볼게요,0,0.329,0,0,
+kcelectra-ko,INV,punct_strip,2편이 1편을 뛰어넘었다. => 2편이 1편을 뛰어넘었다,1,0.4952,0,0,
+kcelectra-ko,INV,emoji_append,돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요. => 돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요. 🎬,0,0.2288,0,0,
+kcelectra-ko,INV,emoji_append,2편이 1편을 뛰어넘었다. => 2편이 1편을 뛰어넘었다. 🎬,1,0.2926,0,0,
+kcelectra-ko,INV,emoji_append,별점 테러가 이해되는 영화였습니다. => 별점 테러가 이해되는 영화였습니다. 🎬,0,0.4469,0,0,
+kcelectra-ko,INV,emoji_append,무서워서 눈을 못 뜨겠더라고요. 공포영화로는 최고. => 무서워서 눈을 못 뜨겠더라고요. 공포영화로는 최고. 🎬,1,0.2221,0,0,
+kcelectra-ko,INV,emoji_append,조금만 더 짧았으면 명작이었을 텐데 아쉽다. => 조금만 더 짧았으면 명작이었을 텐데 아쉽다. 🎬,0,0.536,1,0,
+kcelectra-ko,INV,drop_jongseong,기대를 저버리지 않았다. => 기대르 저버리지 않았다.,1,0.7053,1,0,
+kcelectra-ko,INV,drop_jongseong,좋았다고 말하긴 어렵다. => 좋았다고 말하긴 어려다.,0,0.6641,1,0,
+kcelectra-ko,INV,drop_jongseong,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다. => 만듦새는 준수하다. 다마 두 번 볼 영화는 아니다.,0,0.8891,1,0,
+kcelectra-ko,INV,drop_jongseong,초반 진입장벽만 넘으면 정말 좋은 영화입니다. => 초반 진입장벽만 넘으면 정말 좋은 영화이니다.,1,0.3703,0,0,
+kcelectra-ko,INV,drop_jongseong,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견. => 올해의 발견입니다. 이렇게까지 못 만들 수 이다는 발견.,0,0.8537,1,0,
+kcelectra-ko,INV,drop_jongseong,졸음 방지용으로 커피 꼭 챙기세요. => 조음 방지용으로 커피 꼭 챙기세요.,0,0.4645,0,0,
+kcelectra-ko,INV,drop_jongseong,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요. => 가독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요.,1,0.5295,1,0,
+kcelectra-ko,INV,swap_adjacent,실망스럽지 않은 영화였어요. => 실망스지럽 않은 영화였어요.,1,0.4689,0,0,
+kcelectra-ko,INV,swap_adjacent,몰입이 되지 않았습니다. => 몰입이 되지 않았니습다.,0,0.9228,1,0,
+kcelectra-ko,INV,swap_adjacent,화가 안 날 수가 없더군요. => 화가 안 날 가수 없더군요.,0,0.8234,1,0,
+kcelectra-ko,INV,swap_adjacent,아쉽지 않다고 하기는 힘들다. => 아쉽지 않고다 하기는 힘들다.,0,0.5019,1,0,
+kcelectra-ko,INV,swap_adjacent,돈이 안 아까울 수가 없다. => 이돈 안 아까울 수가 없다.,0,0.8754,1,0,
+kcelectra-ko,INV,swap_adjacent,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니. => 와 진짜 대단하네요. 이런 걸 화영라고 개봉하다니.,0,0.9317,1,0,
+kcelectra-ko,INV,swap_adjacent,시간 순삭이네요. 세 시간이 삼십 시간 같았어요. => 시간 순삭이네요. 세 시간이 삼십 시간 았같어요.,0,0.1354,0,0,
+kcelectra-ko,INV,swap_adjacent,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견. => 올해의 발견입니다. 이렇게까지 못 만들 수 있는다 발견.,0,0.8705,1,0,
+kcelectra-ko,INV,swap_adjacent,이 감독 진짜 못됐어요. 사람 울리는 데 선수네요. => 이 감독 짜진 못됐어요. 사람 울리는 데 선수네요.,1,0.9096,1,0,
+kcelectra-ko,INV,swap_adjacent,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요. => 감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어라쩌고요.,1,0.5405,1,0,
+kcelectra-ko,INV,swap_adjacent,전작보다 훨씬 낫다. => 전작다보 훨씬 낫다.,1,0.4867,0,0,
+kcelectra-ko,INV,swap_adjacent,평점이 낮아서 걱정했는데 괜한 걱정이었네요. => 평점이 낮아서 걱정는했데 괜한 걱정이었네요.,1,0.2258,0,0,
+kcelectra-ko,INV,swap_adjacent,주변에서 다 말렸는데 보길 잘했어요. => 주변에서 다 말렸는데 보길 잘어했요.,1,0.1363,0,0,
+kcelectra-ko,INV,swap_adjacent,주연이 바뀌었으면 훨씬 좋았을 것 같다. => 연주이 바뀌었으면 훨씬 좋았을 것 같다.,0,0.5143,1,0,
+kcelectra-ko,INV,pad_context,감독이 뭘 말하고 싶었는지 전혀 모르겠다. => 어제 친구랑 같이 극장에서 봤습니다. 감독이 뭘 말하고 싶었는지 전혀 모르겠다. 참고로 주차는 3시간 무료였습니다.,0,0.573,1,0,
+kcelectra-ko,INV,pad_context,혹평만큼 형편없진 않았다. => 어제 친구랑 같이 극장에서 봤습니다. 혹평만큼 형편없진 않았다. 참고로 주차는 3시간 무료였습니다.,1,0.9437,1,0,
+kcelectra-ko,INV,pad_context,추천할 만한 영화는 아니에요. => 어제 친구랑 같이 극장에서 봤습니다. 추천할 만한 영화는 아니에요. 참고로 주차는 3시간 무료였습니다.,0,0.9644,1,0,
+kcelectra-ko,INV,pad_context,다시 볼 생각은 없습니다. => 어제 친구랑 같이 극장에서 봤습니다. 다시 볼 생각은 없습니다. 참고로 주차는 3시간 무료였습니다.,0,0.9593,1,0,
+kcelectra-ko,INV,pad_context,기대를 저버리지 않았다. => 어제 친구랑 같이 극장에서 봤습니다. 기대를 저버리지 않았다. 참고로 주차는 3시간 무료였습니다.,1,0.9647,1,0,
+kcelectra-ko,INV,pad_context,굳이 극장에서 볼 필요는 없어요. => 어제 친구랑 같이 극장에서 봤습니다. 굳이 극장에서 볼 필요는 없어요. 참고로 주차는 3시간 무료였습니다.,0,0.939,1,0,
+kcelectra-ko,INV,pad_context,두 번은 못 보겠다. => 어제 친구랑 같이 극장에서 봤습니다. 두 번은 못 보겠다. 참고로 주차는 3시간 무료였습니다.,0,0.9558,1,0,
+kcelectra-ko,INV,pad_context,재미없다고 할 수 없는 영화. => 어제 친구랑 같이 극장에서 봤습니다. 재미없다고 할 수 없는 영화. 참고로 주차는 3시간 무료였습니다.,1,0.9674,1,0,
+kcelectra-ko,INV,pad_context,화가 안 날 수가 없더군요. => 어제 친구랑 같이 극장에서 봤습니다. 화가 안 날 수가 없더군요. 참고로 주차는 3시간 무료였습니다.,0,0.8759,1,0,
+kcelectra-ko,INV,pad_context,지루하지 않다고는 못 하겠다. => 어제 친구랑 같이 극장에서 봤습니다. 지루하지 않다고는 못 하겠다. 참고로 주차는 3시간 무료였습니다.,0,0.9574,1,0,
+kcelectra-ko,INV,pad_context,좋았다고 말하긴 어렵다. => 어제 친구랑 같이 극장에서 봤습니다. 좋았다고 말하긴 어렵다. 참고로 주차는 3시간 무료였습니다.,0,0.9621,1,0,
+kcelectra-ko,INV,pad_context,재미없다는 말이 나올 수가 없다. => 어제 친구랑 같이 극장에서 봤습니다. 재미없다는 말이 나올 수가 없다. 참고로 주차는 3시간 무료였습니다.,1,0.9623,1,0,
+kcelectra-ko,INV,pad_context,아쉽지 않다고 하기는 힘들다. => 어제 친구랑 같이 극장에서 봤습니다. 아쉽지 않다고 하기는 힘들다. 참고로 주차는 3시간 무료였습니다.,0,0.9532,1,0,
+kcelectra-ko,INV,pad_context,돈이 안 아까울 수가 없다. => 어제 친구랑 같이 극장에서 봤습니다. 돈이 안 아까울 수가 없다. 참고로 주차는 3시간 무료였습니다.,0,0.9505,1,0,
+kcelectra-ko,INV,pad_context,한 시간까지는 최고였는데 그 뒤로 완전히 무너진다. => 어제 친구랑 같이 극장에서 봤습니다. 한 시간까지는 최고였는데 그 뒤로 완전히 무너진다. 참고로 주차는 3시간 무료였습니다.,0,0.5792,1,0,
+kcelectra-ko,INV,pad_context,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다. => 어제 친구랑 같이 극장에서 봤습니다. 만듦새는 준수하다. 다만 두 번 볼 영화는 아니다. 참고로 주차는 3시간 무료였습니다.,0,0.9332,1,0,
+kcelectra-ko,INV,pad_context,기대작이었는데 딱 기대만큼만 하고 끝났다. 아쉽다. => 어제 친구랑 같이 극장에서 봤습니다. 기대작이었는데 딱 기대만큼만 하고 끝났다. 아쉽다. 참고로 주차는 3시간 무료였습니다.,0,0.7119,1,0,
+kcelectra-ko,INV,pad_context,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천. => 어제 친구랑 같이 극장에서 봤습니다. 영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천. 참고로 주차는 3시간 무료였습니다.,1,0.6123,1,0,
+kcelectra-ko,INV,pad_context,소재는 좋았는데 그걸 살리지 못했다. => 어제 친구랑 같이 극장에서 봤습니다. 소재는 좋았는데 그걸 살리지 못했다. 참고로 주차는 3시간 무료였습니다.,0,0.8614,1,0,
+kcelectra-ko,INV,pad_context,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니. => 어제 친구랑 같이 극장에서 봤습니다. 와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니. 참고로 주차는 3시간 무료였습니다.,0,0.9428,1,0,
+kcelectra-ko,INV,pad_context,역대급입니다. 역대급으로 지루한. => 어제 친구랑 같이 극장에서 봤습니다. 역대급입니다. 역대급으로 지루한. 참고로 주차는 3시간 무료였습니다.,0,0.8999,1,0,
+kcelectra-ko,INV,pad_context,주연배우 팬이라 별 하나 드립니다. => 어제 친구랑 같이 극장에서 봤습니다. 주연배우 팬이라 별 하나 드립니다. 참고로 주차는 3시간 무료였습니다.,0,0.9331,1,0,
+kcelectra-ko,INV,pad_context,두 시간 동안 아주 푹 쉬다 왔습니다. => 어제 친구랑 같이 극장에서 봤습니다. 두 시간 동안 아주 푹 쉬다 왔습니다. 참고로 주차는 3시간 무료였습니다.,0,0.9551,1,0,
+kcelectra-ko,INV,pad_context,돈 버리는 방법을 알려드립니다. 이 영화 예매하세요. => 어제 친구랑 같이 극장에서 봤습니다. 돈 버리는 방법을 알려드립니다. 이 영화 예매하세요. 참고로 주차는 3시간 무료였습니다.,0,0.8308,1,0,
+kcelectra-ko,INV,pad_context,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견. => 어제 친구랑 같이 극장에서 봤습니다. 올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견. 참고로 주차는 3시간 무료였습니다.,0,0.9518,1,0,
+kcelectra-ko,INV,pad_context,CG에 돈 다 썼나 봐요. 각본 쓸 돈이 없었나. => 어제 친구랑 같이 극장에서 봤습니다. CG에 돈 다 썼나 봐요. 각본 쓸 돈이 없었나. 참고로 주차는 3시간 무료였습니다.,0,0.5346,1,0,
+kcelectra-ko,INV,pad_context,역시 기대를 저버리지 않네요. 늘 그랬듯 실망시켰습니다. => 어제 친구랑 같이 극장에서 봤습니다. 역시 기대를 저버리지 않네요. 늘 그랬듯 실망시켰습니다. 참고로 주차는 3시간 무료였습니다.,0,0.6529,1,0,
+kcelectra-ko,INV,pad_context,이 감독 진짜 못됐어요. 사람 울리는 데 선수네요. => 어제 친구랑 같이 극장에서 봤습니다. 이 감독 진짜 못됐어요. 사람 울리는 데 선수네요. 참고로 주차는 3시간 무료였습니다.,1,0.656,1,0,
+kcelectra-ko,INV,pad_context,감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요. => 어제 친구랑 같이 극장에서 봤습니다. 감독님 반성하세요. 이렇게 잘 만들면 다른 영화는 어쩌라고요. 참고로 주차는 3시간 무료였습니다.,1,0.5949,1,0,
+kcelectra-ko,INV,pad_context,이 감독 작품 중 가장 아쉽다. => 어제 친구랑 같이 극장에서 봤습니다. 이 감독 작품 중 가장 아쉽다. 참고로 주차는 3시간 무료였습니다.,0,0.8899,1,0,
+kcelectra-ko,INV,pad_context,1편의 발끝에도 못 미친다. => 어제 친구랑 같이 극장에서 봤습니다. 1편의 발끝에도 못 미친다. 참고로 주차는 3시간 무료였습니다.,0,0.9377,1,0,
+kcelectra-ko,INV,pad_context,올해 본 영화 중 이만큼 지루한 건 없었다. => 어제 친구랑 같이 극장에서 봤습니다. 올해 본 영화 중 이만큼 지루한 건 없었다. 참고로 주차는 3시간 무료였습니다.,0,0.8751,1,0,
+kcelectra-ko,INV,pad_context,차라리 예고편만 보는 게 낫다. => 어제 친구랑 같이 극장에서 봤습니다. 차라리 예고편만 보는 게 낫다. 참고로 주차는 3시간 무료였습니다.,0,0.8389,1,0,
+kcelectra-ko,INV,pad_context,집에서 티비로 봤어도 충분했을 영화. => 어제 친구랑 같이 극장에서 봤습니다. 집에서 티비로 봤어도 충분했을 영화. 참고로 주차는 3시간 무료였습니다.,0,0.9323,1,0,
+kcelectra-ko,INV,pad_context,친구는 재밌다는데 저는 도저히 못 보겠더라고요. => 어제 친구랑 같이 극장에서 봤습니다. 친구는 재밌다는데 저는 도저히 못 보겠더라고요. 참고로 주차는 3시간 무료였습니다.,0,0.8589,1,0,
+kcelectra-ko,INV,pad_context,평점 믿고 갔다가 후회했습니다. => 어제 친구랑 같이 극장에서 봤습니다. 평점 믿고 갔다가 후회했습니다. 참고로 주차는 3시간 무료였습니다.,0,0.5572,1,0,
+kcelectra-ko,INV,pad_context,호평 일색이던데 저만 이상한가요? 정말 별로였습니다. => 어제 친구랑 같이 극장에서 봤습니다. 호평 일색이던데 저만 이상한가요? 정말 별로였습니다. 참고로 주차는 3시간 무료였습니다.,0,0.847,1,0,
+kcelectra-ko,INV,pad_context,추천해준 친구랑 절교하고 싶습니다. => 어제 친구랑 같이 극장에서 봤습니다. 추천해준 친구랑 절교하고 싶습니다. 참고로 주차는 3시간 무료였습니다.,0,0.8335,1,0,
+kcelectra-ko,INV,pad_context,별점 1점도 아깝다. => 어제 친구랑 같이 극장에서 봤습니다. 별점 1점도 아깝다. 참고로 주차는 3시간 무료였습니다.,0,0.7862,1,0,
+kcelectra-ko,INV,pad_context,5점 만점에 1점 드립니다. => 어제 친구랑 같이 극장에서 봤습니다. 5점 만점에 1점 드립니다. 참고로 주차는 3시간 무료였습니다.,0,0.9054,1,0,
+kcelectra-ko,INV,pad_context,0점 주고 싶은데 최소가 1점이라 1점 줍니다. => 어제 친구랑 같이 극장에서 봤습니다. 0점 주고 싶은데 최소가 1점이라 1점 줍니다. 참고로 주차는 3시간 무료였습니다.,0,0.6424,1,0,
+kcelectra-ko,INV,pad_context,돈아까움 진짜 => 어제 친구랑 같이 극장에서 봤습니다. 돈아까움 진짜 참고로 주차는 3시간 무료였습니다.,0,0.7661,1,0,
+kcelectra-ko,INV,pad_context,보다가 폰만 봤네요 => 어제 친구랑 같이 극장에서 봤습니다. 보다가 폰만 봤네요 참고로 주차는 3시간 무료였습니다.,0,0.8332,1,0,
+kcelectra-ko,INV,pad_context,음악은 좋았지만 그것 말고는 볼 게 없다. => 어제 친구랑 같이 극장에서 봤습니다. 음악은 좋았지만 그것 말고는 볼 게 없다. 참고로 주차는 3시간 무료였습니다.,0,0.5626,1,0,
+kcelectra-ko,INV,pad_context,"연출력만 놓고 보면 대단한데, 영화로는 실패했다. => 어제 친구랑 같이 극장에서 봤습니다. 연출력만 놓고 보면 대단한데, 영화로는 실패했다. 참고로 주차는 3시간 무료였습니다.",0,0.8028,1,0,
+kcelectra-ko,INV,pad_context,볼거리는 확실한데 남는 게 없습니다. => 어제 친구랑 같이 극장에서 봤습니다. 볼거리는 확실한데 남는 게 없습니다. 참고로 주차는 3시간 무료였습니다.,0,0.6072,1,0,
+kcelectra-ko,INV,pad_context,"배우 팬이라면 만족, 그 외엔 비추. => 어제 친구랑 같이 극장에서 봤습니다. 배우 팬이라면 만족, 그 외엔 비추. 참고로 주차는 3시간 무료였습니다.",0,0.884,1,0,
+kcelectra-ko,INV,pad_context,최고라는 말이 많던데 최악이었다. => 어제 친구랑 같이 극장에서 봤습니다. 최고라는 말이 많던데 최악이었다. 참고로 주차는 3시간 무료였습니다.,0,0.7155,1,0,
+kcelectra-ko,INV,pad_context,지루하다는 말은 이 영화엔 어울리지 않아요. => 어제 친구랑 같이 극장에서 봤습니다. 지루하다는 말은 이 영화엔 어울리지 않아요. 참고로 주차는 3시간 무료였습니다.,1,0.9545,1,0,
+kcelectra-ko,INV,pad_context,최악이라는 단어로도 부족합니다. => 어제 친구랑 같이 극장에서 봤습니다. 최악이라는 단어로도 부족합니다. 참고로 주차는 3시간 무료였습니다.,0,0.7908,1,0,
+kcelectra-ko,INV,pad_context,훌륭하다는 평가는 도저히 못 하겠네요. => 어제 친구랑 같이 극장에서 봤습니다. 훌륭하다는 평가는 도저히 못 하겠네요. 참고로 주차는 3시간 무료였습니다.,0,0.9628,1,0,
+kcelectra-ko,INV,pad_context,감동적이라던데 저는 실소만 나왔습니다. => 어제 친구랑 같이 극장에서 봤습니다. 감동적이라던데 저는 실소만 나왔습니다. 참고로 주차는 3시간 무료였습니다.,0,0.6105,1,0,
+kcelectra-ko,INV,pad_context,걸작이라는 수식어가 부끄러운 수준. => 어제 친구랑 같이 극장에서 봤습니다. 걸작이라는 수식어가 부끄러운 수준. 참고로 주차는 3시간 무료였습니다.,0,0.8665,1,0,
+kcelectra-ko,INV,pad_context,조금만 더 짧았으면 명작이었을 텐데 아쉽다. => 어제 친구랑 같이 극장에서 봤습니다. 조금만 더 짧았으면 명작이었을 텐데 아쉽다. 참고로 주차는 3시간 무료였습니다.,0,0.9281,1,0,
+kcelectra-ko,INV,pad_context,주연이 바뀌었으면 훨씬 좋았을 것 같다. => 어제 친구랑 같이 극장에서 봤습니다. 주연이 바뀌었으면 훨씬 좋았을 것 같다. 참고로 주차는 3시간 무료였습니다.,0,0.9539,1,0,
+kcelectra-ko,INV,pad_context,기대만 안 했으면 괜찮게 봤을 듯. => 어제 친구랑 같이 극장에서 봤습니다. 기대만 안 했으면 괜찮게 봤을 듯. 참고로 주차는 3시간 무료였습니다.,0,0.9521,1,0,
+kcelectra-ko,INV,pad_context,무료로 봤으면 불만 없었을 텐데 돈 주고 보니 아깝다. => 어제 친구랑 같이 극장에서 봤습니다. 무료로 봤으면 불만 없었을 텐데 돈 주고 보니 아깝다. 참고로 주차는 3시간 무료였습니다.,0,0.8573,1,0,
+ensemble-mean,INV,despace,기대를 저버리지 않았다. => 기대를저버리지않았다.,1,0.6536,1,0,
+ensemble-mean,INV,despace,재미없다고 할 수 없는 영화. => 재미없다고할수없는영화.,1,0.663,1,0,
+ensemble-mean,INV,despace,좋았다고 말하긴 어렵다. => 좋았다고말하긴어렵다.,0,0.5198,1,0,
+ensemble-mean,INV,despace,실망 안 할 수가 없는 결말. => 실망안할수가없는결말.,0,0.5031,1,0,
+ensemble-mean,INV,despace,두 시간 동안 아주 푹 쉬다 왔습니다. => 두시간동안아주푹쉬다왔습니다.,0,0.3797,0,0,
+ensemble-mean,INV,despace,각본가님 천재 아니신가요? 이런 전개는 아무나 못 씁니다. => 각본가님천재아니신가요?이런전개는아무나못씁니다.,0,0.3807,0,0,
+ensemble-mean,INV,despace,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견. => 올해의발견입니다.이렇게까지못만들수있다는발견.,0,0.5703,1,0,
+ensemble-mean,INV,despace,이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요. => 이영화고소하고싶습니다.제주말을통째로뺏어가서세번이나보게만들었거든요.,1,0.6566,1,0,
+ensemble-mean,INV,despace,이 감독 작품 중 가장 아쉽다. => 이감독작품중가장아쉽다.,0,0.5608,1,0,
+ensemble-mean,INV,despace,집에서 티비로 봤어도 충분했을 영화. => 집에서티비로봤어도충분했을영화.,0,0.4449,0,0,
+ensemble-mean,INV,despace,별점 테러가 이해되는 영화였습니다. => 별점테러가이해되는영화였습니다.,0,0.3697,0,0,
+ensemble-mean,INV,despace,감동적이라던데 저는 실소만 나왔습니다. => 감동적이라던데저는실소만나왔습니다.,0,0.9375,1,0,
+ensemble-mean,INV,punct_strip,재미없다고 할 수 없는 영화. => 재미없다고 할 수 없는 영화,1,0.5306,1,0,
+ensemble-mean,INV,punct_strip,좋았다고 말하긴 어렵다. => 좋았다고 말하긴 어렵다,0,0.5138,1,0,
+ensemble-mean,INV,punct_strip,최악이라는 말은 과했다. 생각보다 괜찮았음. => 최악이라는 말은 과했다 생각보다 괜찮았음,1,0.4813,0,0,
+ensemble-mean,INV,emoji_append,기대를 저버리지 않았다. => 기대를 저버리지 않았다. 🎬,1,0.5198,1,0,
+ensemble-mean,INV,emoji_append,별점 테러가 이해되는 영화였습니다. => 별점 테러가 이해되는 영화였습니다. 🎬,0,0.4989,0,0,
+ensemble-mean,INV,drop_jongseong,기대를 저버리지 않았다. => 기대르 저버리지 않았다.,1,0.7121,1,0,
+ensemble-mean,INV,drop_jongseong,좋았다고 말하긴 어렵다. => 좋았다고 말하긴 어려다.,0,0.5203,1,0,
+ensemble-mean,INV,drop_jongseong,만듦새는 준수하다. 다만 두 번 볼 영화는 아니다. => 만듦새는 준수하다. 다마 두 번 볼 영화는 아니다.,0,0.5418,1,0,
+ensemble-mean,INV,drop_jongseong,집에서 티비로 봤어도 충분했을 영화. => 집에서 티비로 봤어도 충부했을 영화.,0,0.33,0,0,
+ensemble-mean,INV,drop_jongseong,불편한 소재를 정말 잘 다뤘습니다. => 불편한 소재를 정말 잘 다뤘스니다.,1,0.4951,0,0,
+ensemble-mean,INV,drop_jongseong,주연이 바뀌었으면 훨씬 좋았을 것 같다. => 주연이 바뀌어으면 훨씬 좋았을 것 같다.,0,0.5291,1,0,
+ensemble-mean,INV,swap_adjacent,몰입이 되지 않았습니다. => 몰입이 되지 않았니습다.,0,0.5966,1,0,
+ensemble-mean,INV,swap_adjacent,화가 안 날 수가 없더군요. => 화가 안 날 가수 없더군요.,0,0.5091,1,0,
+ensemble-mean,INV,swap_adjacent,추천 안 할 이유가 없네요. => 추천 안 할 이가유 없네요.,1,0.4848,0,0,
+ensemble-mean,INV,swap_adjacent,시간 순삭이네요. 세 시간이 삼십 시간 같았어요. => 시간 순삭이네요. 세 시간이 삼십 시간 았같어요.,0,0.4742,0,0,
+ensemble-mean,INV,swap_adjacent,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견. => 올해의 발견입니다. 이렇게까지 못 만들 수 있는다 발견.,0,0.5609,1,0,
+ensemble-mean,INV,swap_adjacent,졸음 방지용으로 커피 꼭 챙기세요. => 졸음 지방용으로 커피 꼭 챙기세요.,0,0.2955,0,0,
+ensemble-mean,INV,swap_adjacent,이 감독 진짜 못됐어요. 사람 울리는 데 선수네요. => 이 감독 짜진 못됐어요. 사람 울리는 데 선수네요.,1,0.6129,1,0,
+ensemble-mean,INV,swap_adjacent,전작보다 훨씬 낫다. => 전작다보 훨씬 낫다.,1,0.4647,0,0,
+ensemble-mean,INV,swap_adjacent,악평 보고 기대 없이 갔는데 의외의 수확이었어요. => 악평 보고 기대 없이 갔는데 의의외 수확이었어요.,1,0.4035,0,0,
+ensemble-mean,INV,swap_adjacent,시간 순삭 ㄱㅇㄷ => 시간 삭순 ㄱㅇㄷ,1,0.4581,0,0,
+ensemble-mean,INV,swap_adjacent,주연이 바뀌었으면 훨씬 좋았을 것 같다. => 연주이 바뀌었으면 훨씬 좋았을 것 같다.,0,0.5874,1,0,
+ensemble-mean,INV,pad_context,기대를 저버리지 않았다. => 어제 친구랑 같이 극장에서 봤습니다. 기대를 저버리지 않았다. 참고로 주차는 3시간 무료였습니다.,1,0.6385,1,0,
+ensemble-mean,INV,pad_context,재미없다고 할 수 없는 영화. => 어제 친구랑 같이 극장에서 봤습니다. 재미없다고 할 수 없는 영화. 참고로 주차는 3시간 무료였습니다.,1,0.6359,1,0,
+ensemble-mean,INV,pad_context,재미없다는 말이 나올 수가 없다. => 어제 친구랑 같이 극장에서 봤습니다. 재미없다는 말이 나올 수가 없다. 참고로 주차는 3시간 무료였습니다.,1,0.6479,1,0,
+ensemble-mean,INV,pad_context,영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천. => 어제 친구랑 같이 극장에서 봤습니다. 영화는 좋았는데 같이 간 사람이 별로였음. 영화는 추천. 참고로 주차는 3시간 무료였습니다.,1,0.5023,1,0,
+ensemble-mean,INV,pad_context,불면증 있으신 분들께 강력 추천드립니다. => 어제 친구랑 같이 극장에서 봤습니다. 불면증 있으신 분들께 강력 추천드립니다. 참고로 주차는 3시간 무료였습니다.,0,0.4288,0,0,
+ensemble-mean,INV,pad_context,별점 테러가 이해되는 영화였습니다. => 어제 친구랑 같이 극장에서 봤습니다. 별점 테러가 이해되는 영화였습니다. 참고로 주차는 3시간 무료였습니다.,0,0.453,0,0,
+ensemble-mean,INV,pad_context,지루하다는 말은 이 영화엔 어울리지 않아요. => 어제 친구랑 같이 극장에서 봤습니다. 지루하다는 말은 이 영화엔 어울리지 않아요. 참고로 주차는 3시간 무료였습니다.,1,0.6386,1,0,
+ensemble-mean,INV,pad_context,주연이 바뀌었으면 훨씬 좋았을 것 같다. => 어제 친구랑 같이 극장에서 봤습니다. 주연이 바뀌었으면 훨씬 좋았을 것 같다. 참고로 주차는 3시간 무료였습니다.,0,0.5565,1,0,
+tfidf-lr,INV,despace,전혀 감동적이지 않았다. => 전혀감동적이지않았다.,0,0.5878,1,0,
+tfidf-lr,INV,despace,다시 볼 생각은 없습니다. => 다시볼생각은없습니다.,0,0.6454,1,0,
+tfidf-lr,INV,despace,기대를 저버리지 않았다. => 기대를저버리지않았다.,1,0.5935,1,0,
+tfidf-lr,INV,despace,공감이 전혀 되지 않았다. => 공감이전혀되지않았다.,0,0.5158,1,0,
+tfidf-lr,INV,despace,몰입이 되지 않았습니다. => 몰입이되지않았습니다.,0,0.8164,1,0,
+tfidf-lr,INV,despace,추천 안 할 이유가 없네요. => 추천안할이유가없네요.,1,0.5043,1,0,
+tfidf-lr,INV,despace,좋다고 안 할 수가 없는 작품. => 좋다고안할수가없는작품.,1,0.6288,1,0,
+tfidf-lr,INV,despace,아쉽지 않다고 하기는 힘들다. => 아쉽지않다고하기는힘들다.,0,0.5774,1,0,
+tfidf-lr,INV,despace,초반은 좀 지루했지만 후반부는 정말 압권이었다. => 초반은좀지루했지만후반부는정말압권이었다.,1,0.5218,1,0,
+tfidf-lr,INV,despace,원작 팬으로서 아쉬운 점도 있었지만 전반적으로 훌륭한 각색. => 원작팬으로서아쉬운점도있었지만전반적으로훌륭한각색.,1,0.8303,1,0,
+tfidf-lr,INV,despace,기대를 안 하고 봐서 그런지 의외로 괜찮았다. => 기대를안하고봐서그런지의외로괜찮았다.,1,0.4538,0,0,
+tfidf-lr,INV,despace,전반부는 훌륭했으나 후반부가 다 망쳤습니다. => 전반부는훌륭했으나후반부가다망쳤습니다.,0,0.5198,1,0,
+tfidf-lr,INV,despace,초반 진입장벽만 넘으면 정말 좋은 영화입니다. => 초반진입장벽만넘으면정말좋은영화입니다.,1,0.8511,1,0,
+tfidf-lr,INV,despace,돈 주고 볼 기회를 주셔서 감사합니다. 다시는 안 볼게요. => 돈주고볼기회를주셔서감사합니다.다시는안볼게요.,0,0.4171,0,0,
+tfidf-lr,INV,despace,시간 순삭이네요. 세 시간이 삼십 시간 같았어요. => 시간순삭이네요.세시간이삼십시간같았어요.,0,0.5156,1,0,
+tfidf-lr,INV,despace,올해의 발견입니다. 이렇게까지 못 만들 수 있다는 발견. => 올해의발견입니다.이렇게까지못만들수있다는발견.,0,0.3226,0,0,
+tfidf-lr,INV,despace,팝콘이 참 맛있었습니다. => 팝콘이참맛있었습니다.,0,0.4805,0,0,
+tfidf-lr,INV,despace,역시 기대를 저버리지 않네요. 늘 그랬듯 실망시켰습니다. => 역시기대를저버리지않네요.늘그랬듯실망시켰습니다.,0,0.6761,1,0,
+tfidf-lr,INV,despace,전작보다 훨씬 낫다. => 전작보다훨씬낫다.,1,0.5307,1,0,
+tfidf-lr,INV,despace,이 감독 작품 중 가장 아쉽다. => 이감독작품중가장아쉽다.,0,0.3705,0,0,
+tfidf-lr,INV,despace,따뜻한 영화를 표방하지만 오글거리기만 한다. => 따뜻한영화를표방하지만오글거리기만한다.,0,0.519,1,0,
+tfidf-lr,INV,despace,지루하다는 평이 많았지만 나는 정말 몰입해서 봤다. => 지루하다는평이많았지만나는정말몰입해서봤다.,1,0.4548,0,0,
+tfidf-lr,INV,despace,재미없다는 리뷰에 동의할 수 없다. 훌륭했다. => 재미없다는리뷰에동의할수없다.훌륭했다.,1,0.4443,0,0,
+tfidf-lr,INV,despace,재미없을 거라는 편견을 완전히 깨줬습니다. => 재미없을거라는편견을완전히깨줬습니다.,1,0.2603,0,0,
+tfidf-lr,INV,despace,훌륭하다는 평가는 도저히 못 하겠네요. => 훌륭하다는평가는도저히못하겠네요.,0,0.8324,1,0,
+tfidf-lr,INV,despace,감동적이라던데 저는 실소만 나왔습니다. => 감동적이라던데저는실소만나왔습니다.,0,0.7607,1,0,
+tfidf-lr,INV,despace,속편이 나온다면 무조건 볼 겁니다. => 속편이나온다면무조건볼겁니다.,1,0.3223,0,0,
+tfidf-lr,INV,punct_strip,전혀 감동적이지 않았다. => 전혀 감동적이지 않았다,0,0.5263,1,0,
+tfidf-lr,INV,punct_strip,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니. => 와 진짜 대단하네요 이런 걸 영화라고 개봉하다니,0,0.472,0,0,
+tfidf-lr,INV,punct_strip,역대급입니다. 역대급으로 지루한. => 역대급입니다 역대급으로 지루한,0,0.345,0,0,
+tfidf-lr,INV,punct_strip,팝콘이 참 맛있었습니다. => 팝콘이 참 맛있었습니다,0,0.4807,0,0,
+tfidf-lr,INV,punct_strip,전작보다 훨씬 낫다. => 전작보다 훨씬 낫다,1,0.5386,1,0,
+tfidf-lr,INV,punct_strip,추천해준 친구랑 절교하고 싶습니다. => 추천해준 친구랑 절교하고 싶습니다,0,0.4398,0,0,
+tfidf-lr,INV,punct_strip,화질은 별로였지만 영화 자체는 명작. => 화질은 별로였지만 영화 자체는 명작,1,0.3719,0,0,
+tfidf-lr,INV,punct_strip,재미없다는 리뷰에 동의할 수 없다. 훌륭했다. => 재미없다는 리뷰에 동의할 수 없다 훌륭했다,1,0.4701,0,0,
+tfidf-lr,INV,punct_strip,속편이 나온다면 무조건 볼 겁니다. => 속편이 나온다면 무조건 볼 겁니다,1,0.4996,0,0,
+tfidf-lr,INV,drop_jongseong,기대 이상이었어요. 후회 없는 선택. => 기대 이사이었어요. 후회 없는 선택.,1,0.4228,0,0,
+tfidf-lr,INV,drop_jongseong,돈이 아깝지는 않았습니다. => 도이 아깝지는 않았습니다.,1,0.7952,1,0,
+tfidf-lr,INV,drop_jongseong,전혀 감동적이지 않았다. => 저혀 감동적이지 않았다.,0,0.5528,1,0,
+tfidf-lr,INV,drop_jongseong,다시 볼 생각은 없습니다. => 다시 볼 생각은 없스니다.,0,0.8262,1,0,
+tfidf-lr,INV,drop_jongseong,기대를 저버리지 않았다. => 기대르 저버리지 않았다.,1,0.5756,1,0,
+tfidf-lr,INV,drop_jongseong,두 번은 못 보겠다. => 두 번은 못 보게다.,0,0.6493,1,0,
+tfidf-lr,INV,drop_jongseong,불만이 없다고는 못 하지만 그래도 좋았다. => 불만이 없다고는 못 하지마 그래도 좋았다.,1,0.3587,0,0,
+tfidf-lr,INV,drop_jongseong,원작 팬으로서 아쉬운 점도 있었지만 전반적으로 훌륭한 각색. => 원작 팬으로서 아쉬운 저도 있었지만 전반적으로 훌륭한 각색.,1,0.581,1,0,
+tfidf-lr,INV,drop_jongseong,기대를 안 하고 봐서 그런지 의외로 괜찮았다. => 기대를 안 하고 봐서 그런지 의외로 괘찮았다.,1,0.3797,0,0,
+tfidf-lr,INV,drop_jongseong,전반부는 훌륭했으나 후반부가 다 망쳤습니다. => 전바부는 훌륭했으나 후반부가 다 망쳤습니다.,0,0.532,1,0,
+tfidf-lr,INV,drop_jongseong,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니. => 와 지짜 대단하네요. 이런 걸 영화라고 개봉하다니.,0,0.3868,0,0,
+tfidf-lr,INV,drop_jongseong,역대급입니다. 역대급으로 지루한. => 역대급입니다. 역대급으로 지루하.,0,0.4128,0,0,
+tfidf-lr,INV,drop_jongseong,감독님 다음 작품도 기대할게요... 안 볼 거지만. => 감독님 다음 작품도 기대할게요... 안 볼 거지마.,0,0.4913,0,0,
+tfidf-lr,INV,drop_jongseong,두 시간 동안 아주 푹 쉬다 왔습니다. => 두 시간 동안 아주 푹 쉬다 와습니다.,0,0.799,1,0,
+tfidf-lr,INV,drop_jongseong,불면증 있으신 분들께 강력 추천드립니다. => 불며증 있으신 분들께 강력 추천드립니다.,0,0.7107,1,0,
+tfidf-lr,INV,drop_jongseong,팝콘이 참 맛있었습니다. => 팝콘이 참 맛있어습니다.,0,0.3851,0,0,
+tfidf-lr,INV,drop_jongseong,졸음 방지용으로 커피 꼭 챙기세요. => 조음 방지용으로 커피 꼭 챙기세요.,0,0.6397,1,0,
+tfidf-lr,INV,drop_jongseong,집에서 티비로 봤어도 충분했을 영화. => 집에서 티비로 봤어도 충부했을 영화.,0,0.4666,0,0,
+tfidf-lr,INV,drop_jongseong,시간 순삭 ㄱㅇㄷ => 시가 순삭 ㄱㅇㄷ,1,0.6687,1,0,
+tfidf-lr,INV,drop_jongseong,보다가 폰만 봤네요 => 보다가 폰마 봤네요,0,0.5251,1,0,
+tfidf-lr,INV,drop_jongseong,포스터만 멋있고 내용은 텅 비었다. => 포스터만 멋있고 내요은 텅 비었다.,0,0.6084,1,0,
+tfidf-lr,INV,drop_jongseong,재밌다 재밌다 해서 봤는데 노잼. => 재밌다 재밌다 해서 봤느데 노잼.,0,0.474,0,0,
+tfidf-lr,INV,drop_jongseong,재미없을 거라는 편견을 완전히 깨줬습니다. => 재미없을 거라는 펴견을 완전히 깨줬습니다.,1,0.3371,0,0,
+tfidf-lr,INV,drop_jongseong,실망이라는 단어를 쓸 일이 없었어요. 계속 좋았습니다. => 실망이라는 단어르 쓸 일이 없었어요. 계속 좋았습니다.,1,0.5142,1,0,
+tfidf-lr,INV,drop_jongseong,속편이 나온다면 무조건 볼 겁니다. => 속편이 나온다면 무조건 볼 거니다.,1,0.26,0,0,
+tfidf-lr,INV,swap_adjacent,기대 이상이었어요. 후회 없는 선택. => 기대 상이이었어요. 후회 없는 선택.,1,0.4515,0,0,
+tfidf-lr,INV,swap_adjacent,돈이 아깝지 않은 영화였습니다. => 돈이 아깝지 않은 영화였니습다.,1,0.2825,0,0,
+tfidf-lr,INV,swap_adjacent,돈이 아깝지는 않았습니다. => 이돈 아깝지는 않았습니다.,1,0.7826,1,0,
+tfidf-lr,INV,swap_adjacent,그다지 좋지 않았습니다. => 그지다 좋지 않았습니다.,0,0.5261,1,0,
+tfidf-lr,INV,swap_adjacent,추천할 만한 영화는 아니에요. => 추천할 한만 영화는 아니에요.,0,0.3384,0,0,
+tfidf-lr,INV,swap_adjacent,전혀 감동적이지 않았다. => 전혀 감동이적지 않았다.,0,0.5119,1,0,
+tfidf-lr,INV,swap_adjacent,후회하지 않을 영화입니다. => 후하회지 않을 영화입니다.,1,0.373,0,0,
+tfidf-lr,INV,swap_adjacent,불만이 없다고는 못 하지만 그래도 좋았다. => 불만이 없다고는 못 하지만 그도래 좋았다.,1,0.3729,0,0,
+tfidf-lr,INV,swap_adjacent,원작 팬으로서 아쉬운 점도 있었지만 전반적으로 훌륭한 각색. => 원작 팬으로서 쉬아운 점도 있었지만 전반적으로 훌륭한 각색.,1,0.5668,1,0,
+tfidf-lr,INV,swap_adjacent,기대를 안 하고 봐서 그런지 의외로 괜찮았다. => 기대를 안 하고 봐서 그지런 의외로 괜찮았다.,1,0.418,0,0,
+tfidf-lr,INV,swap_adjacent,초반 진입장벽만 넘으면 정말 좋은 영화입니다. => 초반 진장입벽만 넘으면 정말 좋은 영화입니다.,1,0.6246,1,0,
+tfidf-lr,INV,swap_adjacent,역대급입니다. 역대급으로 지루한. => 대역급입니다. 역대급으로 지루한.,0,0.3289,0,0,
+tfidf-lr,INV,swap_adjacent,두 시간 동안 아주 푹 쉬다 왔습니다. => 두 시간 동안 아주 푹 쉬다 왔습다니.,0,0.5273,1,0,
+tfidf-lr,INV,swap_adjacent,팝콘이 참 맛있었습니다. => 팝콘이 참 맛었있습니다.,0,0.3046,0,0,
+tfidf-lr,INV,swap_adjacent,이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었거든요. => 이 영화 고소하고 싶습니다. 제 주말을 통째로 뺏어가서 세 번이나 보게 만들었든거요.,1,0.5331,1,0,
+tfidf-lr,INV,swap_adjacent,이 감독 작품 중 가장 아쉽다. => 이 감독 작품 중 장가 아쉽다.,0,0.4511,0,0,
+tfidf-lr,INV,swap_adjacent,추천해준 친구랑 절교하고 싶습니다. => 추천해준 친구랑 절교하고 싶습다니.,0,0.45,0,0,
+tfidf-lr,INV,swap_adjacent,보다가 폰만 봤네요 => 다보가 폰만 봤네요,0,0.6643,1,0,
+tfidf-lr,INV,swap_adjacent,따뜻한 영화를 표방하지만 오글거리기만 한다. => 따뜻한 영화를 표방하지만 오거글리기만 한다.,0,0.5015,1,0,
+tfidf-lr,INV,swap_adjacent,화질은 별로였지만 영화 자체는 명작. => 화질은 별로였지만 영화 체자는 명작.,1,0.4799,0,0,
+tfidf-lr,INV,swap_adjacent,감동적이라던데 저는 실소만 나왔습니다. => 감동적이라던데 저는 실소만 나습왔니다.,0,0.5858,1,0,
+tfidf-lr,INV,swap_adjacent,주연이 바뀌었으면 훨씬 좋았을 것 같다. => 연주이 바뀌었으면 훨씬 좋았을 것 같다.,0,0.5903,1,0,
+tfidf-lr,INV,swap_adjacent,속편이 나온다면 무조건 볼 겁니다. => 속편이 나온다면 무건조 볼 겁니다.,1,0.3088,0,0,
+tfidf-lr,INV,pad_context,와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니. => 어제 친구랑 같이 극장에서 봤습니다. 와 진짜 대단하네요. 이런 걸 영화라고 개봉하다니. 참고로 주차는 3시간 무료였습니다.,0,0.4986,0,0,
+tfidf-lr,INV,pad_context,팝콘이 참 맛있었습니다. => 어제 친구랑 같이 극장에서 봤습니다. 팝콘이 참 맛있었습니다. 참고로 주차는 3시간 무료였습니다.,0,0.4777,0,0,
+tfidf-lr,INV,pad_context,추천해준 친구랑 절교하고 싶습니다. => 어제 친구랑 같이 극장에서 봤습니다. 추천해준 친구랑 절교하고 싶습니다. 참고로 주차는 3시간 무료였습니다.,0,0.4728,0,0,
+tfidf-lr,INV,pad_context,속편이 나온다면 무조건 볼 겁니다. => 어제 친구랑 같이 극장에서 봤습니다. 속편이 나온다면 무조건 볼 겁니다. 참고로 주차는 3시간 무료였습니다.,1,0.4797,0,0,
+lexicon-baseline,INV,swap_adjacent,지루하고 뻔한 전개. 추천하지 않습니다. => 지루하고 한뻔 전개. 추천하지 않습니다.,0,0.5,1,0,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,송강호,1,0.9924,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,전지현,1,0.9917,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,마동석,1,0.9948,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,김혜수,1,0.9892,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,톰 크루즈,1,0.9957,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,스칼렛 요한슨,1,0.9961,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,이정재,1,0.9948,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,김민희,1,0.9931,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,봉준호,1,0.9946,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,박찬욱,1,0.9924,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,정유미,1,0.9955,1,1,
+mbert-nsmc,BIAS-entity,{}의 연기가 정말 좋았습니다.,류승룡,1,0.9948,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,송강호,1,0.9882,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,전지현,1,0.9907,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,마동석,1,0.9905,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,김혜수,1,0.9901,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,톰 크루즈,1,0.9924,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,스칼렛 요한슨,1,0.9927,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,이정재,1,0.9911,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,김민희,1,0.9895,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,봉준호,1,0.9909,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,박찬욱,1,0.9887,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,정유미,1,0.9906,1,1,
+koelectra-gen,BIAS-entity,{}의 연기가 정말 좋았습니다.,류승룡,1,0.9916,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,송강호,1,0.9675,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,전지현,1,0.9683,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,마동석,1,0.9373,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,김혜수,1,0.9591,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,톰 크루즈,1,0.9699,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,스칼렛 요한슨,1,0.9659,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,이정재,1,0.969,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,김민희,1,0.9681,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,봉준호,1,0.9647,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,박찬욱,1,0.9566,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,정유미,1,0.9618,1,1,
+kcelectra-ko,BIAS-entity,{}의 연기가 정말 좋았습니다.,류승룡,1,0.9632,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,송강호,1,0.9827,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,전지현,1,0.9836,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,마동석,1,0.9742,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,김혜수,1,0.9795,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,톰 크루즈,1,0.986,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,스칼렛 요한슨,1,0.9849,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,이정재,1,0.985,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,김민희,1,0.9836,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,봉준호,1,0.9834,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,박찬욱,1,0.9792,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,정유미,1,0.9826,1,1,
+ensemble-mean,BIAS-entity,{}의 연기가 정말 좋았습니다.,류승룡,1,0.9832,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,송강호,1,0.9905,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,전지현,1,0.9643,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,마동석,1,0.9855,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,김혜수,1,0.984,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,톰 크루즈,1,0.9835,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,스칼렛 요한슨,1,0.9615,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,이정재,1,0.9726,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,김민희,1,0.9852,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,봉준호,1,0.9845,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,박찬욱,1,0.9466,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,정유미,1,0.9879,1,1,
+tfidf-lr,BIAS-entity,{}의 연기가 정말 좋았습니다.,류승룡,1,0.9941,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,송강호,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,전지현,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,마동석,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,김혜수,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,톰 크루즈,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,스칼렛 요한슨,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,이정재,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,김민희,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,봉준호,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,박찬욱,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,정유미,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{}의 연기가 정말 좋았습니다.,류승룡,1,0.9241,1,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,송강호,0,0.0022,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,전지현,0,0.0025,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,마동석,0,0.0018,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김혜수,0,0.0023,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,톰 크루즈,0,0.0043,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,스칼렛 요한슨,0,0.0024,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,이정재,0,0.0032,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김민희,0,0.0019,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,봉준호,0,0.0023,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,박찬욱,0,0.0021,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,정유미,0,0.0022,0,1,
+mbert-nsmc,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,류승룡,0,0.0027,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,송강호,0,0.0075,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,전지현,0,0.0092,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,마동석,0,0.0073,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김혜수,0,0.0065,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,톰 크루즈,0,0.0094,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,스칼렛 요한슨,0,0.0084,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,이정재,0,0.0068,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김민희,0,0.0076,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,봉준호,0,0.0075,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,박찬욱,0,0.0066,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,정유미,0,0.0091,0,1,
+koelectra-gen,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,류승룡,0,0.0073,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,송강호,0,0.0344,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,전지현,0,0.0337,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,마동석,0,0.0359,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김혜수,0,0.0344,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,톰 크루즈,0,0.0341,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,스칼렛 요한슨,0,0.0359,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,이정재,0,0.0355,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김민희,0,0.0339,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,봉준호,0,0.0343,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,박찬욱,0,0.0349,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,정유미,0,0.034,0,1,
+kcelectra-ko,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,류승룡,0,0.0342,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,송강호,0,0.0147,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,전지현,0,0.0151,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,마동석,0,0.015,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김혜수,0,0.0144,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,톰 크루즈,0,0.0159,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,스칼렛 요한슨,0,0.0156,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,이정재,0,0.0152,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김민희,0,0.0145,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,봉준호,0,0.0147,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,박찬욱,0,0.0145,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,정유미,0,0.0151,0,1,
+ensemble-mean,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,류승룡,0,0.0147,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,송강호,0,0.1617,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,전지현,0,0.0718,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,마동석,0,0.1139,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김혜수,0,0.0947,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,톰 크루즈,0,0.1442,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,스칼렛 요한슨,0,0.1832,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,이정재,0,0.0917,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김민희,0,0.1729,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,봉준호,0,0.148,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,박찬욱,0,0.0912,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,정유미,0,0.09,0,1,
+tfidf-lr,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,류승룡,0,0.1728,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,송강호,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,전지현,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,마동석,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김혜수,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,톰 크루즈,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,스칼렛 요한슨,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,이정재,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,김민희,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,봉준호,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,박찬욱,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,정유미,0,0.0759,0,1,
+lexicon-baseline,BIAS-entity,{} 나오는 영화인데 진짜 별로였어요.,류승룡,0,0.0759,0,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,송강호,1,0.9688,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,전지현,1,0.9659,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,마동석,1,0.9752,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김혜수,1,0.9524,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,톰 크루즈,1,0.9862,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,스칼렛 요한슨,1,0.991,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,이정재,1,0.9742,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김민희,1,0.9701,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,봉준호,1,0.979,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,박찬욱,1,0.9698,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,정유미,1,0.979,1,1,
+mbert-nsmc,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,류승룡,1,0.9821,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,송강호,1,0.9866,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,전지현,1,0.9899,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,마동석,1,0.9881,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김혜수,1,0.9913,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,톰 크루즈,1,0.9934,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,스칼렛 요한슨,1,0.9931,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,이정재,1,0.9916,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김민희,1,0.9863,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,봉준호,1,0.9892,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,박찬욱,1,0.9877,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,정유미,1,0.9908,1,1,
+koelectra-gen,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,류승룡,1,0.9895,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,송강호,1,0.9734,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,전지현,1,0.9734,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,마동석,1,0.9687,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김혜수,1,0.9727,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,톰 크루즈,1,0.9745,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,스칼렛 요한슨,1,0.974,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,이정재,1,0.9738,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김민희,1,0.9736,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,봉준호,1,0.9733,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,박찬욱,1,0.9731,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,정유미,1,0.9732,1,1,
+kcelectra-ko,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,류승룡,1,0.9731,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,송강호,1,0.9763,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,전지현,1,0.9764,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,마동석,1,0.9773,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김혜수,1,0.9721,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,톰 크루즈,1,0.9847,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,스칼렛 요한슨,1,0.986,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,이정재,1,0.9799,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김민희,1,0.9767,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,봉준호,1,0.9805,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,박찬욱,1,0.9768,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,정유미,1,0.981,1,1,
+ensemble-mean,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,류승룡,1,0.9816,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,송강호,1,0.9141,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,전지현,1,0.8257,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,마동석,1,0.872,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김혜수,1,0.8637,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,톰 크루즈,1,0.8898,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,스칼렛 요한슨,1,0.878,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,이정재,1,0.8656,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김민희,1,0.9164,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,봉준호,1,0.8982,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,박찬욱,1,0.8534,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,정유미,1,0.8486,1,1,
+tfidf-lr,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,류승룡,1,0.9139,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,송강호,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,전지현,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,마동석,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김혜수,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,톰 크루즈,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,스칼렛 요한슨,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,이정재,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,김민희,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,봉준호,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,박찬욱,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,정유미,1,0.9241,1,1,
+lexicon-baseline,BIAS-entity,{} 때문에 봤는데 만족스러웠어요.,류승룡,1,0.9241,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,공포,1,0.9936,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,로맨스,1,0.9945,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,코미디,1,0.9919,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,액션,1,0.9941,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,다큐멘터리,1,0.9931,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,애니메이션,1,0.9954,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,전쟁,1,0.9905,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,종교,1,0.993,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,정치,1,0.9906,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,성인,1,0.9898,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,가족,1,0.9948,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,스릴러,1,0.9931,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,공포,1,0.9896,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,로맨스,1,0.9903,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,코미디,1,0.9881,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,액션,1,0.9905,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,다큐멘터리,1,0.9909,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,애니메이션,1,0.9916,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,전쟁,1,0.99,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,종교,1,0.9903,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,정치,1,0.9907,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,성인,1,0.9908,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,가족,1,0.9924,1,1,
+koelectra-gen,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,스릴러,1,0.9903,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,공포,1,0.9738,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,로맨스,1,0.9741,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,코미디,1,0.9734,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,액션,1,0.9742,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,다큐멘터리,1,0.9729,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,애니메이션,1,0.9731,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,전쟁,1,0.9741,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,종교,1,0.9735,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,정치,1,0.9734,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,성인,1,0.9746,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,가족,1,0.9737,1,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,스릴러,1,0.9733,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,공포,1,0.9857,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,로맨스,1,0.9863,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,코미디,1,0.9845,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,액션,1,0.9863,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,다큐멘터리,1,0.9857,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,애니메이션,1,0.9867,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,전쟁,1,0.9849,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,종교,1,0.9856,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,정치,1,0.9849,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,성인,1,0.9851,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,가족,1,0.987,1,1,
+ensemble-mean,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,스릴러,1,0.9856,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,공포,1,0.9852,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,로맨스,1,0.9897,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,코미디,1,0.9844,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,액션,1,0.9933,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,다큐멘터리,1,0.963,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,애니메이션,1,0.9914,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,전쟁,1,0.9894,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,종교,1,0.9778,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,정치,1,0.9865,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,성인,1,0.9812,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,가족,1,0.9907,1,1,
+tfidf-lr,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,스릴러,1,0.9882,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,공포,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,로맨스,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,코미디,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,액션,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,다큐멘터리,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,애니메이션,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,전쟁,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,종교,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,정치,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,성인,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,가족,1,0.9241,1,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 정말 재미있게 봤습니다.,스릴러,1,0.9241,1,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,공포,0,0.0018,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,로맨스,0,0.0018,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,코미디,0,0.0018,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,액션,0,0.0018,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,다큐멘터리,0,0.0018,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,애니메이션,0,0.002,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,전쟁,0,0.002,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,종교,0,0.0018,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,정치,0,0.0018,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,성인,0,0.0019,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,가족,0,0.002,0,1,
+mbert-nsmc,BIAS-genre,{} 영화인데 너무 지루했습니다.,스릴러,0,0.0017,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,공포,0,0.0017,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,로맨스,0,0.002,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,코미디,0,0.0027,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,액션,0,0.0016,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,다큐멘터리,0,0.003,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,애니메이션,0,0.0023,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,전쟁,0,0.0032,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,종교,0,0.0027,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,정치,0,0.0023,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,성인,0,0.0033,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,가족,0,0.0036,0,1,
+koelectra-gen,BIAS-genre,{} 영화인데 너무 지루했습니다.,스릴러,0,0.0022,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,공포,0,0.0353,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,로맨스,0,0.036,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,코미디,0,0.0353,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,액션,0,0.0376,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,다큐멘터리,0,0.0358,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,애니메이션,0,0.0342,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,전쟁,0,0.0364,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,종교,0,0.0344,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,정치,0,0.0346,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,성인,0,0.035,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,가족,0,0.037,0,1,
+kcelectra-ko,BIAS-genre,{} 영화인데 너무 지루했습니다.,스릴러,0,0.0358,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,공포,0,0.0129,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,로맨스,0,0.0132,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,코미디,0,0.0133,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,액션,0,0.0137,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,다큐멘터리,0,0.0135,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,애니메이션,0,0.0129,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,전쟁,0,0.0139,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,종교,0,0.013,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,정치,0,0.0129,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,성인,0,0.0134,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,가족,0,0.0142,0,1,
+ensemble-mean,BIAS-genre,{} 영화인데 너무 지루했습니다.,스릴러,0,0.0133,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,공포,0,0.0401,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,로맨스,0,0.0765,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,코미디,0,0.0457,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,액션,0,0.0709,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,다큐멘터리,0,0.048,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,애니메이션,0,0.1324,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,전쟁,0,0.0609,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,종교,0,0.0404,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,정치,0,0.057,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,성인,0,0.0381,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,가족,0,0.064,0,1,
+tfidf-lr,BIAS-genre,{} 영화인데 너무 지루했습니다.,스릴러,0,0.0591,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,공포,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,로맨스,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,코미디,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,액션,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,다큐멘터리,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,애니메이션,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,전쟁,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,종교,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,정치,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,성인,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,가족,0,0.0759,0,1,
+lexicon-baseline,BIAS-genre,{} 영화인데 너무 지루했습니다.,스릴러,0,0.0759,0,1,

@@ -1,0 +1,363 @@
+
+==============================================================================
+모델 로딩 및 극성 방향 실측 검증
+==============================================================================
+  device = cpu
+  mbert-nsmc         sangrimlee/bert-base-multilingual-cased-nsmc
+      declared id2label = {0: 'negative', 1: 'positive'}
+      실측: pos_index=1 (declared=positive), neg_index=0, gap=0.995, probe_sep=+0.994
+  koelectra-gen      Copycats/koelectra-base-v3-generalized-sentiment-analysis
+      declared id2label = {0: '0', 1: '1'}
+      실측: pos_index=1 (declared=1), neg_index=0, gap=0.984, probe_sep=+0.971
+  kcelectra-ko       matthewburke/korean_sentiment
+      declared id2label = {0: 'LABEL_0', 1: 'LABEL_1'}
+      실측: pos_index=1 (declared=LABEL_1), neg_index=0, gap=0.938, probe_sep=+0.947
+  ensemble-mean      (mean of transformer P(pos))
+      declared id2label = {0: 'negative', 1: 'positive'}
+      실측: (mean of ['mbert-nsmc', 'koelectra-gen', 'kcelectra-ko'])
+  tfidf-lr           (char 2-4gram TF-IDF + LogisticRegression, NSMC train 150k)
+      declared id2label = {0: 'negative', 1: 'positive'}
+      실측: (supervised, fixed)
+  lexicon-baseline   (rule-based)
+      declared id2label = {0: 'negative', 1: 'positive'}
+      실측: (rule-based, fixed)
+
+==============================================================================
+파트 B-1. MFT — 능력별 최소기능 테스트
+==============================================================================
+  ('다수'=해당 소분류에서 다수 라벨만 찍었을 때의 정확도. 이 값을 못 넘으면 무의미)
+  capability                     n    다수      mbert-nsmc   koelectra-gen    kcelectra-ko   ensemble-mean        tfidf-lr  lexicon-baseli
+  01_basic_pos_neg              20  0.50 0.95[0.76-0.99] 1.00[0.84-1.00] 1.00[0.84-1.00] 1.00[0.84-1.00] 1.00[0.84-1.00] 0.75[0.53-0.89]
+  02_negation                   24  0.50 0.88[0.69-0.96] 0.96[0.80-0.99] 0.92[0.74-0.98] 0.92[0.74-0.98] 0.67[0.47-0.82] 0.33[0.18-0.53]
+  03_double_negation            16  0.56 0.56[0.33-0.77] 1.00[0.81-1.00] 0.88[0.64-0.97] 0.88[0.64-0.97] 0.50[0.28-0.72] 0.81[0.57-0.93]
+  04_contrast_but               20  0.50 0.95[0.76-0.99] 1.00[0.84-1.00] 0.95[0.76-0.99] 0.95[0.76-0.99] 0.70[0.48-0.85] 0.55[0.34-0.74]
+  05_sarcasm_irony              26  0.77 0.54[0.35-0.71] 0.50[0.32-0.68] 0.35[0.19-0.54] 0.42[0.26-0.61] 0.50[0.32-0.68] 0.27[0.14-0.46]
+  06_comparative                14  0.50 0.64[0.39-0.84] 0.93[0.69-0.99] 1.00[0.78-1.00] 0.93[0.69-0.99] 0.79[0.52-0.92] 0.64[0.39-0.84]
+  07_reported_opinion           16  0.56 0.81[0.57-0.93] 0.94[0.72-0.99] 0.94[0.72-0.99] 0.94[0.72-0.99] 0.88[0.64-0.97] 0.62[0.39-0.82]
+  08_rating_expr                 8  0.50 0.88[0.53-0.98] 1.00[0.68-1.00] 0.88[0.53-0.98] 0.88[0.53-0.98] 0.88[0.53-0.98] 0.50[0.22-0.78]
+  09_slang_internet             12  0.50 0.75[0.47-0.91] 1.00[0.76-1.00] 1.00[0.76-1.00] 1.00[0.76-1.00] 0.83[0.55-0.95] 0.83[0.55-0.95]
+  10_sad_scary_not_negative      9  0.67 0.89[0.56-0.98] 1.00[0.70-1.00] 1.00[0.70-1.00] 1.00[0.70-1.00] 0.89[0.56-0.98] 0.78[0.45-0.94]
+  11_aspect_scope               12  0.50 1.00[0.76-1.00] 1.00[0.76-1.00] 1.00[0.76-1.00] 1.00[0.76-1.00] 1.00[0.76-1.00] 0.58[0.32-0.81]
+  12_adversarial_lexical        16  0.50 0.81[0.57-0.93] 0.88[0.64-0.97] 0.94[0.72-0.99] 0.94[0.72-0.99] 0.62[0.39-0.82] 0.44[0.23-0.67]
+  13_conditional_hypothetical    6  0.67 0.83[0.44-0.97] 0.67[0.30-0.90] 1.00[0.61-1.00] 0.83[0.44-0.97] 0.83[0.44-0.97] 0.33[0.10-0.70]
+  14_long_review                 3  0.67 1.00[0.44-1.00] 1.00[0.44-1.00] 1.00[0.44-1.00] 1.00[0.44-1.00] 1.00[0.44-1.00] 0.67[0.21-0.94]
+  ** 전체 **                   202  0.53 0.80[0.74-0.85] 0.90[0.85-0.93] 0.88[0.82-0.91] 0.88[0.82-0.91] 0.75[0.68-0.80] 0.55[0.49-0.62]
+
+[B-1b] 난이도별 정확도 (1=사전적 / 2=보통 / 3=추론 필요)
+  mbert-nsmc          d1: 0.913(n=23)  d2: 0.890(n=73)  d3: 0.708(n=106)
+  koelectra-gen       d1: 1.000(n=23)  d2: 1.000(n=73)  d3: 0.811(n=106)
+  kcelectra-ko        d1: 1.000(n=23)  d2: 0.986(n=73)  d3: 0.774(n=106)
+  ensemble-mean       d1: 1.000(n=23)  d2: 0.986(n=73)  d3: 0.774(n=106)
+  tfidf-lr            d1: 1.000(n=23)  d2: 0.836(n=73)  d3: 0.632(n=106)
+  lexicon-baseline    d1: 0.870(n=23)  d2: 0.548(n=73)  d3: 0.491(n=106)
+
+[B-1c] 파인튜닝 트랜스포머 전부가 실패한 케이스 (베이스라인/앙상블 제외)
+  [02_negation] gold=1 | 혹평만큼 형편없진 않았다. | mbert-nsmc=0.09 koelectra-=0.40 kcelectra-=0.25 ensemble-m=0.25 tfidf-lr=0.26 lexicon-ba=0.08
+  [05_sarcasm_irony] gold=0 | 감독님 다음 작품도 기대할게요... 안 볼 거지만. | mbert-nsmc=0.93 koelectra-=0.67 kcelectra-=0.89 ensemble-m=0.83 tfidf-lr=0.54 lexicon-ba=0.50
+  [05_sarcasm_irony] gold=0 | 시간 순삭이네요. 세 시간이 삼십 시간 같았어요. | mbert-nsmc=0.69 koelectra-=0.98 kcelectra-=0.75 ensemble-m=0.81 tfidf-lr=0.34 lexicon-ba=0.50
+  [05_sarcasm_irony] gold=0 | 명작이네요 명작. 화장실 갈 타이밍 잡기 딱 좋은. | mbert-nsmc=0.96 koelectra-=0.98 kcelectra-=0.97 ensemble-m=0.97 tfidf-lr=0.87 lexicon-ba=0.92
+  [05_sarcasm_irony] gold=0 | 아 정말 좋은 영화네요. 중간에 나올 용기를 줘서. | mbert-nsmc=0.98 koelectra-=0.93 kcelectra-=0.97 ensemble-m=0.96 tfidf-lr=0.80 lexicon-ba=0.92
+  [05_sarcasm_irony] gold=0 | 팝콘이 참 맛있었습니다. | mbert-nsmc=0.79 koelectra-=0.95 kcelectra-=0.96 ensemble-m=0.90 tfidf-lr=0.56 lexicon-ba=0.50
+  [05_sarcasm_irony] gold=1 | 이 감독 진짜 못됐어요. 사람 울리는 데 선수네요. | mbert-nsmc=0.16 koelectra-=0.06 kcelectra-=0.06 ensemble-m=0.09 tfidf-lr=0.85 lexicon-ba=0.50
+  [05_sarcasm_irony] gold=1 | 돈 아깝네요. 티켓값이 이 퀄리티에 비해 너무 쌉니다. | mbert-nsmc=0.00 koelectra-=0.00 kcelectra-=0.05 ensemble-m=0.02 tfidf-lr=0.13 lexicon-ba=0.50
+  [05_sarcasm_irony] gold=1 | 최악입니다. 이걸 보고 나니 다른 영화가 다 시시해졌어요. | mbert-nsmc=0.00 koelectra-=0.02 kcelectra-=0.04 ensemble-m=0.02 tfidf-lr=0.10 lexicon-ba=0.08
+
+==============================================================================
+파트 B-2. UNC — 의견 없는 중립 문장에서의 과신 여부
+==============================================================================
+  (정답 라벨 없음. 이상적 모델이라면 P(pos)가 0.5 근처여야 함)
+  mbert-nsmc         평균확신도=0.733  확신도>0.9 비율=0.10  P(pos) 범위=[0.02,0.77]  긍정판정=2/10
+  koelectra-gen      평균확신도=0.726  확신도>0.9 비율=0.10  P(pos) 범위=[0.37,0.90]  긍정판정=6/10
+  kcelectra-ko       평균확신도=0.758  확신도>0.9 비율=0.30  P(pos) 범위=[0.10,0.94]  긍정판정=4/10
+  ensemble-mean      평균확신도=0.682  확신도>0.9 비율=0.00  P(pos) 범위=[0.22,0.86]  긍정판정=5/10
+  tfidf-lr           평균확신도=0.717  확신도>0.9 비율=0.10  P(pos) 범위=[0.09,0.83]  긍정판정=3/10
+  lexicon-baseline   평균확신도=0.500  확신도>0.9 비율=0.00  P(pos) 범위=[0.50,0.50]  긍정판정=10/10
+
+  문장별 P(pos):
+    2시간 15분짜리 영화이고 12세 관람가입니다.                     mbert-nsmc=0.10 koelectra-=0.84 kcelectra-=0.31 ensemble-m=0.42 tfidf-lr=0.18 lexicon-ba=0.50
+    1980년대 서울을 배경으로 한 시대극입니다.                      mbert-nsmc=0.77 koelectra-=0.86 kcelectra-=0.94 ensemble-m=0.86 tfidf-lr=0.49 lexicon-ba=0.50
+    주인공은 형사이고 연쇄살인범을 쫓습니다.                         mbert-nsmc=0.31 koelectra-=0.84 kcelectra-=0.39 ensemble-m=0.51 tfidf-lr=0.16 lexicon-ba=0.50
+    쿠키영상은 두 개 있습니다.                                mbert-nsmc=0.26 koelectra-=0.45 kcelectra-=0.41 ensemble-m=0.37 tfidf-lr=0.09 lexicon-ba=0.50
+    아이맥스관에서 봤습니다.                                  mbert-nsmc=0.68 koelectra-=0.86 kcelectra-=0.86 ensemble-m=0.80 tfidf-lr=0.83 lexicon-ba=0.50
+    감독은 이 영화로 장편 데뷔했습니다.                           mbert-nsmc=0.35 koelectra-=0.90 kcelectra-=0.73 ensemble-m=0.66 tfidf-lr=0.36 lexicon-ba=0.50
+    상영시간은 100분입니다.                                 mbert-nsmc=0.02 koelectra-=0.40 kcelectra-=0.25 ensemble-m=0.22 tfidf-lr=0.34 lexicon-ba=0.50
+    원작은 동명의 웹툰입니다.                                 mbert-nsmc=0.18 koelectra-=0.42 kcelectra-=0.43 ensemble-m=0.34 tfidf-lr=0.32 lexicon-ba=0.50
+    주말 오후에 관람했고 좌석은 F열이었습니다.                       mbert-nsmc=0.49 koelectra-=0.37 kcelectra-=0.10 ensemble-m=0.32 tfidf-lr=0.56 lexicon-ba=0.50
+    영어 자막판으로 관람했습니다.                               mbert-nsmc=0.43 koelectra-=0.58 kcelectra-=0.94 ensemble-m=0.65 tfidf-lr=0.72 lexicon-ba=0.50
+
+==============================================================================
+파트 B-3. DIR — 방향성 기대 테스트 (유효 변화폭 > 0.02)
+==============================================================================
+  -- mbert-nsmc
+     FAIL intensify_pos_1    up    0.983 -> 0.994 (Δ=+0.011)
+     FAIL intensify_pos_2    up    0.979 -> 0.989 (Δ=+0.010)
+     FAIL intensify_pos_3    up    0.973 -> 0.971 (Δ=-0.002)
+     FAIL intensify_neg_1    down  0.002 -> 0.002 (Δ=+0.000)
+     FAIL intensify_neg_2    down  0.002 -> 0.002 (Δ=+0.000)
+     PASS negate_pos_1       down  0.979 -> 0.002 (Δ=-0.978)
+     PASS negate_pos_2       down  0.995 -> 0.182 (Δ=-0.813)
+     PASS negate_pos_3       down  0.973 -> 0.273 (Δ=-0.701)
+     PASS negate_neg_1       up    0.002 -> 0.519 (Δ=+0.518)
+     PASS negate_neg_2       up    0.002 -> 0.912 (Δ=+0.910)
+     PASS hedge_pos          down  0.979 -> 0.705 (Δ=-0.275)
+     FAIL hedge_neg          up    0.002 -> 0.002 (Δ=+0.000)
+     FAIL add_complaint      down  0.994 -> 0.996 (Δ=+0.002)
+     PASS add_praise         up    0.269 -> 0.818 (Δ=+0.549)
+     통과율 7/14 = 0.50 [0.27-0.73]
+  -- koelectra-gen
+     FAIL intensify_pos_1    up    0.989 -> 0.987 (Δ=-0.002)
+     FAIL intensify_pos_2    up    0.964 -> 0.982 (Δ=+0.018)
+     PASS intensify_pos_3    up    0.926 -> 0.971 (Δ=+0.046)
+     FAIL intensify_neg_1    down  0.002 -> 0.002 (Δ=-0.000)
+     FAIL intensify_neg_2    down  0.004 -> 0.007 (Δ=+0.003)
+     PASS negate_pos_1       down  0.964 -> 0.005 (Δ=-0.959)
+     PASS negate_pos_2       down  0.973 -> 0.019 (Δ=-0.953)
+     PASS negate_pos_3       down  0.926 -> 0.007 (Δ=-0.919)
+     PASS negate_neg_1       up    0.003 -> 0.876 (Δ=+0.873)
+     PASS negate_neg_2       up    0.004 -> 0.954 (Δ=+0.950)
+     PASS hedge_pos          down  0.964 -> 0.148 (Δ=-0.816)
+     PASS hedge_neg          up    0.004 -> 0.087 (Δ=+0.083)
+     FAIL add_complaint      down  0.973 -> 0.954 (Δ=-0.018)
+     FAIL add_praise         up    0.916 -> 0.715 (Δ=-0.201)
+     통과율 8/14 = 0.57 [0.33-0.79]
+  -- kcelectra-ko
+     FAIL intensify_pos_1    up    0.974 -> 0.974 (Δ=+0.000)
+     FAIL intensify_pos_2    up    0.973 -> 0.973 (Δ=-0.000)
+     FAIL intensify_pos_3    up    0.966 -> 0.964 (Δ=-0.002)
+     FAIL intensify_neg_1    down  0.038 -> 0.039 (Δ=+0.001)
+     FAIL intensify_neg_2    down  0.034 -> 0.035 (Δ=+0.000)
+     PASS negate_pos_1       down  0.973 -> 0.036 (Δ=-0.937)
+     PASS negate_pos_2       down  0.972 -> 0.043 (Δ=-0.929)
+     PASS negate_pos_3       down  0.966 -> 0.073 (Δ=-0.893)
+     PASS negate_neg_1       up    0.043 -> 0.877 (Δ=+0.835)
+     PASS negate_neg_2       up    0.036 -> 0.968 (Δ=+0.932)
+     PASS hedge_pos          down  0.973 -> 0.695 (Δ=-0.278)
+     FAIL hedge_neg          up    0.034 -> 0.037 (Δ=+0.002)
+     FAIL add_complaint      down  0.973 -> 0.961 (Δ=-0.012)
+     PASS add_praise         up    0.150 -> 0.961 (Δ=+0.811)
+     통과율 7/14 = 0.50 [0.27-0.73]
+  -- ensemble-mean
+     FAIL intensify_pos_1    up    0.982 -> 0.985 (Δ=+0.003)
+     FAIL intensify_pos_2    up    0.972 -> 0.981 (Δ=+0.009)
+     FAIL intensify_pos_3    up    0.955 -> 0.969 (Δ=+0.014)
+     FAIL intensify_neg_1    down  0.014 -> 0.015 (Δ=+0.000)
+     FAIL intensify_neg_2    down  0.014 -> 0.015 (Δ=+0.001)
+     PASS negate_pos_1       down  0.972 -> 0.014 (Δ=-0.958)
+     PASS negate_pos_2       down  0.980 -> 0.081 (Δ=-0.899)
+     PASS negate_pos_3       down  0.955 -> 0.118 (Δ=-0.837)
+     PASS negate_neg_1       up    0.016 -> 0.758 (Δ=+0.742)
+     PASS negate_neg_2       up    0.014 -> 0.944 (Δ=+0.930)
+     PASS hedge_pos          down  0.972 -> 0.516 (Δ=-0.456)
+     PASS hedge_neg          up    0.014 -> 0.042 (Δ=+0.029)
+     FAIL add_complaint      down  0.980 -> 0.971 (Δ=-0.009)
+     PASS add_praise         up    0.445 -> 0.832 (Δ=+0.387)
+     통과율 8/14 = 0.57 [0.33-0.79]
+  -- tfidf-lr
+     FAIL intensify_pos_1    up    0.991 -> 0.994 (Δ=+0.003)
+     FAIL intensify_pos_2    up    0.990 -> 0.988 (Δ=-0.002)
+     PASS intensify_pos_3    up    0.925 -> 0.961 (Δ=+0.037)
+     FAIL intensify_neg_1    down  0.010 -> 0.050 (Δ=+0.040)
+     FAIL intensify_neg_2    down  0.002 -> 0.020 (Δ=+0.017)
+     PASS negate_pos_1       down  0.990 -> 0.001 (Δ=-0.989)
+     PASS negate_pos_2       down  0.997 -> 0.657 (Δ=-0.340)
+     PASS negate_pos_3       down  0.925 -> 0.475 (Δ=-0.450)
+     PASS negate_neg_1       up    0.006 -> 0.032 (Δ=+0.026)
+     PASS negate_neg_2       up    0.008 -> 0.919 (Δ=+0.912)
+     PASS hedge_pos          down  0.990 -> 0.846 (Δ=-0.144)
+     FAIL hedge_neg          up    0.002 -> 0.010 (Δ=+0.008)
+     FAIL add_complaint      down  0.992 -> 0.976 (Δ=-0.016)
+     PASS add_praise         up    0.697 -> 0.893 (Δ=+0.196)
+     통과율 8/14 = 0.57 [0.33-0.79]
+  -- lexicon-baseline
+     FAIL intensify_pos_1    up    0.500 -> 0.500 (Δ=+0.000)
+     FAIL intensify_pos_2    up    0.924 -> 0.924 (Δ=+0.000)
+     FAIL intensify_pos_3    up    0.924 -> 0.924 (Δ=+0.000)
+     FAIL intensify_neg_1    down  0.076 -> 0.076 (Δ=+0.000)
+     FAIL intensify_neg_2    down  0.076 -> 0.076 (Δ=+0.000)
+     PASS negate_pos_1       down  0.924 -> 0.500 (Δ=-0.424)
+     FAIL negate_pos_2       down  0.924 -> 0.924 (Δ=+0.000)
+     FAIL negate_pos_3       down  0.924 -> 0.924 (Δ=+0.000)
+     FAIL negate_neg_1       up    0.076 -> 0.076 (Δ=+0.000)
+     FAIL negate_neg_2       up    0.076 -> 0.076 (Δ=+0.000)
+     FAIL hedge_pos          down  0.924 -> 0.924 (Δ=+0.000)
+     FAIL hedge_neg          up    0.076 -> 0.076 (Δ=+0.000)
+     FAIL add_complaint      down  0.500 -> 0.500 (Δ=+0.000)
+     PASS add_praise         up    0.500 -> 0.924 (Δ=+0.424)
+     통과율 2/14 = 0.14 [0.04-0.40]
+
+==============================================================================
+파트 B-4. 강도 사다리 — P(pos) 단조성
+==============================================================================
+  [pos_ladder] 기대: 아래로 갈수록 P(pos) 증가
+    mbert-nsmc         0.003 -> 0.347 -> 0.987 -> 0.989 -> 0.995   단조성 OK
+    koelectra-gen      0.054 -> 0.594 -> 0.976 -> 0.988 -> 0.991   단조성 OK
+    kcelectra-ko       0.045 -> 0.696 -> 0.971 -> 0.972 -> 0.975   단조성 OK
+    ensemble-mean      0.034 -> 0.546 -> 0.978 -> 0.983 -> 0.987   단조성 OK
+    tfidf-lr           0.269 -> 0.567 -> 0.998 -> 0.998 -> 0.999   단조성 OK
+    lexicon-baseline   0.500 -> 0.500 -> 0.924 -> 0.924 -> 0.924   단조성 X
+
+  [neg_ladder] 기대: 아래로 갈수록 P(pos) 감소
+    mbert-nsmc         0.593 -> 0.002 -> 0.002 -> 0.002 -> 0.002   단조성 X
+    koelectra-gen      0.119 -> 0.002 -> 0.003 -> 0.002 -> 0.002   단조성 X
+    kcelectra-ko       0.763 -> 0.038 -> 0.037 -> 0.039 -> 0.037   단조성 X
+    ensemble-mean      0.492 -> 0.014 -> 0.014 -> 0.015 -> 0.013   단조성 X
+    tfidf-lr           0.784 -> 0.010 -> 0.011 -> 0.050 -> 0.016   단조성 X
+    lexicon-baseline   0.500 -> 0.076 -> 0.076 -> 0.076 -> 0.076   단조성 X
+
+
+==============================================================================
+파트 B-5. INV — 변형 불변성 (예측 라벨이 바뀌면 실패)
+==============================================================================
+  의미보존군: despace / punct_strip / emoji_append / pad_context
+  오타군    : drop_jongseong / swap_adjacent  (감성어는 보호했으나 드물게 의미가 흔들릴 수 있음)
+
+  model             perturbation          flip율    |Δp| 평균  |Δp| p95
+  mbert-nsmc        despace           0.135(27/200)      0.125     0.512
+  mbert-nsmc        punct_strip       0.016(3/188)      0.024     0.086
+  mbert-nsmc        emoji_append      0.084(17/202)      0.066     0.272
+  mbert-nsmc        drop_jongseong    0.092(18/196)      0.068     0.357
+  mbert-nsmc        swap_adjacent     0.103(20/195)      0.091     0.474
+  mbert-nsmc        pad_context       0.302(61/202)      0.278     0.856
+  koelectra-gen     despace           0.070(14/200)      0.082     0.384
+  koelectra-gen     punct_strip       0.016(3/188)      0.021     0.107
+  koelectra-gen     emoji_append      0.015(3/202)      0.019     0.076
+  koelectra-gen     drop_jongseong    0.041(8/196)      0.048     0.254
+  koelectra-gen     swap_adjacent     0.062(12/195)      0.079     0.363
+  koelectra-gen     pad_context       0.030(6/202)      0.041     0.191
+  kcelectra-ko      despace           0.060(12/200)      0.055     0.351
+  kcelectra-ko      punct_strip       0.021(4/188)      0.020     0.120
+  kcelectra-ko      emoji_append      0.025(5/202)      0.029     0.161
+  kcelectra-ko      drop_jongseong    0.036(7/196)      0.034     0.216
+  kcelectra-ko      swap_adjacent     0.072(14/195)      0.073     0.456
+  kcelectra-ko      pad_context       0.282(57/202)      0.243     0.846
+  ensemble-mean     despace           0.060(12/200)      0.070     0.242
+  ensemble-mean     punct_strip       0.016(3/188)      0.016     0.057
+  ensemble-mean     emoji_append      0.010(2/202)      0.027     0.103
+  ensemble-mean     drop_jongseong    0.031(6/196)      0.041     0.193
+  ensemble-mean     swap_adjacent     0.056(11/195)      0.070     0.293
+  ensemble-mean     pad_context       0.040(8/202)      0.129     0.284
+  tfidf-lr          despace           0.135(27/200)      0.110     0.356
+  tfidf-lr          punct_strip       0.048(9/188)      0.038     0.135
+  tfidf-lr          emoji_append      0.000(0/202)      0.000     0.000
+  tfidf-lr          drop_jongseong    0.128(25/196)      0.075     0.287
+  tfidf-lr          swap_adjacent     0.118(23/195)      0.080     0.262
+  tfidf-lr          pad_context       0.020(4/202)      0.081     0.164
+  lexicon-baseline  despace           0.000(0/200)      0.000     0.000
+  lexicon-baseline  punct_strip       0.000(0/188)      0.000     0.000
+  lexicon-baseline  emoji_append      0.000(0/202)      0.000     0.000
+  lexicon-baseline  drop_jongseong    0.000(0/196)      0.002     0.000
+  lexicon-baseline  swap_adjacent     0.005(1/195)      0.003     0.000
+  lexicon-baseline  pad_context       0.000(0/202)      0.000     0.000
+
+[B-5b] 수동 작성 문체 변형 쌍 (구어체/맞춤법오류/띄어쓰기/이모지)
+  mbert-nsmc         flip 0/10  평균|Δp|=0.016
+  koelectra-gen      flip 0/10  평균|Δp|=0.010
+  kcelectra-ko       flip 0/10  평균|Δp|=0.002
+  ensemble-mean      flip 0/10  평균|Δp|=0.008
+  tfidf-lr           flip 0/10  평균|Δp|=0.023
+  lexicon-baseline   flip 0/10  평균|Δp|=0.085
+
+==============================================================================
+파트 C-1. 개체명 치환 편향 — 같은 문장, 배우 이름만 교체
+==============================================================================
+  템플릿: {}의 연기가 정말 좋았습니다.  (기대 라벨 1)
+    mbert-nsmc         정확도=1.00  P(pos) 범위=0.989~0.996 (폭 0.007, sd 0.002)
+        최저 김혜수=0.989 / 최고 스칼렛 요한슨=0.996
+    koelectra-gen      정확도=1.00  P(pos) 범위=0.988~0.993 (폭 0.005, sd 0.001)
+        최저 송강호=0.988 / 최고 스칼렛 요한슨=0.993
+    kcelectra-ko       정확도=1.00  P(pos) 범위=0.937~0.970 (폭 0.033, sd 0.009)
+        최저 마동석=0.937 / 최고 톰 크루즈=0.970
+    ensemble-mean      정확도=1.00  P(pos) 범위=0.974~0.986 (폭 0.012, sd 0.003)
+        최저 마동석=0.974 / 최고 톰 크루즈=0.986
+    tfidf-lr           정확도=1.00  P(pos) 범위=0.947~0.994 (폭 0.048, sd 0.014)
+        최저 박찬욱=0.947 / 최고 류승룡=0.994
+    lexicon-baseline   정확도=1.00  P(pos) 범위=0.924~0.924 (폭 0.000, sd 0.000)
+        최저 송강호=0.924 / 최고 류승룡=0.924
+
+  템플릿: {} 나오는 영화인데 진짜 별로였어요.  (기대 라벨 0)
+    mbert-nsmc         정확도=1.00  P(pos) 범위=0.002~0.004 (폭 0.002, sd 0.001)
+        최저 마동석=0.002 / 최고 톰 크루즈=0.004
+    koelectra-gen      정확도=1.00  P(pos) 범위=0.007~0.009 (폭 0.003, sd 0.001)
+        최저 김혜수=0.007 / 최고 톰 크루즈=0.009
+    kcelectra-ko       정확도=1.00  P(pos) 범위=0.034~0.036 (폭 0.002, sd 0.001)
+        최저 전지현=0.034 / 최고 스칼렛 요한슨=0.036
+    ensemble-mean      정확도=1.00  P(pos) 범위=0.014~0.016 (폭 0.002, sd 0.000)
+        최저 김혜수=0.014 / 최고 톰 크루즈=0.016
+    tfidf-lr           정확도=1.00  P(pos) 범위=0.072~0.183 (폭 0.111, sd 0.038)
+        최저 전지현=0.072 / 최고 스칼렛 요한슨=0.183
+    lexicon-baseline   정확도=1.00  P(pos) 범위=0.076~0.076 (폭 0.000, sd 0.000)
+        최저 송강호=0.076 / 최고 류승룡=0.076
+
+  템플릿: {} 때문에 봤는데 만족스러웠어요.  (기대 라벨 1)
+    mbert-nsmc         정확도=1.00  P(pos) 범위=0.952~0.991 (폭 0.039, sd 0.010)
+        최저 김혜수=0.952 / 최고 스칼렛 요한슨=0.991
+    koelectra-gen      정확도=1.00  P(pos) 범위=0.986~0.993 (폭 0.007, sd 0.002)
+        최저 김민희=0.986 / 최고 톰 크루즈=0.993
+    kcelectra-ko       정확도=1.00  P(pos) 범위=0.969~0.974 (폭 0.006, sd 0.001)
+        최저 마동석=0.969 / 최고 톰 크루즈=0.974
+    ensemble-mean      정확도=1.00  P(pos) 범위=0.972~0.986 (폭 0.014, sd 0.004)
+        최저 김혜수=0.972 / 최고 스칼렛 요한슨=0.986
+    tfidf-lr           정확도=1.00  P(pos) 범위=0.826~0.916 (폭 0.091, sd 0.028)
+        최저 전지현=0.826 / 최고 김민희=0.916
+    lexicon-baseline   정확도=1.00  P(pos) 범위=0.924~0.924 (폭 0.000, sd 0.000)
+        최저 송강호=0.924 / 최고 류승룡=0.924
+
+
+==============================================================================
+파트 C-2. 장르어 confound — 같은 문장, 장르만 교체
+==============================================================================
+  템플릿: {} 영화인데 정말 재미있게 봤습니다.  (기대 라벨 1)
+    mbert-nsmc         정확도=1.00  폭=0.006  최저 성인=0.990 / 최고 애니메이션=0.995
+    koelectra-gen      정확도=1.00  폭=0.004  최저 코미디=0.988 / 최고 가족=0.992
+    kcelectra-ko       정확도=1.00  폭=0.002  최저 다큐멘터리=0.973 / 최고 성인=0.975
+    ensemble-mean      정확도=1.00  폭=0.002  최저 코미디=0.984 / 최고 가족=0.987
+    tfidf-lr           정확도=1.00  폭=0.030  최저 다큐멘터리=0.963 / 최고 액션=0.993
+    lexicon-baseline   정확도=1.00  폭=0.000  최저 공포=0.924 / 최고 스릴러=0.924
+
+  템플릿: {} 영화인데 너무 지루했습니다.  (기대 라벨 0)
+    mbert-nsmc         정확도=1.00  폭=0.000  최저 스릴러=0.002 / 최고 전쟁=0.002
+    koelectra-gen      정확도=1.00  폭=0.002  최저 액션=0.002 / 최고 가족=0.004
+    kcelectra-ko       정확도=1.00  폭=0.003  최저 애니메이션=0.034 / 최고 액션=0.038
+    ensemble-mean      정확도=1.00  폭=0.001  최저 애니메이션=0.013 / 최고 가족=0.014
+    tfidf-lr           정확도=1.00  폭=0.094  최저 성인=0.038 / 최고 애니메이션=0.132
+    lexicon-baseline   정확도=1.00  폭=0.000  최저 공포=0.076 / 최고 스릴러=0.076
+
+
+==============================================================================
+파트 C-3. 패러프레이즈 일관성 — 같은 뜻, 다른 표현
+==============================================================================
+  -- mbert-nsmc
+     group0(gold=1) 일관=O acc=1.00 P=0.99 0.82 0.98 0.89
+     group1(gold=0) 일관=X acc=0.75 P=0.00 0.82 0.00 0.00
+     group2(gold=1) 일관=X acc=0.75 P=0.97 0.95 0.22 0.96
+     group3(gold=0) 일관=O acc=1.00 P=0.00 0.00 0.02 0.00
+  -- koelectra-gen
+     group0(gold=1) 일관=O acc=1.00 P=0.99 0.93 0.96 0.98
+     group1(gold=0) 일관=O acc=1.00 P=0.01 0.01 0.00 0.00
+     group2(gold=1) 일관=O acc=1.00 P=0.97 0.95 0.89 0.97
+     group3(gold=0) 일관=O acc=1.00 P=0.01 0.00 0.04 0.05
+  -- kcelectra-ko
+     group0(gold=1) 일관=O acc=1.00 P=0.97 0.97 0.97 0.97
+     group1(gold=0) 일관=O acc=1.00 P=0.04 0.03 0.04 0.04
+     group2(gold=1) 일관=O acc=1.00 P=0.96 0.97 0.76 0.97
+     group3(gold=0) 일관=O acc=1.00 P=0.40 0.05 0.05 0.04
+  -- ensemble-mean
+     group0(gold=1) 일관=O acc=1.00 P=0.98 0.91 0.97 0.95
+     group1(gold=0) 일관=O acc=1.00 P=0.01 0.29 0.01 0.01
+     group2(gold=1) 일관=O acc=1.00 P=0.97 0.96 0.62 0.97
+     group3(gold=0) 일관=O acc=1.00 P=0.14 0.02 0.04 0.03
+  -- tfidf-lr
+     group0(gold=1) 일관=O acc=1.00 P=1.00 0.96 0.98 0.95
+     group1(gold=0) 일관=O acc=1.00 P=0.01 0.27 0.02 0.06
+     group2(gold=1) 일관=X acc=0.75 P=0.96 0.91 0.11 0.92
+     group3(gold=0) 일관=O acc=1.00 P=0.04 0.04 0.01 0.00
+  -- lexicon-baseline
+     group0(gold=1) 일관=O acc=1.00 P=0.92 0.92 0.92 0.50
+     group1(gold=0) 일관=X acc=0.75 P=0.08 0.08 0.50 0.08
+     group2(gold=1) 일관=O acc=1.00 P=0.92 0.50 0.50 0.92
+     group3(gold=0) 일관=X acc=0.75 P=0.50 0.08 0.08 0.08
+
+==============================================================================
+저장 완료
+==============================================================================
+  C:\Users\hi\Documents\workspace\ksent\results/results.json   (2138 case rows -> cases.csv)
